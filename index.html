@@ -23,15 +23,47 @@
 	.icono{font-size: 16px; background: #ffa500; border-radius: 30px; cursor: pointer; padding: 7px 10px;}
 	.separacion{margin-top: 20px; margin-bottom: 20px;}
 	.separador{padding-bottom: 25px; padding-top: 25px;}
+	/*.skill_item{}*/
 	.fuente25{font-size: 25px; margin-right: 10px;}
 	.menu-fon{color: white; font-size: 20px; cursor: pointer;}
+	.velo{background: rgba(0, 0, 0, 0.75); color: white; position: absolute; z-index: 10000; padding-top: 30px; }
 	/*.row-menu{ z-index: 1000;}*/
 	#trabajo{margin-top: 25px; margin-bottom: 25px;}
 	#contacto{color: white; margin-top: 15px; margin-bottom: 15px; font-size: 18px;}
+	#remover{font-size: 22px;}
 	</style>
 </head>
 <body>
 <div class="container-fluid">
+	<div class="row">
+		<div class="velo col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+		<div class="separador"></div>
+			<div class="row">
+		    	<p class="col-lg-2 col-lg-offset-7 col-md-2 col-md-offset-7 col-sm-2 col-sm-offset-7 col-xs-2 col-xs-offset-7 glyphicon glyphicon-remove" id="remover"></p>
+		    	<h1 class="col-lg-10 col-md-10 col-sm-10 col-xs-10">Mis Skills</h1>
+		    	<ul class="col-lg-3 col-lg-offset-1 col-md-4 col-md-offset-1 col-sm-6 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+		        	<li class"skill_item" >Atención al Cliente</li>
+		        	<li class"skill_item" >Gusto por la tecnología</li>
+		        	<li class"skill_item" >Facilidad de aprendizaje</li>
+		        	<li class"skill_item" >Cien por ciento Autodidacta</li>
+		        	<li class"skill_item" >Maquetación en HTML5 y CSS3</li>
+		        	<li class"skill_item" >Preprocesador CSS Stylus</li>
+		        	<li class"skill_item" >Javascript</li>
+		        	<li class"skill_item" >jQuery</li>
+		        	<li class"skill_item" >Photoshop</li>
+		        	<li class"skill_item" >Conocimiento de Bootstrap</li>
+		        	<li class"skill_item" >Conocimiento de Angularjs</li>
+		        	<li class"skill_item" >Conocimiento de la Consola de Chrome</li>
+		        	<li class"skill_item" >Conocimiento Control de versiones en GitHub</li>
+		        	<li class"skill_item" >Lectura y comprensión del Idioma Ingles</li>
+		    	</ul>
+		    	<p class="visible-lg-block">lg</p>
+			<p class="visible-md-block">md</p>
+			<p class="visible-sm-block">sm</p>
+			<p class="visible-xs-block">xs</p>
+	    	</div>
+		</div>
+	</div>
 	<div class="row">
 		<header class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 			<div class="row">
@@ -39,8 +71,8 @@
 				<div class="row">
 					<p id="menu" class="col-xs-2 icon-menu menu-fon visible-xs-block"></p>
 					<ul id="ulMenu" class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-9 col-sm-offset-3 visible-lg-block visible-md-block visible-sm-block">
-						<li class="col-lg-2 col-lg-offset-2 col-md-2 col-md-offset-1 col-sm-2 "><a href="#">Yo</a></li>
-						<li class="col-lg-2 col-md-2 col-sm-3"><a href="#">Sobre mi</a></li>
+						<li class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 col-sm-2 "><a href="#">Yo</a></li>
+						<li class="col-lg-3 col-md-3 col-sm-3"><a href="#">Sobre mi</a></li>
 						<li class="col-lg-2 col-md-2 col-sm-2"><a href="#">Trabajo</a></li>
 						<li class="col-lg-2 col-md-3 col-sm-3"><a href="#">Contacto</a></li>
 					</ul>
@@ -91,11 +123,11 @@
 		</div>
 		<div class="row" id="trabajo">
 			<h2 class="col-lg-10 col-lg-offset-1">Mi trabajo</h2>
-			<img class="col-lg-3 col-md-3 col-sm-3 col-xs-6" src="img/spvlg.png" alt="">
-			<img class="col-lg-3 col-md-3 col-sm-3 col-xs-6" src="img/decorinterlg.png" alt="">
-			<div class="col-xs-12 visible-xs-block separador"></div>
-			<img class="col-lg-3 col-md-3 col-sm-3 col-xs-6" src="img/evolushionlg.png" alt="">
-			<img class="col-lg-3 col-md-3 col-sm-3 col-xs-6" src="img/apamlg.png" alt="">
+			<img class="col-lg-4 col-lg-offset-1 col-md-3 col-sm-3 col-xs-6" src="img/spvlg.png" alt="">
+			<img class="col-lg-4 col-lg-offset-2 col-md-3 col-sm-3 col-xs-6" src="img/decorinterlg.png" alt="">
+			<div class="col-lg-12 col-xs-12 visible-lg-block visible-xs-block separador"></div>
+			<img class="col-lg-4 col-lg-offset-1 col-md-3 col-sm-3 col-xs-6" src="img/evolushionlg.png" alt="">
+			<img class="col-lg-4 col-lg-offset-2 col-md-3 col-sm-3 col-xs-6" src="img/apamlg.png" alt="">
 		</div>
 	</section>
 	<div class="row">
