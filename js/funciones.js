@@ -2,13 +2,16 @@
 // estas 3 lineas al iniciar la pagina pondra automaticamente el tamaño del velo segun el tamaño del body
 var largo = document.body;
 var largotexto = largo.offsetHeight.toString();
-var ancho = largo.offsetWidth;
+var ancho = largo.offsetWidth.toString();
 document.getElementById("elVelo").style.height = largotexto + "px";
 console.log(ancho);
-if (ancho < 768) 
+console.log(largotexto);
+/*if (ancho <= 768) 
 	{
 		moviles();
 	}
+
+
 //largoVelo.style.height = largo.offsetHeight;
 //alert("esto es lo largo de la ventana " + largotexto + " px" );
 
@@ -19,10 +22,10 @@ function moviles()
 	var img_3 = document.getElementById("img3");
 	var img_4 = document.getElementById("img4");
 
-	img1.className = "visible-xs-block col-xs-8 col-xs-offset-2";
-	img2.className = "visible-xs-block col-xs-8 col-xs-offset-2";
-	img2.className = "visible-xs-block col-xs-8 col-xs-offset-2";
-	img4.className = "visible-xs-block col-xs-8 col-xs-offset-2";	
+	img_1.className = "col-xs-8 col-xs-offset-2";
+	img_2.className = "col-xs-8 col-xs-offset-2";
+	img_2.className = "col-xs-8 col-xs-offset-2";
+	img_4.className = "col-xs-8 col-xs-offset-2";	
 		
 }
 /*Funciones para distintas cosas.
@@ -43,10 +46,42 @@ if (largo.offsetWidth > 768) {
 			}	
 	}
 
+//+++++Funcion que mostrara el DIV de detalles cuando cliqueen en la imagen del trabajo++++++++
+function detalles()
+{
+	console.log(this.id + " Este es el ID de la imagen que se le dio click");
+	var t_detalle1 = document.getElementById("trabajo1");
+	var t_detalle2 = document.getElementById("trabajo2");
+	var t_detalle3 = document.getElementById("trabajo3");
+	var t_detalle4 = document.getElementById("trabajo4");
+	var Spv = document.getElementById("spv");
+	var Decorint = document.getElementById("decorint");
+
+	if (this.id == "img1" ) {t_detalle1.className = "velo-detalles col-lg-12 col-md-12 col-sm-12 col-xs-12";}
+	if (this.id == "img2" ) {t_detalle2.className = "velo-detalles col-lg-12 col-md-12 col-sm-12 col-xs-12";}
+	if (this.id == "img3" ) {t_detalle3.className = "velo-detalles col-lg-12 col-md-12 col-sm-12 col-xs-12";}
+	if (this.id == "img4" ) {t_detalle4.className = "velo-detalles col-lg-12 col-md-12 col-sm-12 col-xs-12";}
+	if (this.id == "img1_1" ) {t_detalle1.className = "velo-detalles col-lg-12 col-md-12 col-sm-12 col-xs-12";}
+	if (this.id == "img2_2" ) {t_detalle2.className = "velo-detalles col-lg-12 col-md-12 col-sm-12 col-xs-12";}
+	if (this.id == "img3_3" ) {t_detalle3.className = "foco3 velo-detalles col-lg-12 col-md-12 col-sm-12 col-xs-12";}
+	if (this.id == "img4_4" ) {t_detalle4.className = "foco4 velo-detalles col-lg-12 col-md-12 col-sm-12 col-xs-12";}
+}
+
 //++++++++++++++++++++++++++++++++ Funcion que cierra la etiqueta DIV.velo ++++++++++++++++++++++++++++++++++++++++++++//
 function cerrarVelo () {
+	console.log(this.id + " Este es el ID de la X que se le dio click");
 	var velo = document.getElementById("elVelo");
-	velo.className = "oculto";
+	var t_detalle1 = document.getElementById("trabajo1");
+	var t_detalle2 = document.getElementById("trabajo2");
+	var t_detalle3 = document.getElementById("trabajo3");
+	var t_detalle4 = document.getElementById("trabajo4");
+
+	if (this.id == "remover") {velo.className = "oculto";}
+	if (this.id == "cerrarv1") {t_detalle1.className = "oculto";}
+	if (this.id == "cerrarv2") {t_detalle2.className = "oculto";}
+	if (this.id == "cerrarv3") {t_detalle3.className = "oculto";}
+	if (this.id == "cerrarv4") {t_detalle4.className = "oculto";}
+	
 }
 
 //++++++ Funcion que habilita el boton "Ver mas.." que habilitara detalles de la imagen en la seccion "Mi trabajo"  +++++++++++++++++++++++++//
@@ -71,7 +106,7 @@ function verImagen () {
 			menuimg_3.className="oculto";
 			menuimg_4.className="oculto";
 
-			img_1.className="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2 col-xs-6 col-xs-offset-3";
+			img_1.className="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 visible-lg-block visible-md-block visible-sm-block";
 			img_2.className = "oculto";
 			img_3.className = "oculto";	
 			img_4.className = "oculto";
@@ -86,7 +121,7 @@ function verImagen () {
 			menuimg_4.className="oculto";
 
 			img_1.className="oculto col-xs-6 col-xs-offset-3";
-			img_2.className = "col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2 col-xs-6 col-xs-offset-3";
+			img_2.className = "col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 visible-lg-block visible-md-block visible-sm-block";
 			img_3.className = "oculto col-xs-6 col-xs-offset-3";	
 			img_4.className = "oculto col-xs-6 col-xs-offset-3";
 		};
@@ -99,10 +134,10 @@ function verImagen () {
 			menuimg_3.className = "menu-subitem col-lg-3 col-lg-offset-6 col-md-3 col-md-offset-6 col-sm-3 col-sm-offset-6";
 			menuimg_4.className = "oculto";
 
-			img_1.className = "oculto col-xs-6 col-xs-offset-3";
-			img_2.className = "oculto col-xs-6 col-xs-offset-3";
-			img_3.className = "col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2 col-xs-6 col-xs-offset-3";	
-			img_4.className = "oculto col-xs-6 col-xs-offset-3";
+			img_1.className = "oculto";
+			img_2.className = "oculto";
+			img_3.className = "col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 visible-lg-block visible-md-block visible-sm-block";	
+			img_4.className = "oculto";
 		};
  
 /* ------------------Este if muestra la imagen 1 junto con la felcha 1*/	
@@ -113,10 +148,10 @@ function verImagen () {
 			menuimg_3.className="oculto";
 			menuimg_4.className="menu-subitem col-lg-3 col-lg-offset-9 col-md-3 col-md-offset-9 col-sm-3 col-sm-offset-9";
 
-			img_1.className="oculto col-xs-6 col-xs-offset-3";
-			img_2.className = "oculto col-xs-6 col-xs-offset-3";
-			img_3.className = "oculto col-xs-6 col-xs-offset-3";	
-			img_4.className = "col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2 col-xs-6 col-xs-offset-3";
+			img_1.className="oculto";
+			img_2.className = "oculto";
+			img_3.className = "oculto";	
+			img_4.className = "col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 visible-lg-block visible-md-block visible-sm-block";
 		};
 
 
@@ -128,5 +163,20 @@ document.getElementById("item3").onclick = verImagen;
 document.getElementById("item4").onclick = verImagen;
 
 document.getElementById("remover").onclick = cerrarVelo;//Esta linea llama a la funcion "cerrarVelo" Al hacer click en el elemento con id "remover".
+document.getElementById("cerrarv1").onclick = cerrarVelo;//Esta linea llama a la funcion "cerrarVelo" Al hacer click en el elemento con id "remover".
+document.getElementById("cerrarv2").onclick = cerrarVelo;//Esta linea llama a la funcion "cerrarVelo" Al hacer click en el elemento con id "remover".
+document.getElementById("cerrarv3").onclick = cerrarVelo;//Esta linea llama a la funcion "cerrarVelo" Al hacer click en el elemento con id "remover".
+document.getElementById("cerrarv4").onclick = cerrarVelo;//Esta linea llama a la funcion "cerrarVelo" Al hacer click en el elemento con id "remover".
+
+document.getElementById("img1").onclick = detalles;
+document.getElementById("img1_1").onclick = detalles;
+document.getElementById("img2").onclick = detalles;
+document.getElementById("img2_2").onclick = detalles;
+document.getElementById("img3").onclick = detalles;
+document.getElementById("img3_3").onclick = detalles;
+document.getElementById("img4").onclick = detalles;
+document.getElementById("img4_4").onclick = detalles;
+
+
 document.getElementById("menu").onclick=hideMenu;//Esta linea llama a la funcion "hideMenu" Al hacer click en el elemento con id "menu".
 //alert( window.innerWidth + " x " + window.innerHeight);
