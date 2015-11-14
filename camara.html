@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+</head>
+<body>
+    <div>
+        <video controls autoplay></video>
+    </div>
+<script>
+    window.URL = window.URL || window.webkitURL;
+    navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozgetUserMedia;
+
+    navigator.getUserMedia({audio: true, video: true}, function(vid){
+        document.querySelector('video').src = window.URL.createObjecURL(vid);
+    });
+
+</script>
+</body>
+</html>
