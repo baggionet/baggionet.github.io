@@ -15,7 +15,7 @@ $(document).ready(function(){
 			$('.logo').css({
 				'marginTop' : '10px'
 			});
-			$('#img-logo').attr('src','img/logohssazul.png');
+			$('#img-logo').attr('src','img-ss/logohssazul.png');
 			$('nav').css({
 				'marginTop' : '0',
 				'marginBottom' : '0',
@@ -42,7 +42,7 @@ $(document).ready(function(){
 			$('.menu').css({
 				'color' : '#fff'
 			});
-			$('#img-logo').attr('src','img/logohssblanco.png');
+			$('#img-logo').attr('src','img-ss/logohssblanco.png');
 		}
 	});
 //Funcion que cambiara automaticamente las fotos del apartado quienes somos
