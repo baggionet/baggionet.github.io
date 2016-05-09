@@ -5,7 +5,7 @@
 	nav{background: #1e1e1e; margin-bottom: 20px; padding: 22px 0 20px 0;}
 	li{list-style: none;}
 	a{font-size: 18px; text-decoration: none; color: #f5f5f5;}
-	a:hover{text-decoration: none; color: #f5f5f5; font-size: 20px; }
+	a:hover{text-decoration: none; color: #f5f5f5;}
 	a:visited{text-decoration: none; color: #f5f5f5;}
 	a:active{text-decoration: none; color: #f5f5f5;}
 
@@ -22,9 +22,14 @@
 	.separador{padding-bottom: 25px; padding-top: 25px;}
 	/*.skill_item{}*/
 	.fuente25{font-size: 25px; margin-right: 10px;}
+	.li-lateral{color: #a7b1c2;	font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif; list-style: none; padding: 10px 0 10px 40px;	z-index: 0;}
+	.li-lateral:hover{color: white; background: #2f4050; border-right: 5px; border-right: 5px solid #ffa500;}
 	.menu-bajo{margin-top: 25px; padding-top: 25px;}
-	.menu-fon{color: white; font-size: 20px; cursor: pointer;}
+	.menu-largo{position: absolute; z-index: 10000;}
+	.menu-off{color: white; font-size: 20px; cursor: pointer;}
+	.menu-on{color: white; font-size: 20px; cursor: pointer; margin-bottom: 30px;}
 	.menu-item li{color: black;}
+	.menu_movil{padding: 10px 40px;}
 	.menu-subitem{text-align: center; font-size: 26px;}
 	.menu-subitem1{background-color: #f5f5f5; cursor: pointer; padding-top: 10px; padding-bottom: 10px;  text-align: center;}
 	.marcador{color: black;}
@@ -38,3 +43,4 @@
 	#contacto{color: white; margin-top: 15px; margin-bottom: 15px; font-size: 18px;}
 	#remover{font-size: 22px; cursor: pointer;}
 	#img1:hover, #img2:hover, #img3:hover, #img4:hover, #img1_1:hover, #img2_2:hover, #img3_3:hover, #img4_4:hover{opacity: 0.7; cursor: pointer;}
+	#ulMenu{padding: 0; width: 100%;}

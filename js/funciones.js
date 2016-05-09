@@ -6,6 +6,10 @@ var ancho = largo.offsetWidth.toString();
 document.getElementById("elVelo").style.height = largotexto + "px";
 console.log(ancho);
 console.log(largotexto);
+elNav = document.getElementById("nav");
+largoNav=elNav.offsetHeight.toString();
+console.log("el largo del van es " +largoNav);
+
 /*if (ancho <= 768) 
 	{
 		moviles();
@@ -32,18 +36,41 @@ function moviles()
 if (largo.offsetWidth > 768) {
 	alert("cambioi la resolucion");*/
 
-//+++++++++++++++++++++++++++++++ funcion que habilita y deshabilita el menu cuando estamos en dispositivos pequeños +++++++++++++++++++++++//
+//+++++++++++++++++++++++++++++++ funcion que habilita el menu cuando estamos en dispositivos pequeños +++++++++++++++++++++++//
+	function showMenu(){
+		elMenu = document.getElementById('ulMenu');
+		elNav = document.getElementById("nav");
+		Menu = document.getElementById("menu");
+		closeMenu = document.getElementById("close-menu");
+
+		Menu.className = "oculto;"
+		elMenu.className = "visible-xs-block col-xs-8";
+		elNav.className = "col-xs-8 menu-largo";
+		closeMenu.className = "col-xs-1 col-xs-offset-10 icon-menu4 menu-on visible-xs-block";
+
+		elNav.style.height = largotexto + "px";
+
+		/*var scrollEventHandler = function()
+		{
+  			window.scroll(0, window.pageXOffset);
+		}
+
+		window.addEventListener("scroll", scrollEventHandler, false);*/
+	}
+
+//+++++++++++++++++++++++++++++++ funcion que deshabilita el menu cuando estamos en dispositivos pequeños +++++++++++++++++++++++//
 	function hideMenu(){
 		elMenu = document.getElementById('ulMenu');
-		//
-		if (elMenu.className == "oculto") 
-			{
-				elMenu.className = "visible-xs-block col-xs-4";
-			} 
-		else
-			{
-				elMenu.className = "oculto";
-			}	
+		elNav = document.getElementById("nav");
+		Menu = document.getElementById("menu");
+		closeMenu = document.getElementById("close-menu");
+		console.log(largotexto + "px");
+
+		Menu.className = "col-xs-1 icon-menu3 menu-off visible-xs-block";
+		elMenu.className = "oculto";
+		elNav.className = "col-lg-12 col-md-12 col-sm-12";
+		closeMenu.className = "oculto";
+		elNav.style.height = 72 + "px";
 	}
 
 //+++++Funcion que mostrara el DIV de detalles cuando cliqueen en la imagen del trabajo++++++++
@@ -178,5 +205,11 @@ document.getElementById("img4").onclick = detalles;
 document.getElementById("img4_4").onclick = detalles;
 
 
-document.getElementById("menu").onclick=hideMenu;//Esta linea llama a la funcion "hideMenu" Al hacer click en el elemento con id "menu".
+document.getElementById("menu").onclick=showMenu;//Esta linea llama a la funcion "hideMenu" Al hacer click en el elemento con id "menu".
 //alert( window.innerWidth + " x " + window.innerHeight);
+document.getElementById("close-menu").onclick=hideMenu;
+//funciones que escondera el menu movil cuando se le de click a alguno de sus items.
+document.getElementById("ma").onclick=hideMenu;
+document.getElementById("me").onclick=hideMenu;
+document.getElementById("mi").onclick=hideMenu;
+document.getElementById("mo").onclick=hideMenu;
