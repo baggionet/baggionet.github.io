@@ -22,8 +22,8 @@
 	.separador{padding-bottom: 25px; padding-top: 25px;}
 	/*.skill_item{}*/
 	.fuente25{font-size: 25px; margin-right: 10px;}
-	.li-lateral{color: #a7b1c2;	font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif; list-style: none; padding: 10px 0 10px 40px;	z-index: 0;}
-	.li-lateral:hover{color: white; background: #2f4050; border-right: 5px; border-right: 5px solid #ffa500;}
+	.li-lateral{background: #2f4050; color: #a7b1c2; font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif; list-style: none; padding: 10px 0 10px 40px;	z-index: 0; border-bottom:1px solid #1e1e1e;}
+	.li-top:hover, .li-lateral:hover{color: white; background: #2f4050; border-right: 5px; border-right: 5px solid #ffa500;}
 	.menu-bajo{margin-top: 25px; padding-top: 25px;}
 	.menu-largo{position: absolute; z-index: 10000;}
 	.menu-off{color: white; font-size: 20px; cursor: pointer;}
