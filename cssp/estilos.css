@@ -1,20 +1,16 @@
 .oculto{
-	display: none;
+	display: none; 
 }
 span{
-	font-size: .8rem;
+	font-size: 1.2rem;
+	color: black;
 }
 .itenmenu{
     color: black;
 }
-.itenmenu:hover{
-	color: black;   
-}
-
 .submenu{
 	display: inline-block;
 	padding: 2rem 1rem;
-	border-bottom: solid white 3px;
 }
 .submenu:hover{
 	/*border: solid black 1px;*/
@@ -47,7 +43,7 @@ span{
 	height: 350px;
 
 }
-#ventas{
+#soluciones{
 	background-image: url("../imgp/fondoSomos.jpg");
 	background-repeat: no-repeat;
 	height: 400px;

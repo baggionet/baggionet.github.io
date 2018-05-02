@@ -3,28 +3,31 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Sofmat Servicios</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="cssp/estilos.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	 <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
 </head>
 <body>
 <div class="container-fluid">
-	<div class="row ventas"> <!-- Inicia header -->
-		<div class="offset-lg-1 col-lg-4 col-md-5">
+	<div class="row ventas" id="ventas"> <!-- Inicia header -->
+		<div class="col-sm-offset-0 col-sm-5 col-md-offset-1 col-md-4 col-lg-offset-1 col-lg-4  ">
 			<span>Tel: 57901713 | ventas@sofmatservicios.com</span>
 		</div>
-		<div class="offset-lg-4 col-lg-1 offset-md-4 col-md-2">
-			<img src="imgp/facebook.jpg" alt="">
-			<img src="imgp/twitter.png" alt="">
+		<div class="col-sm-offset-4 col-sm-2 col-md-offset-5 col-md-1 col-lg-offset-5 col-lg-1">
+			<a href="https://www.facebook.com" target="_blank"><img src="imgp/facebook.jpg" alt=""></a>
+			<a href="https://twitter.com" target="_blank"><img src="imgp/twitter.png" alt=""></a>
 		</div>
 	</div>
 	<div class="row">
-		<div class="offset-lg-1 col-lg-2 col-md-2">
-			<img src="imgp/logotemp.png" alt="">
+		<div class="col-xs-4 col-sm-offset-1 col-sm-3 col-md-offset-1 col-md-3 col-lg-offset-1 col-lg-3">
+			<img src="imgp/logotemp2.png" alt="">
 		</div>
-		<div class="col-lg-9 col-md-10">
+		<div class="oculto" id="fonmenu">
+			<span class="glyphicons glyphicons-menu-hamburger"></span>
+		</div>
+		<div class="col-sm-8 col-md-8 col-lg-8" id="menu">
 			<ul>
 				<li class="submenu nav-item"><a class="itenmenu nav-link" href="#">INICIO</a></li>
 				<li class="submenu nav-item"><a class="itenmenu nav-link" href="#">QUIENES SOMOS</a></li>
@@ -53,7 +56,7 @@
 			<h4>OKIDATA</h4>
 		</div>
 	</div>
-	<div class="row" id="ventas"><!-- VENTAS Y SOLUCIONES -->
+	<div class="row" id="soluciones"><!-- VENTAS Y SOLUCIONES -->
 		<div class="col-md-9 contenido">
 			<h3>SOLUCIONES DE ARRENDAMIENTO</h3>
 			<h4>POLIZAS DE MENTENIMIENTO</h4>
@@ -132,9 +135,8 @@
 
 
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>	
-<!--script src="js/slider.js"></script -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="js/elQuery.js"></script>
 </body>
 </html>
