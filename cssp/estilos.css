@@ -7,15 +7,15 @@ span{
 }
 .itenmenu{
     color: black;
+    text-decoration-style: dashed;
 }
 .submenu{
 	display: inline-block;
-	padding: 2rem 1rem;
+	padding: 2rem 2rem;
 }
 .submenu:hover{
 	/*border: solid black 1px;*/
-	display: inline-block;
-	padding: 2rem 0.8rem;
+	
 	border-bottom: solid rgb(213, 37, 40) 3px;
 }
 .ventas{

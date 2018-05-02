@@ -125,7 +125,7 @@ function verImagen () {
 	var img_3 = document.getElementById("img3");
 	var img_4 = document.getElementById("img4");		
 	console.log(this.id);
-/* ------------------Este if muestra la imagen 1 junto con la felcha 1*/	
+/* ------------------Este if muestra la imagen 1 junto con la flecha 1*/	
 	if (this.id == "item1") 
 		{
 			menuimg_1.className="menu-subitem col-lg-3 col-md-3 col-sm-3";
