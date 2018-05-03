@@ -25,7 +25,7 @@ var menuopen = document.getElementById("menuopen");
 var menuclose = document.getElementById("menuclose");
 
 	$("#menuopen").click(function(){
-		menufon.className = "col-xs-offset-3 col-xs-9 visible-xs-block";
+		menufon.className = "visible-xs-block";
 		menuopen.className = "oculto";
 		menuclose.className = "menumovil fa fa-bars";
 	});
