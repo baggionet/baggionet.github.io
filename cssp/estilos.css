@@ -1,21 +1,26 @@
 .oculto{
 	display: none; 
 }
-span{
-	font-size: 1.2rem;
-	color: black;
+.menumovil{
+	font-size:2rem;
+	color:red;
+	margin-top: 25px;
 }
-.itenmenu{
+.itemmenu{
     color: black;
-    text-decoration-style: dashed;
+    text-decoration: none;
+    font-size:16px;
+}
+.itemmenu:hover{
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
 }
 .submenu{
 	display: inline-block;
 	padding: 2rem 2rem;
 }
 .submenu:hover{
-	/*border: solid black 1px;*/
-	
 	border-bottom: solid rgb(213, 37, 40) 3px;
 }
 .ventas{
@@ -54,3 +59,15 @@ span{
 #contacto{
 	padding-top: 50px
 }
+.liLateral{
+	background: red;/*#2f4050*/ 
+	color: white; /* #a7b1c2*/
+	font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif; 
+	list-style: none; 
+	padding: 10px 40px 10px 40px;	
+	z-index: 0; 
+	border-bottom:1px solid #1e1e1e;
+	text-align: right;
+	margin-left: 90px
+}
+.ulLateral{padding: 0; width: 30%;}
