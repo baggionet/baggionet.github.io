@@ -3,8 +3,21 @@ h3{
 	color: red;
 	font-weight: bolder;
 }
+span{
+	color: white;
+}
 .oculto{
 	display: none; 
+}
+.face, .twi, .email{
+	color:#90979a;
+	font-size: 20px;
+}
+.face, .twi{
+	margin-right: 10px;
+}
+.face:hover, .twi:hover, .email:hover{
+	color:white;
 }
 .menumovil{
 	font-size:2rem;
@@ -30,33 +43,26 @@ h3{
 }
 .ventas{
 	border-top: solid rgb(213, 37, 40) 2px;
-	background-color: rgb(183, 183, 183);
+	background-color: #222629;
 	padding: 10px 5px;
 }
 .titulo, .contenido{
 	text-align: center;
 }
 .titulo{
-	background-color: #6c757d;	
+	background-color: #222629;/*#6c757d;*/
+	color: white;
 }
 
 .formulario{
 	padding-top: 30px
 }
-#slaider{
-	background-image: url("../imgp/itemSlaider.jpg");
-	background-repeat: no-repeat;
-	height: 400px;
-}
 #somos{
 	background-image: url("../imgp/fondoSomos.jpg");
-	height: 350px;
-
 }
 #soluciones{
 	background-image: url("../imgp/fondoSomos.jpg");
 	background-repeat: no-repeat;
-	height: 400px;
 }
 #mapa{
 	padding-left: 60px;
