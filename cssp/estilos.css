@@ -57,8 +57,11 @@ span{
 .formulario{
 	padding-top: 30px
 }
+#menu{
+	padding-top: 25px;
+}
 #somos{
-	background-image: url("../imgp/fondoSomos.jpg");
+	background-image: url("../imgp/fondoSomos.png");
 }
 #soluciones{
 	background-image: url("../imgp/fondoSomos.jpg");
@@ -82,3 +85,15 @@ span{
 	margin-left: 90px
 }
 .ulLateral{padding: 0; width: 100%;}
+
+.linea1{
+	font-weight: bolder;
+	font-size: 25px;
+	color: red;
+	padding-top: 15px;
+	margin-top: 20px;
+}
+
+
+
+
