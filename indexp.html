@@ -54,11 +54,6 @@
 		</div>
 	</div><!-- termina header -->
 	<div class="row" id="slaider"><!-- Inicia Contenido -->
-		<!-- div class="col-md-2">
-			<input type="button" class="btn btn-danger elbtn" value="Ventas">
-			<input type="button" class="btn btn-danger elbtn" value="Arrendamiento">
-			<input type="button" class="btn btn-danger elbtn" value="Soporte">
-		</div -->
 		<div id="myCarousel" class="carousel slide" data-ride="carousel">
   <!--  Inicia Carrusel  Indicators -->
   			<ol class="carousel-indicators">
@@ -99,45 +94,51 @@
 		</div><!-- fin carrusel -->
 	</div>
 	<div class="row" id="somos"><!-- QUIENES SOMOS -->
-		<div class="col-lg-3 col-md-3 col-sm-4 titulo">
-			<h3 class="itemtitulo">QUIENES SOMOS</h3>
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			<h2 class="itemtitulo">QUIENES SOMOS</h2>
 		</div>
-		<div class="col-lg-9 col-md-9 col-sm-8 contenido">
-			<p class="linea1">SOMOS UNA EMPRESA ESPECIALIZADA <br> CON 11 AÑOS DE EXPERIENCIA</p >
-			<p class="linea2">SOMOS UN CENTRO DE ATENCION</p >
-			<p class="linea3">OKIDATA</p >
+		<div class="col-lg-offset-3 col-lg-6 col-md-offset-3 col-md-6 col-sm-12 col-xs-12 contenido">
+			<p class="linea1">Somos una empresa especializada con 11 años de experiencia en:</p ><br>
+			<ul>
+				<li class="linea2">Soluciones de impresion Okidata</li>
+				<li class="linea2">Venta Impresoras y consumibles</li>
+				<li class="linea2">Soporte tecnico y Mantenimiento</li>
+			</ul>
 		</div>
 	</div>
 	<div class="row" id="soluciones"><!-- VENTAS Y SOLUCIONES -->
-		<div class="col-lg-9 col-md-9 contenido">
-			<h3>SOLUCIONES DE ARRENDAMIENTO</h3>
-			<h4>POLIZAS DE MENTENIMIENTO</h4>
-			<h4>VENTAS</h4>
-			<h5>OKIDATA</h5>
+		<div class="col-xs-12 visible-xs-block" style="text-align: center;">
+			<img src="imgp/asistente.png" alt="" style="width: 200px; height: 200px;">
+			<h4>ASISTENCIA TECNICA</h4>
 		</div>
-		<div class="col-lg-3 col-md-3 titulo">
-			<h3 class="itemtitulo">SOLUCIONES</h3>
-			<h3 class="itetitulo">VENTAS</h3>
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+			<h2 class="itemtitulo">SOPORTE TECNICO Y MANTENIMIENTO</h2>
+		</div>
+		<div class="col-lg-3 col-md-3 col-sm-3 visible-sm-block visible-md-block visible-lg-block">
+			<img src="imgp/mono.png" alt="">
+		</div>
+		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-8  contenido">
+			<h4>Te podemos apoyar a que nunca se detenga tu produccion, resolviendo eventualidades o puedes contratar nuestras pólizas de soporte</h4>
+			<hr>
+			<ul>
+				<li class="linea2">Asistencia tecnica por evento</li>
+				<li class="linea2">Polizas de soporte</li>
+				<li class="linea2">Mantenimiento preventivo y correctivo a equipo de computo</li>
+				<li class="linea2">Instalacion y soporte de redes computacionales</li>
+				<li class="linea2">Venta e instalacion de Servidores</li>
+			</ul>	
+		</div >
+		<div class="col-lg-3 col-md-3 col-sm-3 visible-sm-block visible-md-block visible-lg-block" style="text-align: center;">
+			<img src="imgp/asistente.png" alt="" style="width: 200px; height: 200px;">
+			<h4>ASISTENCIA TECNICA</h4>
 		</div>
 	</div>
-	<div class="row" id="contacto">. <!-- CONTACTO -->
-		<!--div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-			<p class="visible-lg-block">lg-para computadoras portátiles y de escritorio: pantallas de más de 1200 px de ancho</p>
-			<p class="visible-md-block">md-para laptops pequeñas - pantallas iguales o mayores que 992px de ancho</p>
-			<p class="visible-sm-block">sm-para tabletas: pantallas iguales o superiores a 768 px de ancho</p>
-			<p class="visible-xs-block">xs-para teléfonos - pantallas de menos de 768px de ancho</p>
-		</div-->
-		<div class="col-xs-10 col-sm-10 col-md-5 col-lg-5" id="mapa">
-			<h5>Aqui estamos</h5>
-			<div id="map" class="visible-lg-block">
-				<img src="imgp/mapa.png" alt="">
-			</div>
-			<div id="map" class="visible-xs-block visible-sm-block visible-md-block">
-				<img src="imgp/mapalg.png" alt="">
-			</div>
+	<div class="row" id="contacto"> <!-- CONTACTO -->
+		<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+			<h3>CONTACTO</h3>
 		</div>
-		<div class="col-xs-10 col-sm-10 col-md-5 col-lg-5" id="formulario">
-			<form action="">
+		<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" id="formulario">
+			<form action="" id="formulario">
 				<h5>Contactanos</h5>
 				<div class="form-row">
 					<div class="form-group">
@@ -161,31 +162,50 @@
 	    		</div>
 	    		<textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
       			<div class="form-group">
-      			    <button class="btn btn-default pull-right" type="submit">Send</button>
+      			    <button class="btn btn-primary pull-right" type="submit">Enviar</button>
       			</div>
 			</form>
 		</div>
-	</div>
-	<div class="row piepagina">
-		<div class="col-md-3">
-			1
+		<div class="col-xs-12 col-sm-5 col-md-5 col-lg-5" id="mapa">
+			<h5>Aqui estamos</h5>
+			<div id="map">
+				<img src="imgp/mapa.png" alt="" style="width: 350px; height: 300px;">
+			</div>
 		</div>
-		<div class="col-md-3">2</div>
-		<div class="col-md-3">3</div>
-		<div class="col-md-3">4</div>
-
 	</div>
+		<div class="row footer">
+			<div class="col-lg-4 col-md-4 col-sm-4">
+				1
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 fsocial">
+				<h4>Nuestras Redes Sociales</h4>
+				<div>
+					<a href="https://www.facebook.com" target="_blank"><i class="face fab fa-facebook-f"></i></a>
+					<a href="https://twitter.com" target="_blank"><i class="twi fab fa-twitter"></i></a>
+					<!--a href="#contacto" ></a-->
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4">
+				<div class="direccion">
+					<i class="fas fa-map-marker-alt"></i>
+					<p class="itemdireccion" >
+						<span>CALLE 307 No. 603</span><br>
+						GUSTAVO A. MADERO.MÉXICO, D.F.
+					</p>
+				</div>
+				<div class="telefono">
+					<i class="email fas fa-envelope"></i>
+					<span>5557901713</span>
+				</div>
+				<div class="correo">
+					<i class="email fas fa-envelope"></i>
+					<span>cpadilla7936@prodigy.net.mx</span>
+				</div>
+			</div>
+		</div>
 </div>
-
-
-
-
-
-
-
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="jsp/elQuery.js"></script>
 </body>
 </html>
