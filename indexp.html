@@ -33,10 +33,10 @@
 	</div>
 	<div class="oculto" id="menufon">
 		<lu class="ulLateral">
-			<li class="liLateral">INICIO</li>
-			<li class="liLateral">QUIENES SOMOS</li>
-			<li class="liLateral">SERVICIO</li>
-			<li class="liLateral">CONTACTO</li>
+			<li class="liLateral"><a href="#" class="itemmenup">INICIO</a></li>
+			<li class="liLateral"><a href="#somos" class="itemmenup">QUIENES SOMOS</a></li>
+			<li class="liLateral"><a href="#soluciones" class="itemmenup">SERVICIO</a></li>
+			<li class="liLateral"><a href="#contacto" class="itemmenup">CONTACTO</a></li>
 		</lu>
 	</div>
 	<div class="row visible-sm-block visible-md-block visible-lg-block">
@@ -47,9 +47,9 @@
 		<div class="col-sm-8 col-md-8 col-lg-offset-2 col-lg-6" id="menu">
 			<ul>
 				<li class="submenu nav-item"><a class="itemmenu nav-link" href="#">INICIO</a></li>
-				<li class="submenu nav-item"><a class="itemmenu nav-link" href="#">QUIENES SOMOS</a></li>
-				<li class="submenu nav-item"><a class="itemmenu nav-link" href="#">SERVICIOS</a></li>
-				<li class="submenu nav-item"><a class="itemmenu nav-link" href="#">CONTACTO</a></li>
+				<li class="submenu nav-item"><a class="itemmenu nav-link" href="#somos">QUIENES SOMOS</a></li>
+				<li class="submenu nav-item"><a class="itemmenu nav-link" href="#soluciones">SERVICIOS</a></li>
+				<li class="submenu nav-item"><a class="itemmenu nav-link" href="#contacto">CONTACTO</a></li>
 			</ul>
 		</div>
 	</div><!-- termina header -->
@@ -64,13 +64,13 @@
   <!-- Wrapper for slides -->
   			<div class="carousel-inner">
   			  	<div class="item active">
-  			  	  	<img src="imgp/itemSlaider.jpg" alt="">
+  			  	  	<img src="imgp/Slaider1.png" alt="">
   			  	  	<!--div class="carousel-caption">
         				<input type="button" class="btn btn-danger elbtn" value="Ventas">
       				</div-->
   			  	</div>
   			  	<div class="item">
-  			  	  	<img src="imgp/Slaider1.png" alt="">
+  			  	  	<img src="imgp/Slaider2.png" alt="">
   			  	  	<!--div class="carousel-caption">
   			  	  		<input type="button" class="btn btn-danger elbtn" value="Arrendamiento">
   			  	  	</div-->
@@ -98,7 +98,7 @@
 			<h2 class="itemtitulo">QUIENES SOMOS</h2>
 		</div>
 		<div class="col-lg-offset-3 col-lg-6 col-md-offset-3 col-md-6 col-sm-12 col-xs-12 contenido">
-			<p class="linea1">Somos una empresa especializada con 11 años de experiencia en:</p ><br>
+			<p class="linea1">Somos una empresa especializada con 11 años de experiencia</p ><br>
 			<ul>
 				<li class="linea2">Soluciones de impresion Okidata</li>
 				<li class="linea2">Venta Impresoras y consumibles</li>
@@ -108,7 +108,7 @@
 	</div>
 	<div class="row" id="soluciones"><!-- VENTAS Y SOLUCIONES -->
 		<div class="col-xs-12 visible-xs-block" style="text-align: center;">
-			<img src="imgp/asistente.png" alt="" style="width: 200px; height: 200px;">
+			<img src="imgp/asistente.png" alt="" style="width: 150px; height: 150px;">
 			<h4>ASISTENCIA TECNICA</h4>
 		</div>
 		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
@@ -117,10 +117,10 @@
 		<div class="col-lg-3 col-md-3 col-sm-3 visible-sm-block visible-md-block visible-lg-block">
 			<img src="imgp/mono.png" alt="">
 		</div>
-		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-8  contenido">
+		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" style="overflow: visible;">
 			<h4>Te podemos apoyar a que nunca se detenga tu produccion, resolviendo eventualidades o puedes contratar nuestras pólizas de soporte</h4>
 			<hr>
-			<ul>
+			<ul id="contenido">
 				<li class="linea2">Asistencia tecnica por evento</li>
 				<li class="linea2">Polizas de soporte</li>
 				<li class="linea2">Mantenimiento preventivo y correctivo a equipo de computo</li>
@@ -128,46 +128,44 @@
 				<li class="linea2">Venta e instalacion de Servidores</li>
 			</ul>	
 		</div >
-		<div class="col-lg-3 col-md-3 col-sm-3 visible-sm-block visible-md-block visible-lg-block" style="text-align: center;">
+		<div class="col-lg-3 visible-lg-block col-md-3 visible-md-block col-sm-3 visible-sm-block" style="text-align: center;">
 			<img src="imgp/asistente.png" alt="" style="width: 200px; height: 200px;">
 			<h4>ASISTENCIA TECNICA</h4>
 		</div>
 	</div>
 	<div class="row" id="contacto"> <!-- CONTACTO -->
 		<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-			<h3>CONTACTO</h3>
+			<p class="itemcontacto">CONTACTO</p>
 		</div>
 		<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" id="formulario">
 			<form action="" id="formulario">
-				<h5>Contactanos</h5>
 				<div class="form-row">
 					<div class="form-group">
-	      				<label for="">Nombre</label>
-	      				<input type="text" class="form-control" placeholder="Nombre">
+	      				<label for="">Nombre *</label>
+	      				<input type="text" class="form-control"  name="" placeholder="Nombre">
 	    			</div>
 	    			<div class="form-group">
-	      				<label for="">Apellido</label>
-	      				<input type="text" class="form-control" placeholder="Apellido">
+	      				<label for="">Apellido *</label>
+	      				<input type="text" class="form-control" name=""  placeholder="Apellido">
 	    			</div>
 	    		</div>
 	    		<div class="form-row">
 	    			<div class="form-group">
-	      				<label for="">Telefono</label>
-	      				<input type="text" class="form-control" placeholder="Telefono">
+	      				<label for="">Telefono *</label>
+	      				<input type="text" class="form-control"  name="" placeholder="Telefono">
 	    			</div>
 					<div class="form-group">
-	      				<label for="">Email</label>
-	      				<input type="email" class="form-control" placeholder="Email">
+	      				<label for="">Email *</label>
+	      				<input type="email" class="form-control"  name="" placeholder="Email">
 	    			</div>
 	    		</div>
-	    		<textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+	    		<textarea class="form-control" id="comentarios" name="comentarios" placeholder="Comentarios" rows="5"></textarea><br>
       			<div class="form-group">
       			    <button class="btn btn-primary pull-right" type="submit">Enviar</button>
       			</div>
 			</form>
 		</div>
 		<div class="col-xs-12 col-sm-5 col-md-5 col-lg-5" id="mapa">
-			<h5>Aqui estamos</h5>
 			<div id="map">
 				<img src="imgp/mapa.png" alt="" style="width: 350px; height: 300px;">
 			</div>
@@ -180,25 +178,25 @@
 			<div class="col-lg-4 col-md-4 col-sm-4 fsocial">
 				<h4>Nuestras Redes Sociales</h4>
 				<div>
-					<a href="https://www.facebook.com" target="_blank"><i class="face fab fa-facebook-f"></i></a>
-					<a href="https://twitter.com" target="_blank"><i class="twi fab fa-twitter"></i></a>
+					<a href="https://www.facebook.com" target="_blank"><i class="fface fab fa-facebook-f"></i></a>
+					<a href="https://twitter.com" target="_blank"><i class="ftwi fab fa-twitter"></i></a>
 					<!--a href="#contacto" ></a-->
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-4">
 				<div class="direccion">
-					<i class="fas fa-map-marker-alt"></i>
+					<i class="ficono fas fa-map-marker-alt"></i>
 					<p class="itemdireccion" >
 						<span>CALLE 307 No. 603</span><br>
 						GUSTAVO A. MADERO.MÉXICO, D.F.
 					</p>
 				</div>
 				<div class="telefono">
-					<i class="email fas fa-envelope"></i>
+					<i class="ficono fas fa-envelope"></i>
 					<span>5557901713</span>
 				</div>
 				<div class="correo">
-					<i class="email fas fa-envelope"></i>
+					<i class="ficono fas fa-envelope"></i>
 					<span>cpadilla7936@prodigy.net.mx</span>
 				</div>
 			</div>
