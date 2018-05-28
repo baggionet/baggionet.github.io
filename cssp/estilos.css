@@ -180,11 +180,17 @@ form .form-control{
 	margin-bottom: 15px;
 	font: bold 16px sans-serif;
 }
-.fsocial{
-	margin-bottom: 30px;
+.fsocial, .flogo,
+.fcontacto{
+	margin-bottom: 40px;
 }
 .link-footer{
 	font-size: 18px;
 	color: white
 }
-
+#imgxsoki, #imglgoki, #imgsmoki{
+	margin: 0 auto 0 auto;
+}
+.firma{
+	color: #8c8888;
+}
