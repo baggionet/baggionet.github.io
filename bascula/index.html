@@ -4,46 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+   <style>
+       h1{
+           text-align: center;
+       }
+       .campos{
+           border: 1px solid black;
+       }
+   </style>
     <title>Document</title>
 </head>
 <body>
-    <div class="margen">
+    <div class="col-md-12 col-sm-12">
         <h1>BASCULA</h1>
         <hr>
-        <p>Ingresa el precio x kilo</p>
-        <input type="text" id="preciokilo">
-        <p>Ingresa los gramos solicitados</p>
-        <input type="text" id="solicitado">
-        <br>
-        <br>
-        <input type="button" value="Calcular" id="boton">
-        <br>
-        <br>
-        <p>El costo es:</p>
-        <p id="resultado"></p>
-
+        <div class="xgramos col-md-10 col-sm-12">
+            <p>Ingresa el precio x kilo</p>
+            <input class="campos" type="text" id="preciokilo">
+            <p>Ingresa los gramos y/o pesos solicitados</p>
+            <input class="campos" type="text" id="solicitado">
+            <br><br>
+            <div class="botones col-md-6 col-md-6 ">
+                <input type="button" value="Calcular X Gramos" id="botonxgramos">
+                <input type="button" value="Calcular X Pesos" id="botonxpesos">
+            </div>
+            <br><br>
+            <p>El costo es:</p>
+            <p id="resultado"></p>
+        </div>
     </div>
 
+    <script src="../js/jquery.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
     <script>
     
-
-    function porkilo(){
+//funcion  que nos ayudara a calcular cuantos nos cuesta ciertos gramos de una fruta o verdura
+    function porgramos(){
         var preciokilo = document.getElementById("preciokilo").value;
-        var solicitado = document.getElementById("solicitado").value;
+        var gramos = document.getElementById("solicitado").value;
         var resultado;
         
-
-        var resultado = (solicitado * preciokilo) / 1000;
+        var resultado = (gramos * preciokilo) / 1000;
 
         console.log(resultado);
-        document.getElementById("resultado").innerHTML = resultado;
+        document.getElementById("resultado").innerHTML = resultado + " pesos";
     }
-
+//funcion que nos ayudara a saber cuantos gramos se dan por x cantidad de pesos
     function porpesos(){
-
+        var preciokilo = document.getElementById("preciokilo").value;
+        var pesos = document.getElementById("solicitado").value;
+        var resultado;
+    
+        var resultado = (pesos * 1000 ) / preciokilo;
+        
+        console.log(resultado);
+        document.getElementById("resultado").innerHTML = resultado + " gramos";
     }
 
-    document.getElementById("boton").addEventListener("click", porkilo);
+    document.getElementById("botonxgramos").addEventListener("click", porgramos);
+    document.getElementById("botonxpesos").addEventListener("click", porpesos);
+
 
 
 
