@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="margen">
+        <h1>BASCULA</h1>
+        <hr>
+        <p>Ingresa el precio x kilo</p>
+        <input type="text" id="preciokilo">
+        <p>Ingresa los gramos solicitados</p>
+        <input type="text" id="solicitado">
+        <br>
+        <br>
+        <input type="button" value="Calcular" id="boton">
+        <br>
+        <br>
+        <p>El costo es:</p>
+        <p id="resultado"></p>
+
+    </div>
+
+    <script>
+    
+
+    function porkilo(){
+        var preciokilo = document.getElementById("preciokilo").value;
+        var solicitado = document.getElementById("solicitado").value;
+        var resultado;
+        
+
+        var resultado = (solicitado * preciokilo) / 1000;
+
+        console.log(resultado);
+        document.getElementById("resultado").innerHTML = resultado;
+    }
+
+    function porpesos(){
+
+    }
+
+    document.getElementById("boton").addEventListener("click", porkilo);
+
+
+
+    </script>
+</body>
+</html>
