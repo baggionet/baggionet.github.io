@@ -6,7 +6,7 @@ var ancho = largo.offsetWidth.toString();
 document.getElementById("elVelo").style.height = largotexto + "px";
 console.log(ancho);
 console.log(largotexto);
-elNav = document.getElementById("nav");
+//elNav = document.getElementById("nav");
 largoNav=elNav.offsetHeight.toString();
 console.log("el largo del van es " +largoNav);
 

@@ -4,101 +4,80 @@
 	<meta charset="UTF-8">
 	<title>Baggionet</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/ABeeZee.css">
 	<link rel="stylesheet" href="css/stilos.css">
 </head>
-<body>	
-	<!--p class="visible-lg-block">lg</p>
-	<p class="visible-md-block">md</p>
-	<p class="visible-sm-block">sm</p>
-	<p class="visible-xs-block">xs</p-->
+<body>
 <div id="contenedor" class="container-fluid">
-	<div class="row" >
-		<div  id="elVelo" class="velo col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-		<div class="separador"></div>
-			<div class="row">
-		    	<p class="col-lg-2 col-lg-offset-7 col-md-2 col-md-offset-7 col-sm-2 col-sm-offset-7 col-xs-2 col-xs-offset-9 glyphicon glyphicon-remove" id="remover"></p>
-		    	<h1 class="col-lg-10 col-md-10 col-sm-10 col-xs-10">Mis Skills</h1>
-		    	<ul class="col-lg-3 col-lg-offset-1 col-md-4 col-md-offset-1 col-sm-6 col-sm-offset-1 col-xs-10 col-xs-offset-1">
-		        	<li class"skill_item" >Atención al Cliente</li>
-		        	<li class"skill_item" >Gusto por la tecnología</li>
-		        	<li class"skill_item" >Facilidad de aprendizaje</li>
-		        	<li class"skill_item" >Cien por ciento Autodidacta</li>
-		        	<li class"skill_item" >Maquetación en HTML5 y CSS3</li>
-		        	<li class"skill_item" >Preprocesador CSS Stylus</li>
-		        	<li class"skill_item" >Javascript</li>
-		        	<li class"skill_item" >jQuery</li>
-		        	<li class"skill_item" >Photoshop</li>
-		        	<li class"skill_item" >Conocimiento de Bootstrap</li>
-		        	<li class"skill_item" >Conocimiento de Angularjs</li>
-		        	<li class"skill_item" >Conocimiento de la Consola de Chrome</li>
-		        	<li class"skill_item" >Conocimiento Control de versiones en GitHub</li>
-		        	<li class"skill_item" >Lectura y comprensión del Idioma Ingles</li>
-		    	</ul>
-	    	</div>
-		</div>
-	</div>
-	
 	<div class="row">
-		<header class="col-lg-12 col-md-12 col-sm-12">
-			<div class="row">
-				<nav id="nav" class="col-lg-12 col-md-12 col-sm-12">
-					<div class="row">
-						<p id="menu" class="col-xs-1 icon-menu3 menu-off visible-xs-block"></p>
-						<p id="close-menu" class="oculto"></p>
-						<ul id="ulMenu" class="oculto">
-							<li id="ma" class="li-lateral"><a href="#yo">Yo</a></li>
-							<li id="me" class="li-lateral"><a href="#sobre mi">Sobre mi</a></li>
-							<li id="mi" class="li-lateral"><a href="#trabajos">Trabajo</a></li>
-							<li id="mo" class="li-lateral"><a href="#contacto">Contacto</a></li>
-						</ul>
-						<ul class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-9 col-sm-offset-3 visible-lg-block visible-md-block visible-sm-block">
-							<li class="li-top col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 col-sm-2 "><a href="#yo">Yo</a></li>
-							<li class="li-top col-lg-3 col-md-3 col-sm-3"><a href="#sobre mi">Sobre mi</a></li>
-							<li class="li-top col-lg-2 col-md-2 col-sm-2"><a href="#trabajos">Trabajo</a></li>
-							<li class="li-top col-lg-2 col-md-3 col-sm-3"><a href="#contacto">Contacto</a></li>
-						</ul>
-					</div>
-				</nav>
-				<div class="centrado col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
-					<img class="img-circle centrado" src="img/baggionet.jpg" alt="">
-					<h1>@baggionet</h1>
-					<h4 id="yo">Jose Alfredo Lopez Figueroa</h4>
-				</div>
+		<nav id="nav" class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+			<div class="oculto" id="ulMenu">
+				<p id="menu" class="icon-menu3 menu-off"></p>
+				<p id="close-menu" class="oculto"></p>
+				<ul  class="">
+					<li id="ma" class="li-lateral"><a href="#yo">Yo</a></li>
+					<li id="me" class="li-lateral"><a href="#sobre mi">Sobre mi</a></li>
+					<li id="mi" class="li-lateral"><a href="#trabajos">Trabajo</a></li>
+					<li id="mo" class="li-lateral"><a href="#contacto">Contacto</a></li>
+				</ul>
 			</div>
-		</header>
+			<div class="col-md-8 offset-md-4 col-sm-10 offset-sm-2 col-lg-10">
+				<ul class="nav">
+					<li class="nav-item">
+					  <a class="nav-link" href="#">Yo</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="#">Sobre mi</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="#">Trabajo</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link " href="#">Contacto</a>
+					</li>
+				</ul>
+			</div>
+			<div class=" centrado offset-lg-4 col-lg-4 offset-md-4 col-md-4 offset-sm-2 col-sm-6 offset-1 col-10">
+				<img class="img-fluid  centrado rounded-circle" src="img/perfil1.jpg" style="height: 200px;">
+				<h1>@baggionet</h1>
+				<h4 id="yo">Jose Alfredo Lopez Figueroa</h4>
+			</div>
+		</nav>
 	</div>
 	<section>
 		
 		<div class="row">
-			<h2 class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1" id="sobre mi">Sobre Mi</h2>
-			<div class="separacion btn btn-primary boton centrado col-lg-2 col-lg-offset-2 col-md-2 col-md-offset-2 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2">
+			<div class="col-lg-12 col-md-12 col-sm-12 ">
+				<h2  id="sobre mi">Sobre Mi</h2>
+			</div>
+			<div class="separacion btn btn-primary boton centrado col-lg-4 col-md-4 col-sm-4 offset-1 col-10">
 				<strong class="fuente25 icon-facebook2"></strong>
 				<a href="https://www.facebook.com/baggionet">baggionet</a>
 			</div>
-			<div class="separacion btn btn-primary boton centrado col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2">
+			<div class="separacion btn btn-primary boton centrado col-lg-4 col-md-4 col-sm-4 offset-1 col-10">
 				<strong class="fuente25 icon-twitter2"></strong>
 				<a href="https://twitter.com/baggionet">@baggionet</a>
 			</div>
-			<div class="separacion btn btn-primary boton centrado col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2">
+			<div class="separacion btn btn-primary boton centrado col-lg-4 col-md-4 col-sm-4 offset-1 col-10">
 				<strong class="fuente25 icon-github"></strong>
 				<a href="https://github.com/baggionet">baggionet</a>
 			</div>
-			<div class="separacion icono col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+			<div class="separacion icono col-lg-10 col-lg-10 offset-lg-1 col-md-10 offset-md-1 col-sm-10 offset-sm-1 col-12">
 				<h3 class="centrado">Un hoobit</h3>
 				<p class="texto">
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, veritatis. Beatae quaerat quidem iste ipsum earum in saepe totam doloribus repudiandae eligendi modi minima numquam minus, facilis dolore accusantium. Nisi?
 				</p>
 			</div>
-			<div class="separacion icono col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+			<div class="separacion icono col-lg-10 col-lg-10 offset-lg-1 col-md-10 offset-md-1 col-sm-10 offset-sm-1 col-12">
 				<h3 class="centrado">Siendo mas serios</h3>
 				<p class="texto">
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta non ducimus beatae ipsum, voluptas totam eligendi eos quas cum modi natus at odio alias. Autem illo adipisci inventore facere eaque.
 				</p>
 			</div>
-			<div class="separacion icono col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+			<div class="separacion icono col-lg-10 col-lg-10 offset-lg-1 col-md-10 offset-md-1 col-sm-10 offset-sm-1 col-12">
 				<h3 class="centrado">Profesinalizandome</h3>
 				<p class="texto">
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est ipsum possimus, omnis ab, dolorem, quia quis vitae nulla aliquam illum adipisci, voluptatum sed. Nostrum maiores, ipsum ullam alias vel magni.
@@ -242,7 +221,8 @@
 	</div>
 </div>
 <script src="js/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="js/funciones.js"></script>
 			
 </body>
