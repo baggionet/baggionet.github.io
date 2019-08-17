@@ -1,7 +1,7 @@
 //alert("funcionando Ubicaciones");
 
 var objeto = {"sucursales":[
-    {"crPlaza" : "10QRI", "tienda": "La Estacion", "crTienda": "50QST", "ubicacion": '<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14908.198693228993!2d-100.7662484!3d20.9103211!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842b50491a058d73%3A0x9761d69618eb897!2sOXXO!5e0!3m2!1ses!2smx!4v1564988346300!5m2!1ses!2smx" width="360" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>', "direccion": "Calz. de la Estacion 116"},
+    {"crPlaza" : "10QRI", "tienda": "La Estacion", "crTienda": "50QST", "ubicacion": '<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14908.198693228993!2d-100.7662484!3d20.9103211!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842b50491a058d73%3A0x9761d69618eb897!2sOXXO!5e0!3m2!1ses!2smx!4v1564988346300!5m2!1ses!2smx" width="330" height="320" frameborder="0" style="border:0" allowfullscreen></iframe>', "direccion": "Calz. de la Estacion 116"},
     {"crPlaza" : "10QRI", "tienda": "San Isidro", "crTienda": "50SWI", "ubicacion": "https://goo.gl/maps/kLwLy4hgL4b3FLia9", "direccion": "CARRETERA FEDERAL LIBRE CELAYA-QUERETARO KM.13+700"},
     {"crPlaza" : "10QRI", "tienda": "Apaseo II", "crTienda": "50AII", "ubicacion": "https://goo.gl/maps/4B3uaMHtzUFB7jGBA", "direccion": "Carr. Panamericana Km. 30.5"},
     {"crPlaza" : "10QRI", "tienda": "16 de Septiembre", "crTienda": "50FPH", "ubicacion": "https://goo.gl/maps/YN6mCb2ZpAvhdH1n7", "direccion": "16 DE SEPTIEMBRE 302-A"},
