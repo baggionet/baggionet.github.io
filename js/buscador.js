@@ -1,3 +1,5 @@
+//alert("funcionando");
+
 document.getElementById("buscar").addEventListener("click", validacion);
 
 
@@ -17,6 +19,7 @@ function validacion(){
 function busqueda(){
     
     let valor = document.getElementById("busqueda").value;
+    valor = valor.toLowerCase();
    //alert(valor);
     for(let conta = 0; conta < objeto.sucursales.length; conta++){
         console.log(conta);
