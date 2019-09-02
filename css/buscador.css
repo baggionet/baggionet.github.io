@@ -1,5 +1,5 @@
 .contenido{
-    margin-top: 25px;
+    margin-top: 20px;
 }
 .oculto{
     display: none;
@@ -14,8 +14,7 @@ nav, .direccion{
     color: aliceblue;
 }
 .titulo{
-    font-size: 2rem;
-    
+    font-size: 20px;
 }
 
 
