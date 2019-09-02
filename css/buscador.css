@@ -1,7 +1,18 @@
 .contenido{
     margin-top: 25px;
 }
-
+.oculto{
+    display: none;
+}
+nav, .direccion{
+    background-color: #c32421;
+}
+.direccion{
+    padding: 5px 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: aliceblue;
+}
 
 
 
