@@ -25,8 +25,13 @@
             </div>
         </div>
       </nav>
-      <div class="col-md-12">
-        
+      <div class="oculto" id="agregar"> <!-- row justify-content-center -->
+        <span class="col-10 mensaje" id="mensaje1">La sucursal no se encuentra en la base de datos.</span>
+        <span class="col-10 mensaje" id="mensaje2">Deseas que sea agregada?</span>
+        <div class="botones ">
+          <button class="btn btn-danger btn-md boton" id="si">SI</button>
+          <button class="btn btn-danger btn-md boton" id="no">NO</button>
+        </div>
       </div>
       <div class="oculto" id="contenido"> <!--row contenido-->
         <div class="col-md-12 regreso" id="regreso">
@@ -52,6 +57,7 @@
     <script src="js/bootstrap.js"></script>
     <script src="js/buscador.js"></script>
     <script src="js/ubicaciones.js"></script>
+    <script src="js/xlsx.full.min.js"></script>
   </body>
 </html>
 

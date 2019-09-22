@@ -23,34 +23,87 @@ function validacion(){
     }
 }
 
+/*
+ *Funcion que al presionar el boton "si" agregara alguna sucursal que no este en la base de datos
+ * 
+*/
+function si() {
+    let f = document.getElementById("busqueda").value;
+    document.getElementById("busqueda").value = "";
+    var body_message = "Agregar sucursal OXXO " + f;
+    var email = 'celaya2.sigma@gmail.com';
+    var subject = 'Agregar sucursal'; 
+
+    var mailto_link = 'mailto:' + email + '?subject=' + subject + '&body=' + body_message;
+
+    win = window.open(mailto_link, 'emailWindow');
+    if (win && win.open && !win.closed) win.close();
+
+
+
+
+
+    //window.location.href = "mailto:celaya2.sigma@gmail.com" ;
+    
+    alert(f);
+}
+/*
+ *Funcion que al presionar el boton "no" regresara a la pantalla principal
+ * 
+*/
+function no() {
+    document.getElementById("busqueda").value = "";
+    add = id("agregar");
+    add.className = "oculto";
+}
+
+/*
+ *Funcion que agregara alguna sucursal que no este en la base de datos
+ * 
+*/ 
+function agregar(){
+    //alert("se agrego");
+    let s;
+    let n;
+    add = id("agregar");
+    s = id("si");
+    n = id("no");
+    add.className = "row justify-content-center";
+    s.addEventListener("click", si);
+    n.addEventListener("click", no);
+}
+
 /* funcion que realiza la busqueda de la tienda y muestra el resultado 
  * en pantalla
  *
- * 
 */ 
 function busqueda(){
     let nombre;
+    let nav;
+    let conten;
+    let mapa;
     //let crTienda;
     let valor = document.getElementById("busqueda").value;
     valor = valor.toLowerCase();
    //alert(valor);
     for(let conta = 0; conta < objeto.sucursales.length; conta++){
-        console.log(conta);
-        console.log(objeto.sucursales[conta].tienda);
+        //console.log(conta);
+        //console.log(objeto.sucursales[conta].tienda);
         if(objeto.sucursales[conta].tienda == valor){
-            document.getElementById("busqueda").value = "";
-            let nav = id("nav");
-            nav.className = "oculto";
             nombre = objeto.sucursales[conta].tienda;
-            //crTienda = objeto.sucursales[conta].crTienda;
-            let mapa = objeto.sucursales[conta].ubicacion;
-            //alert(mapa);
-            let conten = id("contenido");
-            conten.className = "row contenido";
-            document.getElementById("nombre").innerHTML = " " + nombre;
-            //document.getElementById("crTienda").innerHTML = crTienda;
-            document.getElementById("mapa").innerHTML = mapa;
+            mapa = objeto.sucursales[conta].ubicacion;
         }
+    }
+    if (nombre == valor) {
+        document.getElementById("busqueda").value = "";
+        nav = id("nav");
+        nav.className = "oculto";
+        conten = id("contenido");
+        conten.className = "row contenido";
+        document.getElementById("nombre").innerHTML = " " + nombre;
+        document.getElementById("mapa").innerHTML = mapa;
+    }else{
+        agregar();
     }
 }
 
@@ -64,4 +117,10 @@ function regresar(){
 
     let nav = id("nav");
     nav.className = "navbar navbar-expand-md navbar-dark";
+    WriteToAFile()
 }
+
+/*
+*
+*
+*/
