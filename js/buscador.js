@@ -7,7 +7,33 @@ function id (elId){
     let id = document.getElementById(elId);
     return id;
 }
-
+/*
+*Funcion que ayuda a eleiminar acentos, tildes, y cualquier caracter estraños
+*
+*/
+var normalize = (function() {
+  var from = "ÃÀÁÄÂÈÉËÊÌÍÏÎÒÓÖÔÙÚÜÛãàáäâèéëêìíïîòóöôùúüûÑñÇç", 
+      to   = "AAAAAEEEEIIIIOOOOUUUUaaaaaeeeeiiiioooouuuunncc",
+      mapping = {};
+ 
+  for(var i = 0, j = from.length; i < j; i++ )
+        mapping[ from.charAt( i ) ] = to.charAt( i );
+        //console.log(from.charAt( i ));
+ 
+        return function( str ) {
+            var ret = [];
+            for( var i = 0, j = str.length; i < j; i++ ) {
+                var c = str.charAt( i );
+                if( mapping.hasOwnProperty( str.charAt( i ) ) )
+                    ret.push( mapping[ c ] );
+                else
+                    ret.push( c );
+            }      
+            return ret.join( '' );
+  }
+ 
+})();
+    
 /*funcion que valida si el campo esta vacio o lleva una cadena de texto 
  *y si es lo ultimo ejecuta la funcion "busqueda()" 
 */
@@ -21,6 +47,8 @@ function validacion(){
         //alert("buscando "  + f);
         busqueda();
     }
+
+
 }
 
 /*
@@ -31,21 +59,25 @@ function si() {
     let f = document.getElementById("busqueda").value;
     document.getElementById("busqueda").value = "";
     var body_message = "Agregar sucursal OXXO " + f;
+    //console.log(body_message);
     var email = 'celaya2.sigma@gmail.com';
     var subject = 'Agregar sucursal'; 
 
     var mailto_link = 'mailto:' + email + '?subject=' + subject + '&body=' + body_message;
+    //console.log(mailto_link);
 
     win = window.open(mailto_link, 'emailWindow');
-    if (win && win.open && !win.closed) win.close();
+    //if (win && win.open && !win.closed)
 
+        //win.close();
 
+    no();
 
 
 
     //window.location.href = "mailto:celaya2.sigma@gmail.com" ;
     
-    alert(f);
+    //alert(f);
 }
 /*
  *Funcion que al presionar el boton "no" regresara a la pantalla principal
@@ -85,7 +117,8 @@ function busqueda(){
     //let crTienda;
     let valor = document.getElementById("busqueda").value;
     valor = valor.toLowerCase();
-   //alert(valor);
+    valor = normalize(valor);
+    //console.log(normalize(valor));
     for(let conta = 0; conta < objeto.sucursales.length; conta++){
         //console.log(conta);
         //console.log(objeto.sucursales[conta].tienda);
