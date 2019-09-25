@@ -61,7 +61,7 @@ function si() {
     var body_message = "Agregar sucursal OXXO " + f;
     //console.log(body_message);
     var email = 'celaya2.sigma@gmail.com';
-    var subject = 'Agregar sucursal'; 
+    var subject = 'Agregar sucursal' + f; 
 
     var mailto_link = 'mailto:' + email + '?subject=' + subject + '&body=' + body_message;
     //console.log(mailto_link);
