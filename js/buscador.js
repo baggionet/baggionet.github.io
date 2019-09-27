@@ -58,9 +58,9 @@ function validacion(){
 function si() {
     let f = document.getElementById("busqueda").value;
     document.getElementById("busqueda").value = "";
-    var body_message = "Agregar sucursal OXXO " + f;
+    var body_message = 'Agregar sucursal OXXO ' + f;
     //console.log(body_message);
-    var email = 'celaya2.sigma@gmail.com';
+    var email = 'baggio_2@hotmail.com';
     var subject = 'Agregar sucursal ' + f; 
 
     var mailto_link = 'mailto:' + email + '?subject=' + subject + '&body=' + body_message;
