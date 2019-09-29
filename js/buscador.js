@@ -1,4 +1,5 @@
 //alert("funcionando");
+
 //Esta linea escucha cuando se le da click al boton buscar y ejecuta la funcion "validacion()"
 document.getElementById("buscar").addEventListener("click", validacion);
 document.getElementById("regreso").addEventListener("click", regresar);
@@ -39,13 +40,18 @@ var normalize = (function() {
 */
 function validacion(){
     let f = document.getElementById("busqueda").value;
+    let seleccionado = document.getElementById("seleccion").value;
+    console.log(seleccionado);
     //alert(f);
     if (f == "") {
 
         alert("Ingresa la tienda a buscar");
     } else {
-        //alert("buscando "  + f);
-        busqueda();
+        if (seleccionado == "ubicacion") {
+            ubicacion();
+        } else {
+            telefono();
+        }
     }
 
 
@@ -72,18 +78,15 @@ function si() {
         //win.close();
 
     no();
-
-
-
     //window.location.href = "mailto:celaya2.sigma@gmail.com" ;
-    
     //alert(f);
 }
+
 /*
  *Funcion que al presionar el boton "no" regresara a la pantalla principal
  * 
 */
-function no() {
+function no(){
     document.getElementById("busqueda").value = "";
     add = id("agregar");
     add.className = "oculto";
@@ -105,23 +108,58 @@ function agregar(){
     n.addEventListener("click", no);
 }
 
-/* funcion que realiza la busqueda de la tienda y muestra el resultado 
+/* funcion que realiza la busqueda de la tienda y muestra el numero  
+ * telefonico asignado a la tienda en pantalla
+ *
+*/ 
+function telefono(){
+    let nombre;
+    let cr;
+    let telefono;
+    let nav;
+    let conten;
+    //let crTienda;
+    let valor = document.getElementById("busqueda").value;
+    valor = valor.toLowerCase();
+    valor = normalize(valor);
+    //recorremos la BD para encontrar la tienda
+    for(let conta = 0; conta < objeto.telefonos.length; conta++){
+        //console.log(conta);
+        //console.log(objeto.telefonos[conta].tienda);
+        if(objeto.telefonos[conta].tienda == valor){
+            nombre = objeto.telefonos[conta].tienda;
+            cr = objeto.telefonos[conta].cr;
+            telefono = objeto.telefono[conta].telefono;
+        }
+    }
+    document.getElementById("busqueda").value = "";
+    nav = id("nav");
+    nav.className = "oculto";
+    conten = id("contenido");
+    conten.className = "row contenido";
+    telefono = id('telefono');
+    telefono.className = 'col-md-12 telefono';
+    //document.getElementById("nombre").innerHTML = " " + nombre;
+    //document.getElementById("cr").innerHTML = cr;
+}
+
+/* funcion que realiza la busqueda de la tienda y muestrara el mapa  
  * en pantalla
  *
 */ 
-function busqueda(){
+function ubicacion(){
     let nombre;
     let nav;
     let conten;
     let mapa;
+    let divmapa;
     //let crTienda;
     let valor = document.getElementById("busqueda").value;
     valor = valor.toLowerCase();
     valor = normalize(valor);
     //console.log(normalize(valor));
+    //recorremos la BD para encontrar la tienda
     for(let conta = 0; conta < objeto.sucursales.length; conta++){
-        //console.log(conta);
-        //console.log(objeto.sucursales[conta].tienda);
         if(objeto.sucursales[conta].tienda == valor){
             nombre = objeto.sucursales[conta].tienda;
             mapa = objeto.sucursales[conta].ubicacion;
@@ -133,6 +171,8 @@ function busqueda(){
         nav.className = "oculto";
         conten = id("contenido");
         conten.className = "row contenido";
+        divmapa = id("mapa");
+        divmapa.className = 'col-md-12 mapa';
         document.getElementById("nombre").innerHTML = " " + nombre;
         document.getElementById("mapa").innerHTML = mapa;
     }else{
@@ -147,12 +187,28 @@ function busqueda(){
 function regresar(){
     let conten = id("contenido");
     conten.className = "oculto";
-
+    divmapa = id("mapa");
+    divmapa.className = 'oculto';
+    telefono = id('telefono');
+    telefono.className = 'oculto';
     let nav = id("nav");
     nav.className = "navbar navbar-expand-md navbar-dark";
-    WriteToAFile()
+    
 }
 
+/*
+ * Funcion que ejecutara la funcion que corresponda ya sea,
+ * ubicacion() -- que buscara la ubicacion de la tienda y mostrara el mapa
+ * telefono() -- que buscara el numero telefonico de telmex que tiene asignado la tienda
+
+function busqueda(seleccion) {
+    if (seleccion == "ubicacion") {
+        ubicacion();
+    } 
+    if(seleccion == "telefono"){
+        telefono();
+    }
+}*/
 /*
 *
 *

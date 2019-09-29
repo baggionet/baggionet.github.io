@@ -20,21 +20,25 @@
         
             <div class="col-md-12">
                 <div class="form-inline my-2 my-0 col-12" id="formulario">
-                    <input class="form-control mr-md-2" type="text" name="busqueda" id="busqueda" placeholder="Buscar OXXO">
-                    <button class="btn btn-secondary buscar my-2 my-md-0" id="buscar" required >Buscar</button>
+                  <select class="seleccion" id="seleccion" name="">
+                    <option value="ubicacion" selected>Ubicacion</option>
+                    <option value="telefono">Telefono</option>
+                  </select>
+                  <input class="form-control mr-md-2" type="text" name="busqueda" id="busqueda" placeholder="Buscar OXXO">
+                  <button class="btn btn-secondary buscar my-2 my-md-0" id="buscar" required >Buscar</button>
                 </div>
             </div>
         </div>
       </nav>
-      <div class="oculto" id="agregar"> <!-- row justify-content-center -->
+      <div class="oculto" id="agregar"> <!-- row justify-content-center inicia agregar-->
         <span class="col-10 mensaje" id="mensaje1">La sucursal no se encuentra en la base de datos.</span>
         <span class="col-10 mensaje" id="mensaje2">Deseas que sea agregada?</span>
         <div class="botones ">
           <button class="btn btn-danger btn-md boton" id="si">SI</button>
           <button class="btn btn-danger btn-md boton" id="no">NO</button>
         </div>
-      </div>
-      <div class="oculto" id="contenido"> <!--row contenido-->
+      </div><!--Termina agregar-->
+      <div class="oculto" id="contenido"> <!--row contenido  Inicia ubicacion-->
         <div class="col-md-12 regreso" id="regreso">
           <button type="button" class="btn btn-danger btn-md">
             <span  class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> Regresar
@@ -44,11 +48,13 @@
           <span>OXXO </span><span id="nombre"></span>
           <span id="crTienda"></span>
         </div>
-        <div class="col-md-12 mapa" id="mapa">
-        
-        </div>
-      
-      </div>
+        <div class="oculto" id="mapa"><!--col-md-12 mapa  Inicia mapa-->
+
+        </div><!--Termina  mapa -->
+        <div class="col-md-12 telefono" id="telefono"><!--col-md-12 telefono  Inicia telefono-->
+          
+        </div><!--Termina telefono-->
+      </div><!--Termina ubicacion-->
     </div>    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -58,6 +64,7 @@
     <script src="js/bootstrap.js"></script>
     <script src="js/buscador.js"></script>
     <script src="js/ubicaciones.js"></script>
+    <!--script src="js/telmex.js"></script-->
     <script src="js/xlsx.full.min.js"></script>
   </body>
 </html>
