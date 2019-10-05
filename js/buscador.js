@@ -112,24 +112,23 @@ function agregar(){
  * telefonico asignado a la tienda en pantalla
  *
 */ 
-function telefono(){
+function telefono() {
     let nombre;
     let cr;
     let telefono;
     let nav;
     let conten;
-    //let crTienda;
-    let valor = document.getElementById("busqueda").value;
+    /* Variable que toma el valor del input que ingresan el nombre de la tienda a buscar*/
+    let valor = id("busqueda").value;
+    console.log(valor);
     valor = valor.toLowerCase();
     valor = normalize(valor);
-    //recorremos la BD para encontrar la tienda
-    for(let conta = 0; conta < objeto.telefonos.length; conta++){
-        //console.log(conta);
-        //console.log(objeto.telefonos[conta].tienda);
-        if(objeto.telefonos[conta].tienda == valor){
+    //recorremos la base de datos para encontrar la tienda.
+    for (let conta = 0; conta < objeto.telefonos.length; conta++) {
+        if (objeto.telefonos[conta].tienda == valor) {
             nombre = objeto.telefonos[conta].tienda;
-            cr = objeto.telefonos[conta].cr;
-            telefono = objeto.telefono[conta].telefono;
+            cr = objeto.telefono[conta].cr;
+            yelefono = objeto.telefonos[conta].telefono;
         }
     }
     document.getElementById("busqueda").value = "";
@@ -137,11 +136,11 @@ function telefono(){
     nav.className = "oculto";
     conten = id("contenido");
     conten.className = "row contenido";
-    telefono = id('telefono');
-    telefono.className = 'col-md-12 telefono';
-    //document.getElementById("nombre").innerHTML = " " + nombre;
-    //document.getElementById("cr").innerHTML = cr;
+    telefono = id("telefono");
+    telefono.className = "col-md-12 telefono";
+
 }
+
 
 /* funcion que realiza la busqueda de la tienda y muestrara el mapa  
  * en pantalla
@@ -151,9 +150,12 @@ function ubicacion(){
     let nombre;
     let nav;
     let conten;
+    let mapanew;
+    let mapaold;
     let mapa;
     let divmapa;
     //let crTienda;
+    let valor2;
     let valor = document.getElementById("busqueda").value;
     valor = valor.toLowerCase();
     valor = normalize(valor);
@@ -162,9 +164,22 @@ function ubicacion(){
     for(let conta = 0; conta < objeto.sucursales.length; conta++){
         if(objeto.sucursales[conta].tienda == valor){
             nombre = objeto.sucursales[conta].tienda;
-            mapa = objeto.sucursales[conta].ubicacion;
+            mapanew = objeto.sucursales[conta].ubicacionnew;
+            mapaold = objeto.sucursales[conta].ubicacionold;
         }
     }
+
+    if (mapanew != "") {
+        mapa = mapanew;
+    }else if (mapaold != "") {
+        valor2 = valor.toUpperCase();
+        mapa = "<a href=" + "'" + mapaold + "' target='_blank'" + ">Ubicacion de tienda OXXO " + valor2 + "</a>";
+    }else{
+        mapa = "Aun no tenemos la Ubicacion";
+    }
+
+
+
     if (nombre == valor) {
         document.getElementById("busqueda").value = "";
         nav = id("nav");
@@ -173,7 +188,7 @@ function ubicacion(){
         conten.className = "row contenido";
         divmapa = id("mapa");
         divmapa.className = 'col-md-12 mapa';
-        document.getElementById("nombre").innerHTML = " " + nombre;
+        document.getElementById("nombre").innerHTML = " " + nombre.toUpperCase();
         document.getElementById("mapa").innerHTML = mapa;
     }else{
         agregar();
