@@ -44,3 +44,15 @@
 	#remover{font-size: 22px; cursor: pointer;}
 	#img1:hover, #img2:hover, #img3:hover, #img4:hover, #img1_1:hover, #img2_2:hover, #img3_3:hover, #img4_4:hover{opacity: 0.7; cursor: pointer;}
 	#ulMenu{padding: 0; width: 100%;}
+
+	/* Estilos version 2*/
+	.main-header{
+
+	}
+	.main-sidebar{
+		position: absolute;
+		top: 0;
+		left: 0;
+		padding-top: 50px;
+		min-height: 100%;
+	}

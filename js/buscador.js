@@ -40,18 +40,13 @@ var normalize = (function() {
 */
 function validacion(){
     let f = document.getElementById("busqueda").value;
-    let seleccionado = document.getElementById("seleccion").value;
-    console.log(seleccionado);
+    //let seleccionado = document.getElementById("seleccion").value;
+    //console.log(seleccionado);
     //alert(f);
     if (f == "") {
-
         alert("Ingresa la tienda a buscar");
     } else {
-        if (seleccionado == "ubicacion") {
-            ubicacion();
-        } else {
-            telefono();
-        }
+        ubicacion();
     }
 
 
@@ -103,7 +98,7 @@ function agregar(){
     add = id("agregar");
     s = id("si");
     n = id("no");
-    add.className = "row justify-content-center";
+    add.className = "col-md-12 agregar";
     s.addEventListener("click", si);
     n.addEventListener("click", no);
 }
@@ -182,10 +177,10 @@ function ubicacion(){
 
     if (nombre == valor) {
         document.getElementById("busqueda").value = "";
-        nav = id("nav");
+        nav = id("formulario");
         nav.className = "oculto";
         conten = id("contenido");
-        conten.className = "row contenido";
+        conten.className = "contenido";
         divmapa = id("mapa");
         divmapa.className = 'col-md-12 mapa';
         document.getElementById("nombre").innerHTML = " " + nombre.toUpperCase();
@@ -202,12 +197,12 @@ function ubicacion(){
 function regresar(){
     let conten = id("contenido");
     conten.className = "oculto";
-    divmapa = id("mapa");
+    let divmapa = id("mapa");
     divmapa.className = 'oculto';
-    telefono = id('telefono');
-    telefono.className = 'oculto';
-    let nav = id("nav");
-    nav.className = "navbar navbar-expand-md navbar-dark";
+    //telefono = id('telefono');
+    //telefono.className = 'oculto';
+    let form = id("formulario");
+    form.className = "form-inline my-2 my-0 col-12 formulario";
     
 }
 
