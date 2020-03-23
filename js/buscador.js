@@ -1,5 +1,7 @@
 //alert("funcionando");
-
+let myBody = document.body;
+let ancho;
+ancho = myBody.offsetWidth.toString;
 //Esta linea escucha cuando se le da click al boton buscar y ejecuta la funcion "validacion()"
 document.getElementById("buscar").addEventListener("click", validacion);
 document.getElementById("regreso").addEventListener("click", regresar);
@@ -143,7 +145,7 @@ function telefono() {
 */ 
 function ubicacion(){
     let nombre;
-    let nav;
+    let navsub;
     let conten;
     let mapanew;
     let mapaold;
@@ -173,12 +175,12 @@ function ubicacion(){
         mapa = "Aun no tenemos la Ubicacion";
     }
 
+    
 
-
-    if (nombre == valor) {
+    if (nombre == valor ) {
         document.getElementById("busqueda").value = "";
-        nav = id("formulario");
-        nav.className = "oculto";
+        navsub = id("navsub");
+        navsub.className = "oculto";
         conten = id("contenido");
         conten.className = "contenido";
         divmapa = id("mapa");
@@ -195,6 +197,8 @@ function ubicacion(){
 *pagina principal
 */
 function regresar(){
+    let navsub = id("navsub");
+    navsub.className = "navsub";
     let conten = id("contenido");
     conten.className = "oculto";
     let divmapa = id("mapa");

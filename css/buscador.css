@@ -7,7 +7,7 @@
     display: none;
 }
 .navsub{
-    height: 100%;
+    height: 100px;
     margin: 9px 0;
     background-color: #c32421;
     margin-left: 16px;
@@ -51,16 +51,19 @@
     margin-bottom: 10px;
 }
 
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px){ 
+/*Medium devices (tablets, 768px and up)*/
+@media (max-width: 768px){ 
 .navsub{
-    height: 150px;
+    height: 160px;
     margin: 9px 0;
     background-color: #c32421;
     margin-left: 16px;
     margin-right: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+.buscar{
+    margin-top: 10px;
 }
  }
 
