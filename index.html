@@ -361,7 +361,7 @@
                 </div>
                 <div class="solicitados col-md-6 col-sm-6 col-xs-6">
                   <label>Ingresa los pesos solicitados</label><br>
-                  <input class="campos" type="number" id="solicitadop"><br>
+                  <input class="campos" type="text" id="solicitadop"><br>
                   <input type="button" value="Pesos" id="botonxpesos" class="btn btn-success resbtn">
                 </div>
                 <div class="laSuma" >
@@ -378,13 +378,13 @@
                         <td>Total</td>
                         <td>$</td>
                         <td id="total" ></td>
-                      </tr>
+                      </tr> 
                     </tfoot>
                   </table>
                 </div>
                 <div class="sumaTotal">
-                  <input class="btn btn-success resbtn" type="button" value="Suma" onclick="sumaTotal()" >
-                  <input style="margin-left: 25px;" type="button" value="Borrar" class="btn btn-danger" onclick="borrar()">
+                  <input class="btn btn-success resbtn" type="button" value="Suma" id="suma" >
+                  <input style="margin-left: 25px;" type="button" value="Borrar" class="btn btn-danger" id="borrar">
                 </div>
               </div>
             </div>

@@ -5,7 +5,8 @@ console.log(ancho);
 console.log(largotexto);
 console.log("el largo del body es " +largotexto);
 */
-
+//var myvarr = 234;
+//console.log(typeof myvarr);
 
 //funcion que al hacer click en el boton inicio mustra el apartado inicio ocultando la ventana activa
 function inicio(){
@@ -52,13 +53,13 @@ var porPesos = 0;
 function agregarItem(producto, gramos, total){
 	var tabla = document.getElementsByTagName("table");
 	var hilera = document.createElement("tr");
+	hilera.className = "hilera";
 	var tds = new Array();
 	//Agrega primer elemento td
 	tds[0] = document.createElement("td");
 	tds[0].innerHTML = producto;
-	//console.log(tds[0]);
+	
 	hilera.appendChild(tds[0]);
-	//tabla.appendChild(hilera);
 
 	//Agrega segundo elemento td
 	tds[1] = document.createElement("td");
@@ -75,56 +76,84 @@ function agregarItem(producto, gramos, total){
 	tds[3] = document.createElement("td");
 	tds[3].className = "costo";
 	tds[3].innerHTML = total;
-	console.log(tds[3]);
+	
 	hilera.appendChild(tds[3]);
 	tabla[0].append(hilera);
 }
 //funcion  que nos ayudara a calcular cuantos nos cuesta ciertos gramos de una fruta o verdura
 function porgramos(){
-	console.log(porGramos);
+	var resultado;
+	var convertidoGramos;
+
 	var preciokilo = document.getElementById("preciokilo").value;
 	var elSelect = id("preciokilo");
 	var elOption = elSelect.options[elSelect.selectedIndex].text;
 	var gramos = document.getElementById("solicitadog").value;
-	var resultado;
-	var resultado = (gramos * preciokilo) / 1000;
-	porGramos = resultado + porGramos;
-	id("solicitadog").value = "";
-	agregarItem(elOption, gramos, resultado);
+	
+	if (!/^([0-9])*$/.test(gramos)) {
+		alert("El valor "+gramos+" no es un número");
+		id("solicitadog").value = "";
+	}else if(gramos == ""){
+		alert("El campo esta vacio, ingresa un numero");
+		}else{
+			convertidoGramos = parseInt(gramos, 10);
+			var resultado = (convertidoGramos * preciokilo) / 1000;
+			porGramos = resultado + porGramos;
+			id("solicitadog").value = "";
+			agregarItem(elOption, convertidoGramos, resultado);
+		}
 	
 }
 //funcion que nos ayudara a saber cuantos gramos se dan por x cantidad de pesos
 function porpesos(){
-	console.log(porPesos);
+	var resultado;
+	var convertidoPesos;
 	var preciokilo = document.getElementById("preciokilo").value;
 	var elSelect = id("preciokilo");
 	var elOption = elSelect.options[elSelect.selectedIndex].text;
 	var pesos = 0;
 	pesos = document.getElementById("solicitadop").value;
-	console.log(typeof(pesos));
-	pesos = parseInt(pesos);
-	console.log(pesos + " despues del paseint");
-	var resultado;
-	var resultado = (pesos * 1000 ) / preciokilo;
-	porPesos = pesos + porPesos;
-	resultado = Math.round(resultado);
-	id("solicitadop").value = "";
-	agregarItem(elOption, resultado, pesos);
-	
+	if (!/^([0-9])*$/.test(pesos)) {
+		alert("El valor "+pesos+" no es un número");
+		id("solicitadop").value = "";
+	}else if(pesos == ""){
+		alert("El campo esta vacio, ingresa un numero");
+		}else{
+			convertidoPesos = parseInt(pesos, 10);
+			resultado = (convertidoPesos * 1000 ) / preciokilo;
+			porPesos = convertidoPesos + porPesos;
+			resultado = Math.round(resultado);
+			id("solicitadop").value = "";
+			agregarItem(elOption, resultado, convertidoPesos);
+		}
+		
 }
+
 function sumaTotal(){
 	let res;
 	let total = id("total");
 	
 	res = porPesos + porGramos;
-	console.log(res);
 	total.innerHTML = res.toFixed(2);
+	
 }
 
 function borrar() {
 	let tr = new Array;
+	let padre = new Array;
+
+	tr=document.getElementsByClassName("hilera");
+	for (let i = tr.length -1; i >= 0; i--) {
+		padre = tr[i].parentNode;
+		padre.removeChild(tr[i]);
+	}
+	id("total").innerHTML = "";
+	porGramos=0;
+	porPesos=0;
 
 }
 
 document.getElementById("botonxgramos").addEventListener("click", porgramos);
 document.getElementById("botonxpesos").addEventListener("click", porpesos);
+document.getElementById("suma").addEventListener("click", sumaTotal);
+document.getElementById("borrar").addEventListener("click", borrar);
