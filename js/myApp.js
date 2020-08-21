@@ -68,7 +68,7 @@ function funcUne(){
 	let bascula = id("bascula");
 	bascula.className = "oculto";
 	let une = id("unehs");
-	une.className = "unehs";
+	une.className = " row unehs";
 }
 
 /*Seccion para las funciones de la aplicacion 'Bascula */
@@ -237,6 +237,21 @@ function cursos() {
 	extracto.className="oculto";
 	experiencia.className="oculto";
 	educacion.className="oculto";
+}
+/**
+ * Fuuncion que activa el velo en la imagen de unehs
+ */
+function myimgover() {
+	var link =id("link");
+	//var velo = id("velo");
+	link.className="link";
+	//velo.className="velo";
+}
+function myimgout() {
+	var link =id("link");
+	//var velo = id("velo");
+	link.className="oculto";
+	//velo.className="oculto";
 }
 
 document.getElementById("botonxgramos").addEventListener("click", porgramos);

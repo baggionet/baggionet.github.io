@@ -171,7 +171,7 @@
             <div class="row" id="sobreMi">
               <div class="col-md-12 encabezado">
                 <h1 class="my">José Alfredo López Figueroa</h1>
-                <!--h3 class="subMy">Técnico en Soporte TI</h3-->
+                <h4 class="subMy">Desarrollador WEB Jr. | Técnico en Soporte TI</h4>
               </div>
               <div class="col-md-12 extracto "><!--Seccion de extracto Inicia-->
                 <p class="subextracto" id="extra" onclick="extracto()" >Extracto</p>
@@ -342,22 +342,24 @@
                   <!-- *************** Termina seccion 'Sobre MI' " **************************** -->
                   <!-- *************** Inicia proyecto 'buscador oxxo' " **************************** -->
             <div class="oculto" id="buscador"><!--row-->
-              <div class="navsub" id="navsub">
-                <a class="titulo navbar-brand col-md-12 " href="#">Localizador Tienda OXXO</a>
-                <div class="col-md-12 col-sm-12 col-lg-12">
-                  <div class="form-inline my-2 my-0 col-md-12 col-sm-12 col-12-lg formulario" id="formulario">
+              <div class="col-sm-11 col-md-5 col-lg-6 navsub" id="navsub">
+                <a class="titulo navbar-brand col-sm-8 col-md-8 col-lg-8" href="#">Localizador Tienda OXXO</a>
+                <div class="row">
+                  <div class="form-inline my-2 my-0 col-sm-8 col-md-8 col-lg-8 formulario" id="formulario">
                     <input class="form-control mr-md-2 busqueda" type="text" name="busqueda" id="busqueda" placeholder="Buscar OXXO">
                     <button class="btn btn-secondary buscar my-2 my-md-0" id="buscar" required >Buscar</button>
                   </div>
-                  <p>Ejemplos de tienda <br>
-                  Escribe uno de los ejemplos en el campo "Buscar OXXO"</p>
-                  <span>
-                    las hadas<br>
-                    heliotropo<br>
-                    campestre<br>
-                    amarguraQRO<br>
-                  </span>
                 </div>
+              </div>
+              <div class="col-sm-12 col-md-5 col-lg-5">
+                <p>Ejemplos de tienda <br>
+                Escribe uno de los ejemplos en el campo "Buscar OXXO"</p>
+                <span>
+                  las hadas<br>
+                  heliotropo<br>
+                  campestre<br>
+                  amarguraQRO<br>
+                </span>
               </div>
               <!--/nav-->
               <div class="oculto" id="agregar"> <!-- row justify-content-center inicia agregar-->
@@ -403,12 +405,12 @@
                     <option value="30">Patitas</option>
                   </select><br>
                 </div>
-                <div class="solicitados col-md-6 col-sm-6 col-xs-6">
+                <div class="solicitados col-md-6 col-sm-12 col-xs-12">
                   <label>Ingresa los gramos solicitados</label><br>
                   <input class="campos" type="text" id="solicitadog"><br>
                   <input type="button" value="Gramos" id="botonxgramos" class="btn btn-primary resbtn">
                 </div>
-                <div class="solicitados col-md-6 col-sm-6 col-xs-6">
+                <div class="solicitados col-md-6 col-sm-12 col-xs-12">
                   <label>Ingresa los pesos solicitados</label><br>
                   <input class="campos" type="text" id="solicitadop"><br>
                   <input type="button" value="Pesos" id="botonxpesos" class="btn btn-success resbtn">
@@ -439,7 +441,14 @@
             </div>
                 <!-- *************** Termina proyecto 'Bascula' " **************************** -->
             <div class="oculto" id="unehs">
-                probando su aparicion
+              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-10 imgunehs" id="contimg" style="padding-left: 25px;padding-bottom: 4px;">                  
+                <a  href="https://unehs.com/" target="_blanck">
+                  <img id="imgunehs" src="img/unehs.png" alt="">
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-10 velo" id="velo" onmouseover="myimgover()" onmouseout="myimgout()">
+                    <p class="oculto" id="link">unehs.com</p>
+                  </div>
+                </a>
+              </div>
             </div>
                 <!-- *************** Inicia proyecto 'UNEHS' " **************************** -->
           </div><!--end box-->
@@ -450,7 +459,7 @@
   </div>
   <!-- /.content-wrapper -->
   <!-- Main Footer -->
-  <footer class="main-footer">
+  <footer class="main-footer" style="margin-left: 0px;">
     <!-- To the right -->
     <div class="pull-right hidden-xs">
       Baggionet

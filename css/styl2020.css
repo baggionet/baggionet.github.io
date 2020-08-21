@@ -97,3 +97,30 @@
 .c{
     width: 10px;
 }
+#contimg{
+    position: relative;
+}
+#imgunehs{
+    width: 100%;
+}
+#imgunehs:hover{
+    width: 98%;
+}
+#link{
+    position: relative;
+    color:white;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+}
+.velo{
+    top: 0px;
+    position: absolute;
+    width: 92.8%;
+    height:100%;
+}
+.velo:hover{
+    background-color: black;
+    opacity: 0.8;
+}
