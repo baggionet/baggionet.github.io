@@ -10,14 +10,25 @@ console.log("el largo del body es " +largotexto);
 
 //funcion que al hacer click en el boton inicio mustra el apartado inicio ocultando la ventana activa
 function inicio(){
+	var extracto = id("extracto");
+	var experiencia = id("experiencia");
+	var educacion = id("educacion");
+	var cursos = id("cursos");
+	extracto.className="oculto";
+	experiencia.className="oculto";
+	educacion.className="oculto";
+	cursos.className="oculto";
+	
 	let sobreMi = id("sobreMi");
-	let buscador = id("buscador"); 
+	let buscador = id("buscador");
+	let une = id("unehs"); 
 	sobreMi.className = "row";
 	buscador.className = "oculto";
 	let titulo = id("titulo");
 	titulo.innerHTML = "Sobre Mi";
 	let bascula = id("bascula");
 	bascula.className = "oculto";
+	une.className = "oculto";
 	
 }
 //Funcion que muestra el apartado BUSCADOR y oculta el resto.
@@ -30,6 +41,8 @@ function funcBuscador(){
 	buscador.className = "row";
 	let bascula = id("bascula");
 	bascula.className = "oculto";
+	let une = id("unehs");
+	une.className= "oculto";
 }
 //Funcion que mostrara el apartado de BASCULA y ocultara el resto
 function funcBascula(){
@@ -41,8 +54,22 @@ function funcBascula(){
 	titulo.innerHTML = "Mi Trabajo";
 	let bascula = id("bascula");
 	bascula.className = "bascula";
+	let une = id("unehs");
+	une.className = "oculto";
 }
-
+//Funcion que mostrara el apartado de unehs y ocultara el resto
+function funcUne(){
+	let sobreMi = id("sobreMi");
+	sobreMi.className = "oculto";
+	let buscador = id("buscador");
+	buscador.className = "oculto";
+	let titulo = id("titulo");
+	titulo.innerHTML = "Mi Trabajo";
+	let bascula = id("bascula");
+	bascula.className = "oculto";
+	let une = id("unehs");
+	une.className = "unehs";
+}
 
 /*Seccion para las funciones de la aplicacion 'Bascula */
 var porGramos = 0;
@@ -150,7 +177,66 @@ function borrar() {
 	id("total").innerHTML = "";
 	porGramos=0;
 	porPesos=0;
-
+}
+/**
+ * Funciones que contraeran los apartados del curriculum
+ * 
+ */
+function extracto() {
+	var extracto = id("extracto");
+	var experiencia = id("experiencia");
+	var educacion = id("educacion");
+	var cursos = id("cursos");
+	if (extracto.className == "extra") {
+		extracto.className="oculto";		
+	}else{
+		extracto.className="extra";
+	}
+	experiencia.className="oculto";
+	educacion.className="oculto";
+	cursos.className="oculto";
+}
+function experiencia() {
+	var experiencia = id("experiencia");
+	var extracto = id("extracto");
+	var educacion = id("educacion");
+	var cursos = id("cursos");
+	if (experiencia.className == "exper") {
+		experiencia.className="oculto";
+	}else{
+		experiencia.className="exper";
+	}
+	extracto.className="oculto";
+	educacion.className="oculto";
+	cursos.className="oculto";
+}
+function educacion() {
+	var educacion = id("educacion");
+	var experiencia = id("experiencia");
+	var extracto = id("extracto");
+	var cursos = id("cursos");
+	if (educacion.className == "edu") {
+		educacion.className="oculto";
+	}else{
+		educacion.className="edu";
+	}
+	extracto.className="oculto";
+	experiencia.className="oculto";
+	cursos.className="oculto";
+}
+function cursos() {
+	var cursos = id("cursos");
+	var educacion = id("educacion");
+	var experiencia = id("experiencia");
+	var extracto = id("extracto");
+	if (cursos.className == "cur") {
+		cursos.className="oculto";
+	}else{
+		cursos.className="cur";
+	}
+	extracto.className="oculto";
+	experiencia.className="oculto";
+	educacion.className="oculto";
 }
 
 document.getElementById("botonxgramos").addEventListener("click", porgramos);

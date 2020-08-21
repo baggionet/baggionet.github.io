@@ -23,7 +23,7 @@
   <!-- Main Header -->
   <header class="main-header">
     <!-- Logo -->
-    <a href="index2.html" class="logo">
+    <a href="index.html" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>B</b>NT</span>
       <!-- logo for regular state and mobile devices -->
@@ -32,7 +32,7 @@
     <!-- Header Navbar -->
     <nav class="navbar navbar-static-top" role="navigation">
       <!-- Sidebar toggle button-->
-      <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+      <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button" onclick="changemenu()">
         <span class="sr-only">Toggle navigation</span>
       </a>
       <!-- Navbar Right Menu -->
@@ -76,37 +76,16 @@
           <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
         </div>
       </div>
-      <div class="contacto sidebar">
-        <ul class="item-contacto">
-          <li class="treeview" style="padding-bottom: 20px;">
-            <a href="#"><span >Contactar</span>
-              <span class="pull-right-container">
-                <i class=""></i>
-              </span>
-            </a>
-            <ul class="treeview-menu" style="display: none;">
-              <li class="tree-item">baggio_2@hotmail.com</li>
-              <li class="tree-item"><a href="https://www.linkedin.com/in/jos%C3%A9-alfredo-l%C3%B3pez-figueroa-4189b973?jobid=1234&lipi=urn%3Ali%3Apage%3Ad_jobs_easyapply_pdfgenresume%3BoWLskd8EQf6qJPdBlngOCQ%3D%3D&licu=urn%3Ali%3Acontrol%3Ad_jobs_easyapply_pdfgenresume-v02_profile" target="_blank" rel="noopener noreferrer">LinkedIn</a> </li>
-              <li class="contacto-header">Aptitudes principales</li>
-              <li class="tree-item">Soporte TI</li>
-              <li class="tree-item">HTML5</li>
-              <li class="tree-item">JavaScript</li>
-              <li class="tree-item">CSS</li>
-              <li class="tree-item">PHP</li>
-              <li class="tree-item">Desarrollo Web</li>
-              <li class="contacto-header" >Lenguages</li>
-              <li class="tree-item">Ingles Tecnico</li>
-            </ul>
-          </li>
-        </ul>
-      </div>
+
       <!-- Sidebar Menu -->
+      <!-- Las clases "treeview" y "treeview-menu" en conjunto ocultan un menu en el "ul" con la clase 
+  "treeview-menu" dando click en una etiqueta "a" con la clase "treeview" -->
       <ul class="sidebar-menu">
         <li class="header">MENU</li>
         <!-- Optionally, you can add icons to the links -->
-        <li class="active"><a href="#"><i class="fa fa-link"></i> <span onclick="inicio()" >Inicio</span></a></li>
+        <li class="active"><a href="#"><i class="fa fa-male" aria-hidden="true"></i><span onclick="inicio()" >Sobre Mi</span></a></li>
         <li class="treeview">
-          <a href="#"><i class="fa fa-link"></i> <span>Mi Trabajo</span>
+          <a href="#"><i class="fa fa-list-ol" aria-hidden="true"></i> <span>Mi Trabajo</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
@@ -114,10 +93,67 @@
           <ul class="treeview-menu">
             <li><a href="#" onclick="funcBuscador()" >Buscador OXXO</a></li>
             <li><a href="#" onclick="funcBascula()">Bascula</a></li>
+            <li><a href="#" onclick="funcUne()">UNEHS</a></li>
           </ul>
         </li>
+        <li class="header">ACTITUDES PRINCIPALES</li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-laptop" aria-hidden="true"></i><span>SOPORTE IT</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="#">Soporte en sitio</a></li>
+            <li><a href="#">Soporte Remoto</a></li>
+            <li><a href="#">Soporte via telefonica</a></li>
+            <li><a href="#">Redes</a></li>
+            <li><a href="#">Impresoras</a></li>
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-code"></i><span>LENGUAJES</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="#"><i class="fa fa-html5" aria-hidden="true"></i>HTML5</a></li>
+            <li><a href="#"><i class="fa fa-css3" aria-hidden="true"></i>CSS3</a></li>
+            <li><a href="#">JavaScript</a></li>
+            <li><a href="#">PHP</a></li>
+            <li><a href="#">Laravel</a></li>
+            <li><a href="#"><i class="fa fa-wordpress" aria-hidden="true"></i>WordPress</a></li>
+            <li><a href="#"><i class="fa fa-git-square" aria-hidden="true"></i>Git</a></li>
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-globe" aria-hidden="true"></i><span>IDIOMAS</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="#">Ingles Tecnico</a></li>
+          </ul>
+        </li>
+        <li class="header">CONTACTO</li>
+        <li class="treeview">
+          <a href="mailto:baggio_2@hotmail.com">
+            <i class="fa fa-envelope" aria-hidden="true"></i><span>baggio_2@hotmail.com</span>
+          </a> 
+        </li>
+        <li class="treeview">
+          <a href="https://www.linkedin.com/in/jos%C3%A9-alfredo-l%C3%B3pez-figueroa-4189b973?jobid=1234&lipi=urn%3Ali%3Apage%3Ad_jobs_easyapply_pdfgenresume%3BoWLskd8EQf6qJPdBlngOCQ%3D%3D&licu=urn%3Ali%3Acontrol%3Ad_jobs_easyapply_pdfgenresume-v02_profile" target="_blank" rel="noopener noreferrer">
+            <i class="fa fa-linkedin-square" aria-hidden="true"></i><span>LinkedIn</span>
+          </a> 
+        </li>
       </ul>
-      <!-- /.sidebar-menu -->
+<!-- /.sidebar-menu -->
+
     </section>
     <!-- /.sidebar -->
   </aside>
@@ -131,17 +167,15 @@
             <div class="box-header with-border header-titulo">
               <h1 class="box-title " id="titulo" >Sobre Mi</h1>
             </div>
-
-<!-- *************** Inicia seccion 'Sobre MI' " **************************** -->
-
+            <!-- *************** Inicia seccion 'Sobre MI' " **************************** -->
             <div class="row" id="sobreMi">
               <div class="col-md-12 encabezado">
                 <h1 class="my">José Alfredo López Figueroa</h1>
-                <h3 class="subMy">Técnico en Soporte TI</h3>
+                <!--h3 class="subMy">Técnico en Soporte TI</h3-->
               </div>
               <div class="col-md-12 extracto "><!--Seccion de extracto Inicia-->
-                <p class="subextracto">Extracto</p>
-                <ul class="lista">
+                <p class="subextracto" id="extra" onclick="extracto()" >Extracto</p>
+                <ul class="oculto" id="extracto">
                   <li class="li-head">Con 15 años de experiencia</li>
                   <li class="li-item">Soporte tecnico en Sitio, Remotamente y via Telefonica.</li>
                   <li class="li-item">Soporte a Aplicaciones.</li>
@@ -155,9 +189,12 @@
                   <li class="li-item">Gusto por el FrontEnd y BackEnd.</li>
                   </li>
                 </ul>
-              </div><!--Seccion de extracto Finaliza-->
-              <div class="col-md-12 experiencia"><!--Seccion de experiencia Inicia-->
-                <p class="subextracto">Experiencia</p>
+              </div>
+              <!--Seccion de extracto Finaliza-->
+              <!--Seccion de experiencia Inicia-->
+              <div class="col-md-12 experiencia">
+                <p class="subextracto" onclick="experiencia()">Experiencia</p>
+                <div class="oculto" id="experiencia">
                 <ul class="lista"><!--Experiencia 1 Inicia-->
                   <li class="li-empresa">A&C Productos informáticos</li>
                   <li class="li-puesto">Programador Jr.</li>
@@ -215,23 +252,31 @@
                     de la empresa.</li>
                   <li class="li-item">Inventario del equipo de cómputo y herramienta, compras.</li>
                 </ul><!--Experiencia 3 Finaliza-->
-              </div><!--Seccion de experiencia Finaliza-->
-              <div class="col-md-12 educacion"><!--Seccion de educacion Inicia-->
-                <p class="subextracto">Educacion</p>
-                <ul class="lista"><!--Educacion 1 Inicia-->
-                  <li class="li-empresa">Colegio de Bachilleres No. 10</li>
-                  <li class="li-tiempo">Trunca hasta 2do semestre  · (1992 - 1993)</li>
-                  <li class="li-ciudad">Mexico DF</li>
-                </ul><!--Educacion 1 Termina-->
-                <ul class="lista"><!--Educacion 2 Inicia-->
-                  <li class="li-empresa">CYCE</li>
-                  <li class="li-tiempo">Tecnico Soporte a microcomputadoras y redes · (2000 - 2000)</li>
-                  <li class="li-ciudad">Mexico DF</li>
-                </ul><!--Educacion 2 Termina-->
-              </div><!--Seccion de educacion Termina-->
-              <div class="col-md-12 cursos"><!--Seccion de cursos Inicia-->
-                <p class="subextracto">Cursos</p>
-                <ul class="lista"><!--curso 1 Inicia-->
+              </div>
+              </div>
+              <!--Seccion de experiencia Finaliza-->
+              <!--Seccion de educacion Inicia-->
+              <div class="col-md-12 educacion">
+                <p class="subextracto" onclick="educacion()">Educacion</p>
+                <div class="oculto" id="educacion">
+                  <ul class="lista" ><!--Educacion 1 Inicia-->
+                    <li class="li-empresa">Colegio de Bachilleres No. 10</li>
+                    <li class="li-tiempo">Trunca hasta 2do semestre  · (1992 - 1993)</li>
+                    <li class="li-ciudad">Mexico DF</li>
+                  </ul><!--Educacion 1 Termina-->
+                  <ul class="lista"><!--Educacion 2 Inicia-->
+                    <li class="li-empresa">CYCE</li>
+                    <li class="li-tiempo">Tecnico Soporte a microcomputadoras y redes · (2000 - 2000)</li>
+                    <li class="li-ciudad">Mexico DF</li>
+                  </ul><!--Educacion 2 Termina-->
+                </div>
+              </div>
+              <!--Seccion de educacion Termina-->
+              <!--Seccion de cursos Inicia-->
+              <div class="col-md-12 cursos">
+                <p class="subextracto" onclick="cursos()">Cursos</p>
+                <div class="oculto" id="cursos">
+                <ul class="lista" ><!--curso 1 Inicia-->
                   <li class="li-empresa">Programacion de paginas Web con HTML y JS</li>
                   <li class="li-tiempo">Certificado  · (15 de Octubre del 2011)</li>
                   <li class="li-ciudad">Online</li>
@@ -291,14 +336,11 @@
                   <li class="li-tiempo">Certificado · (25 de Marzo del 2019)</li>
                   <li class="li-ciudad">Online</li>
                 </ul><!--curso 12 Termina-->
-                
+                </div>
               </div><!--Seccion de cursos Termina-->
             </div>
-
-<!-- *************** Termina seccion 'Sobre MI' " **************************** -->
-
-<!-- *************** Inicia proyecto 'buscador oxxo' " **************************** -->
-
+                  <!-- *************** Termina seccion 'Sobre MI' " **************************** -->
+                  <!-- *************** Inicia proyecto 'buscador oxxo' " **************************** -->
             <div class="oculto" id="buscador"><!--row-->
               <div class="navsub" id="navsub">
                 <a class="titulo navbar-brand col-md-12 " href="#">Localizador Tienda OXXO</a>
@@ -339,9 +381,8 @@
                 <div class="oculto" id="mapa"></div><!--col-md-12 mapa  Inicia mapa-->
               </div><!--Termina ubicacion-->
             </div>
-
-<!-- ****************** Termina proyecto 'buscador oxxo' " ***************************** -->
-
+                    <!-- ****************** Termina proyecto 'buscador oxxo' " ***************************** -->
+                    <!-- *************** Inicia proyecto 'Bacula' " **************************** -->
             <div class="oculto" id="bascula">
               <p class="subextracto" >BASCULA</p>
             
@@ -396,10 +437,14 @@
                 </div>
               </div>
             </div>
+                <!-- *************** Termina proyecto 'Bascula' " **************************** -->
+            <div class="oculto" id="unehs">
+                probando su aparicion
             </div>
-          </div>
-        </div>
-      </div>
+                <!-- *************** Inicia proyecto 'UNEHS' " **************************** -->
+          </div><!--end box-->
+        </div><!-- end col-md-12-->
+      </div><!--end row-->
     </section>
     <!-- /.content -->
   </div>
