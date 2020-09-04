@@ -1,6 +1,10 @@
 .header-titulo{
     background-color: #3c8dbc;
 }
+#titulo{
+    color:rgb(255, 255, 255);
+    font-weight: bolder;
+}
 .encabezado{
     text-align: center;
     margin-top: 10px;
@@ -123,4 +127,13 @@
 .velo:hover{
     background-color: black;
     opacity: 0.8;
+}
+.proto{
+    background-color: #3c8dbc;
+    padding: 5px;
+    color:white;
+    width: 1065px;
+    margin-top: 4px;
+    padding-left: 20px;
+    padding-top: 3px;
 }

@@ -29,6 +29,8 @@ function inicio(){
 	let bascula = id("bascula");
 	bascula.className = "oculto";
 	une.className = "oculto";
+	let ricrut19 = id("Ricrut19");
+	ricrut19.className = "oculto";
 	
 }
 //Funcion que muestra el apartado BUSCADOR y oculta el resto.
@@ -36,13 +38,15 @@ function funcBuscador(){
 	let sobreMi = id("sobreMi");
 	sobreMi.className = "oculto";
 	let titulo = id("titulo");
-	titulo.innerHTML = "Mi Trabajo";
+	titulo.innerHTML = "Mi Trabajo > Buscador OXXO";
 	let buscador = id("buscador");
 	buscador.className = "row";
 	let bascula = id("bascula");
 	bascula.className = "oculto";
 	let une = id("unehs");
 	une.className= "oculto";
+	let ricrut19 = id("Ricrut19");
+	ricrut19.className = "oculto";
 }
 //Funcion que mostrara el apartado de BASCULA y ocultara el resto
 function funcBascula(){
@@ -51,11 +55,13 @@ function funcBascula(){
 	let buscador = id("buscador");
 	buscador.className = "oculto";
 	let titulo = id("titulo");
-	titulo.innerHTML = "Mi Trabajo";
+	titulo.innerHTML = "Mi Trabajo > Bascula";
 	let bascula = id("bascula");
 	bascula.className = "bascula";
 	let une = id("unehs");
 	une.className = "oculto";
+	let ricrut19 = id("Ricrut19");
+	ricrut19.className = "oculto";
 }
 //Funcion que mostrara el apartado de unehs y ocultara el resto
 function funcUne(){
@@ -64,18 +70,32 @@ function funcUne(){
 	let buscador = id("buscador");
 	buscador.className = "oculto";
 	let titulo = id("titulo");
-	titulo.innerHTML = "Mi Trabajo";
+	titulo.innerHTML = "Mi Trabajo > UNEHS";
 	let bascula = id("bascula");
 	bascula.className = "oculto";
+	let ricrut19 = id("Ricrut19");
+	ricrut19.className = "oculto";
 	let une = id("unehs");
 	une.className = " row unehs";
 }
-
+//Funcion que mostrara el apartado de Ricrut19 y ocultara el resto
+function funcricrut(){
+	let sobreMi = id("sobreMi");
+	sobreMi.className = "oculto";
+	let buscador = id("buscador");
+	buscador.className = "oculto";
+	let titulo = id("titulo");
+	titulo.innerHTML = "Mi Trabajo > Ricrut19";
+	let bascula = id("bascula");
+	bascula.className = "oculto";
+	let une = id("unehs");
+	une.className = "oculto";
+	let ricrut19 = id("Ricrut19");
+	ricrut19.className = "row";
+}
 /*Seccion para las funciones de la aplicacion 'Bascula */
 var porGramos = 0;
-
 var porPesos = 0;
-
 //Funcion que agregara items a la tabla
 function agregarItem(producto, gramos, total){
 	var tabla = document.getElementsByTagName("table");
