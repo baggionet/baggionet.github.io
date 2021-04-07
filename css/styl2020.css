@@ -9,9 +9,6 @@
     text-align: center;
     margin-top: 10px;
 }
-.my{
-    
-}
 .subMy{
     margin-top: 10px;
 }
@@ -41,16 +38,19 @@
     font-weight:bolder;
 }
 .li-puesto{
+    display: inline-flex;
     font-size: 15px;
-    margin-left: 5px;
+    margin-left: 25px;
 }
 .li-tiempo{
-    margin-left: 5px;
+    display: inline-flex;
+    margin-left: 75px;
 }
 .li-ciudad{
+    display: inline-flex;
     font-size: 15;
-    opacity:55%;
-    margin-left: 5px;
+    
+    margin-left: 85px;
 
 }
 .actividades{
