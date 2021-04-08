@@ -9,11 +9,11 @@
   <!-- Bootstrap 3.3.6 -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css"-->
   <!-- Ionicons >
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"-->
   <!-- Theme style -->
-
+  <link rel="stylesheet" href="fontawesome/css/all.css" />
   <link rel="stylesheet" href="css/buscador.css" />
   <link rel="stylesheet" href="css/AdminLTE.min.css">
   <link rel="stylesheet" href="css/skins/skin-blue.min.css">
@@ -51,17 +51,17 @@
         <ul class="nav navbar-nav">
           <li class="dropdown messages-menu">
             <a href="https://www.facebook.com/baggionet" target="_blank" class="dropdown-toggle">
-              <i class="fa fa-facebook-square" style="font-size: 20px;"></i>
+              <i class="fab fa-facebook-square" style="font-size: 20px;"></i>
             </a>
           </li>
           <li class="dropdown notifications-menu">
             <a href="https://twitter.com/baggionet" target="_blank" class="dropdown-toggle">
-              <i class="fa fa-twitter-square" style="font-size: 20px;"></i>
+              <i class="fab fa-twitter-square" style="font-size: 20px;"></i>
             </a>
           </li>
           <li class="dropdown tasks-menu">
             <a href="https://github.com/baggionet" target="_blank" class="dropdown-toggle">
-              <i class="fa fa-github-square" style="font-size: 20px;"></i>
+              <i class="fab fa-github-square" style="font-size: 20px;"></i>
             </a>
           </li>
           <li>
@@ -117,11 +117,11 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="#">Soporte en sitio</a></li>
-            <li><a href="#">Soporte Remoto</a></li>
-            <li><a href="#">Soporte via telefonica</a></li>
-            <li><a href="#">Redes</a></li>
-            <li><a href="#">Impresoras</a></li>
+            <li>Soporte en sitio</li>
+            <li>Soporte Remoto</li>
+            <li>Soporte via telefonica</li>
+            <li>Redes</li>
+            <li>Impresoras</li>
           </ul>
         </li>
         <li class="treeview">
@@ -132,13 +132,13 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="#"><i class="fa fa-html5" aria-hidden="true"></i>HTML5</a></li>
-            <li><a href="#"><i class="fa fa-css3" aria-hidden="true"></i>CSS3</a></li>
-            <li><a href="#">JavaScript</a></li>
-            <li><a href="#">PHP</a></li>
-            <li><a href="#">Laravel</a></li>
-            <li><a href="#"><i class="fa fa-wordpress" aria-hidden="true"></i>WordPress</a></li>
-            <li><a href="#"><i class="fa fa-git-square" aria-hidden="true"></i>Git</a></li>
+            <li><i class="brands fab fa-html5" aria-hidden="true"></i>HTML5</li>
+            <li><i class="brands fab fa-css3" aria-hidden="true"></i>CSS3</li>
+            <li><i class="brands fab fa-js" aria-hidden="true"></i>JavaScript</li>
+            <li><i class="brands fab fa-php" aria-hidden="true"></i>PHP</li>
+            <li><i class="brands fab fa-laravel" aria-hidden="true"></i>Laravel</li>
+            <li><i class="brands fab fa-wordpress" aria-hidden="true"></i>WordPress</li>
+            <li><i class="brands fab fa-git-square" aria-hidden="true"></i>Git</li>
           </ul>
         </li>
         <li class="treeview">
@@ -364,7 +364,7 @@
                   <!-- *************** Termina seccion 'Sobre MI' " **************************** -->
                   <!-- *************** Inicia proyecto 'buscador oxxo' " **************************** -->
             <div class="oculto" id="buscador"><!--row-->
-              <div class="col-sm-11 col-md-5 col-lg-6 navsub" id="navsub">
+              <div class="col-sm-12 col-md-5 col-lg-5 oxxo navsub" id="navsub">
                 <a class="titulo navbar-brand col-sm-8 col-md-8 col-lg-8" href="#">Localizador Tienda OXXO</a>
                 <div class="row">
                   <div class="form-inline my-2 my-0 col-sm-8 col-md-8 col-lg-8 formulario" id="formulario">
@@ -373,25 +373,6 @@
                   </div>
                 </div>
               </div>
-              <div class="col-sm-12 col-md-5 col-lg-5">
-                <p>Ejemplos de tienda <br>
-                Escribe uno de los ejemplos en el campo "Buscar OXXO"</p>
-                <span>
-                  las hadas<br>
-                  heliotropo<br>
-                  campestre<br>
-                  amarguraQRO<br>
-                </span>
-              </div>
-              <!--/nav-->
-              <div class="oculto" id="agregar"> <!-- row justify-content-center inicia agregar-->
-                <span class="col-10 mensaje" id="mensaje1">La sucursal no se encuentra en la base de datos.</span>
-                <span class="col-10 mensaje" id="mensaje2">Deseas que sea agregada?</span>
-                <div class="col-10 botones ">
-                  <button class="btn btn-danger btn-md boton" id="si">SI</button>
-                  <button class="btn btn-danger btn-md boton" id="no">NO</button>
-                </div>
-              </div><!--Termina agregar-->
               <div class="oculto" id="contenido"> <!--row contenido  Inicia ubicacion-->
                 <div class="col-md-12 regreso" id="regreso">
                   <button type="button" class="btn btn-danger btn-md">
@@ -404,6 +385,25 @@
                 </div>
                 <div class="oculto" id="mapa"></div><!--col-md-12 mapa  Inicia mapa-->
               </div><!--Termina ubicacion-->
+              <div class="col-sm-12 col-md-5 col-lg-5 oxxo">
+                <p><strong> Escribe uno de los ejemplos en el campo "Buscar OXXO"</strong></p>
+                <span>
+                  las hadas<br>
+                  heliotropo<br>
+                  amarguraQRO<br>
+                  la estacion
+                </span>
+              </div>
+              <!--/nav-->
+              <div class="oculto" id="agregar"> <!-- row justify-content-center inicia agregar-->
+                <span class="col-10 mensaje" id="mensaje1">La sucursal no se encuentra en la base de datos.</span>
+                <span class="col-10 mensaje" id="mensaje2">Deseas que sea agregada?</span>
+                <div class="col-10 botones ">
+                  <button class="btn btn-danger btn-md boton" id="si">SI</button>
+                  <button class="btn btn-danger btn-md boton" id="no">NO</button>
+                </div>
+              </div><!--Termina agregar-->
+              
             </div>
                     <!-- ****************** Termina proyecto 'buscador oxxo' " ***************************** -->
                     <!-- *************** Inicia proyecto 'Bacula' " **************************** -->

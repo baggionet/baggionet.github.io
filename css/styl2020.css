@@ -18,7 +18,7 @@
     font-size: 20px;
     cursor: pointer;
 }
-.subextracto:hover{
+.subextracto:hover{ 
     color:white;
 }
 .lista{
@@ -77,6 +77,24 @@
 }
 .treeview-menu{
     padding-left: 10px;
+}
+.treeview-menu li{
+    padding: 5px 5px 5px 15px;
+    display: block;
+    font-size: 14px;
+    color: #8aa4af;
+}
+.treeview-menu li:hover{
+    color: white;
+}
+.brands{
+    margin-right: 10px;
+}
+#buscador{
+    height: 500px;
+}
+.oxxo{
+    margin-left: 30px;
 }
 .xgramos{
     padding-top: 15px;

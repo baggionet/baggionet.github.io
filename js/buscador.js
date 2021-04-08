@@ -182,7 +182,7 @@ function ubicacion(){
         navsub = id("navsub");
         navsub.className = "oculto";
         conten = id("contenido");
-        conten.className = "contenido";
+        conten.className = "col-sm-12 col-md-5 col-lg-5";
         divmapa = id("mapa");
         divmapa.className = 'col-md-12 mapa';
         document.getElementById("nombre").innerHTML = " " + nombre.toUpperCase();
@@ -198,7 +198,7 @@ function ubicacion(){
 */
 function regresar(){
     let navsub = id("navsub");
-    navsub.className = "navsub";
+    navsub.className = "col-sm-12 col-md-5 col-lg-5 oxxo navsub";
     let conten = id("contenido");
     conten.className = "oculto";
     let divmapa = id("mapa");
@@ -206,7 +206,7 @@ function regresar(){
     //telefono = id('telefono');
     //telefono.className = 'oculto';
     let form = id("formulario");
-    form.className = "form-inline my-2 my-0 col-12 formulario";
+    form.className = "form-inline my-2 my-0 col-sm-8 col-md-8 col-lg-8 formulario";
     
 }
 
