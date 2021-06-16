@@ -53,15 +53,15 @@ class Tienda {
 *Funcion que ayuda a eleiminar acentos, tildes, y cualquier caracter estraños
 *
 */
+let mapping;
 var normalize = (function() {
+
     var from = "ÃÀÁÄÂÈÉËÊÌÍÏÎÒÓÖÔÙÚÜÛãàáäâèéëêìíïîòóöôùúüûÑñÇç", 
-        to   = "AAAAAEEEEIIIIOOOOUUUUaaaaaeeeeiiiioooouuuunncc",
-        mapping = {};
-   
-    for(var i = 0, j = from.length; i < j; i++ )
-          mapping[ from.charAt( i ) ] = to.charAt( i );
-          //console.log(from.charAt( i ));
-   
+      to   = "AAAAAEEEEIIIIOOOOUUUUaaaaaeeeeiiiioooouuuunncc",
+      mapping = {};
+ 
+  for(var i = 0, j = from.length; i < j; i++ )
+        mapping[ from.charAt( i ) ] = to.charAt( i );
           return function( str ) {
               var ret = [];
               for( var i = 0, j = str.length; i < j; i++ ) {
@@ -121,10 +121,12 @@ function mostrar(busqueda){
         latienda = new Tienda(nombremayusculas, cr, telefono, mapanew, mapaold);
         //muestra los DIV donde ira el contenido de la informacion
         let nav = id("nav");
+        let nota = id("nota");
         let contenido = id("contenido");
         let elMapa = id("elMapa");
         let elRegreso = id("elRegreso");
         nav.className = "oculto";
+        nota.className = "oculto";
         contenido.className = "row contenido";
         elMapa.className = "row mapa";
         elRegreso.className = "row titulo";
@@ -163,7 +165,7 @@ function nodb(name){
 */
 function regresar() {
     //obtenemos los DIV a modificar
-    
+    let nota = id("nota");
     let contenido = id("contenido");
     let regresar = id("elRegreso");
     let elMapa = id("elMapa");
@@ -180,7 +182,8 @@ function regresar() {
     dato.className = "direccion col-8";
     nobd.className = "oculto";
 
-    nav.className = "row nav navbar navbar-expand-md navbar-dark";
+    nav.className = "row nav nav1 navbar navbar-expand-md navbar-dark";
+    nota.className ="nota";
     
 }
 

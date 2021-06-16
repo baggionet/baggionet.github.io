@@ -8,13 +8,9 @@
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.6 -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <!-- Font Awesome -->
-  <!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css"-->
-  <!-- Ionicons >
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"-->
   <!-- Theme style -->
   <link rel="stylesheet" href="fontawesome/css/all.css" />
-  <link rel="stylesheet" href="css/buscador.css" />
+  <link rel="stylesheet" href="css/buscadorV2.css" />
   <link rel="stylesheet" href="css/AdminLTE.min.css">
   <link rel="stylesheet" href="css/skins/skin-blue.min.css">
   <link rel="stylesheet" href="css/styl2020.css">
@@ -44,7 +40,7 @@
     <nav class="navbar navbar-static-top" role="navigation">
       <!-- Sidebar toggle button-->
       <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button" onclick="changemenu()">
-        <span class="sr-only">Toggle navigation</span>
+        <i class="fas fa-align-justify"></i>
       </a>
       <!-- Navbar Right Menu -->
       <div class="navbar-custom-menu">
@@ -111,34 +107,104 @@
         <li class="header">ACTITUDES PRINCIPALES</li>
         <li class="treeview">
           <a href="#">
-            <i class="fa fa-laptop" aria-hidden="true"></i><span>SOPORTE TI</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li>Soporte en sitio</li>
-            <li>Soporte Remoto</li>
-            <li>Soporte via telefonica</li>
-            <li>Redes</li>
-            <li>Impresoras</li>
-          </ul>
-        </li>
-        <li class="treeview">
-          <a href="#">
             <i class="fa fa-code"></i><span>LENGUAJES</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><i class="brands fab fa-html5" aria-hidden="true"></i>HTML5</li>
-            <li><i class="brands fab fa-css3" aria-hidden="true"></i>CSS3</li>
-            <li><i class="brands fab fa-js" aria-hidden="true"></i>JavaScript</li>
-            <li><i class="brands fab fa-php" aria-hidden="true"></i>PHP</li>
-            <li><i class="brands fab fa-laravel" aria-hidden="true"></i>Laravel</li>
-            <li><i class="brands fab fa-wordpress" aria-hidden="true"></i>WordPress</li>
-            <li><i class="brands fab fa-git-square" aria-hidden="true"></i>Git</li>
+            <li>
+              <i class="brands fab fa-html5" aria-hidden="true"></i>
+              HTML5
+              <div style="margin-bottom: 0px; height: 10px;" class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </li>
+            <li><i class="brands fab fa-css3" aria-hidden="true"></i>CSS3
+              <div style="margin-bottom: 0px; height: 10px;" class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </li>
+            <li><i class="brands fab fa-js" aria-hidden="true"></i>JavaScript
+              <div style="margin-bottom: 0px; height: 10px;" class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </li>
+            <li><i class="brands fab fa-node" aria-hidden="true"></i>NodeJs
+              <div style="margin-bottom: 0px; height: 10px;" class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </li>
+            <li><i class="brands fab fa-react"></i></i>ReactJs
+              <div style="margin-bottom: 0px; height: 10px;" class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </li>
+            <li><i class="brands fab fa-php" aria-hidden="true"></i>PHP
+              <div style="margin-bottom: 0px; height: 10px;" class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </li>
+            <li><i class="brands fab fa-laravel" aria-hidden="true"></i>Laravel
+              <div style="margin-bottom: 0px; height: 10px;" class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </li>
+            <li><i class="brands fab fa-wordpress" aria-hidden="true"></i>WordPress
+              <div style="margin-bottom: 0px; height: 10px;" class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </li>
+            <li><i class="brands fab fa-git-square" aria-hidden="true"></i>Git
+              <div style="margin-bottom: 0px; height: 10px;" class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-laptop" aria-hidden="true"></i><span>SOPORTE TI</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li>
+              <i class="brands fas fa-ticket-alt"></i>
+              Soporte en sitio
+              <div style="margin-bottom: 0px; height: 10px;" class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </li>
+            <li>
+              <i class="brands fas fa-laptop-medical"></i>
+              Soporte Remoto
+              <div style="margin-bottom: 0px; height: 10px;" class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </li>
+            <li>
+              <i class="brands fas fa-phone-alt"></i>
+              Soporte via telefonica
+              <div style="margin-bottom: 0px; height: 10px;" class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </li>
+            <li>
+              <i class="brands fas fa-network-wired"></i>
+              Redes
+              <div style="margin-bottom: 0px; height: 10px;" class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </li>
+            <li>
+              <i class="brands fas fa-print"></i>
+              Impresoras
+              <div style="margin-bottom: 0px; height: 10px;" class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </li>
           </ul>
         </li>
         <li class="treeview">
@@ -149,18 +215,24 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="#">Ingles Tecnico</a></li>
+            <li>
+              <i class="brands fas fa-language"></i>
+              Ingles Tecnico
+              <div style="margin-bottom: 0px; height: 10px;" class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 45%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </li>
           </ul>
         </li>
         <li class="header">CONTACTO</li>
         <li class="treeview">
           <a href="mailto:baggio_2@hotmail.com">
-            <i class="fa fa-envelope" aria-hidden="true"></i><span>baggio_2@hotmail.com</span>
+            <i class="brands fa fa-envelope" aria-hidden="true"></i><span>baggio_2@hotmail.com</span>
           </a> 
         </li>
         <li class="treeview">
           <a href="https://www.linkedin.com/in/jos%C3%A9-alfredo-l%C3%B3pez-figueroa-4189b973?jobid=1234&lipi=urn%3Ali%3Apage%3Ad_jobs_easyapply_pdfgenresume%3BoWLskd8EQf6qJPdBlngOCQ%3D%3D&licu=urn%3Ali%3Acontrol%3Ad_jobs_easyapply_pdfgenresume-v02_profile" target="_blank" rel="noopener noreferrer">
-            <i class="fa fa-linkedin-square" aria-hidden="true"></i><span>LinkedIn</span>
+            <i class="brands fab fa-linkedin"></i> LinkedIn
           </a> 
         </li>
       </ul>
@@ -186,7 +258,7 @@
                 <h4 class="subMy">Desarrollador Web Jr.</h4>
               </div>
               <div class="col-md-12 extracto "><!--Seccion de extracto Inicia-->
-                <p class="subextracto" id="extra" onclick="extracto()" >Extracto</p>
+                <p class="subextracto" id="extra" onclick="extracto()">Extracto</p>
                 <ul class="oculto" id="extracto">
                   <li class="li-item">Con 15 años de experiencia en el area TI.</li>
                   <li class="li-item">Soporte tecnico en Sitio, Remotamente y via Telefonica.</li>
@@ -363,7 +435,66 @@
             </div>
                   <!-- *************** Termina seccion 'Sobre MI' " **************************** -->
                   <!-- *************** Inicia proyecto 'buscador oxxo' " **************************** -->
-            <div class="oculto" id="buscador"><!--row-->
+                  <div class="container-fluid oculto" id="buscador" style="margin:1vw">
+                    <div class="row titulo">
+                        <div class="col-lg-4"></div>
+                        <span class="franja navbar-brand col-sm-12 col-lg-4" href="#inicio">Localizador Tienda OXXO</span>
+                    </div>
+                    <div id="nav" class="row nav1 nav navbar navbar-expand-md navbar-dark"> <!--row nav navbar navbar-expand-md navbar-dark-->
+                        <div class="col-lg-4"></div>
+                        <div class="col-sm-12 col-lg-4">
+                            <div class="form-inline my-2 my-0" id="formulario">
+                                <input class="form-control mr-md-2 busqueda" type="text" name="busqueda" id="busqueda"   placeholder="Buscar OXXO">
+                                <button class="boton btn btn-secondary buscar my-2 my-md-0" id="buscar" required>Buscar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nota" id="nota">
+                      <h2>NOTA</h2>
+                      <p>
+                        Este proyectito surge de la necesidad de localizar las distintas tiendas oxxo a lo largo de mi ciudad (Celaya) <br> 
+                        y ciudades colindantes, en ese momento (finales del 2019), trabajaba para una empresa de IT que proporcionaba <br> 
+                        Soporte en Sitio a la cadena Oxxo y yo era uno de los Tecnicos en Sitio.
+                        <p><strong> Escribe uno de los ejemplos en el campo "Buscar OXXO"</strong></p>
+                        <ul>
+                          <li>las hadas</li>
+                          <li>heliotropo</li>
+                          <li>amarguraQRO</li>
+                          <li>la estacion</li>
+                        </ul>
+                      </p>
+                    </div>
+                    <div class="oculto " id="contenido"> <!--row contenido  Inicia ubicacion--> 
+                        <div class="oculto" id="nobd"><!--direccion col-12-->
+                            <span id="nombrene"></span><br>
+                            <span id="noencontrado"></span>
+                        </div>
+                        <div class="direccion col-md-4 " id="direccion">
+                            <span> OXXO </span><br>
+                            <span> CR </span><br>
+                            <span> TELMEX </span>
+                        </div>
+                        <div class="direccion col-md-8" id="datos">
+                            <span id="nombre"></span><br>
+                            <span id="cr"></span><br>
+                            <span id="telefono"></span>
+                        </div>     
+                    </div><!--Termina ubicacion-->
+                    <div class="oculto" id="elRegreso"> <!--row titulo-->
+                        <div class="col-md-12 regreso" >
+                            <span  class="glyphicon glyphicon-chevron-left back" id="regreso" aria-hidden="true"> Regresar</span> 
+                        </div>
+                    </div>
+                    <div class="oculto" id="elMapa"> <!--row mapa-->
+                        <div class="col-lg-4 col-12 mapa" id="mapa">  <!--col-md-12 mapa  Inicia mapa-->
+                                   <!-- Aqui va el mapa-->
+                        </div>                                  <!--Termina  mapa -->
+                    </div>
+            
+                </div>
+            
+            
+            <!--div class="oculto" id="buscador"><!*--row--*>
               <div class="col-sm-12 col-md-5 col-lg-5 oxxo navsub" id="navsub">
                 <a class="titulo navbar-brand col-sm-8 col-md-8 col-lg-8" href="#">Localizador Tienda OXXO</a>
                 <div class="row">
@@ -373,7 +504,7 @@
                   </div>
                 </div>
               </div>
-              <div class="oculto" id="contenido"> <!--row contenido  Inicia ubicacion-->
+              <div class="oculto" id="contenido"> <!*--row contenido  Inicia ubicacion--*>
                 <div class="col-md-12 regreso" id="regreso">
                   <button type="button" class="btn btn-danger btn-md">
                     <span  class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> Regresar
@@ -383,8 +514,8 @@
                   <span style="margin-left: 10px;">OXXO </span><span id="nombre"></span>
                   <span id="crTienda"></span>
                 </div>
-                <div class="oculto" id="mapa"></div><!--col-md-12 mapa  Inicia mapa-->
-              </div><!--Termina ubicacion-->
+                <div class="oculto" id="mapa"></div><!-*-col-md-12 mapa  Inicia mapa-*>
+              </div><!*--Termina ubicacion--*>
               <div class="col-sm-12 col-md-5 col-lg-5 oxxo">
                 <p><strong> Escribe uno de los ejemplos en el campo "Buscar OXXO"</strong></p>
                 <span>
@@ -394,17 +525,17 @@
                   la estacion
                 </span>
               </div>
-              <!--/nav-->
-              <div class="oculto" id="agregar"> <!-- row justify-content-center inicia agregar-->
+              <!*--/nav-*->
+              <div class="oculto" id="agregar"> <!*-- row justify-content-center inicia agregar-*->
                 <span class="col-10 mensaje" id="mensaje1">La sucursal no se encuentra en la base de datos.</span>
                 <span class="col-10 mensaje" id="mensaje2">Deseas que sea agregada?</span>
                 <div class="col-10 botones ">
                   <button class="btn btn-danger btn-md boton" id="si">SI</button>
                   <button class="btn btn-danger btn-md boton" id="no">NO</button>
                 </div>
-              </div><!--Termina agregar-->
+              </div><!*--Termina agregar--*>
               
-            </div>
+            </div-->
                     <!-- ****************** Termina proyecto 'buscador oxxo' " ***************************** -->
                     <!-- *************** Inicia proyecto 'Bacula' " **************************** -->
             <div class="oculto" id="bascula">
@@ -524,7 +655,8 @@
 <!-- AdminLTE App -->
 <script src="js/myApp.js" ></script>
 <script src="js/app.min.js"></script>
-<script src="js/buscador.js"></script>
+<!--script src="js/buscador.js"></script-->
 <script src="js/ubicaciones.js"></script>
+<script src="js/buscadorV2.js"></script>
 </body>
 </html>

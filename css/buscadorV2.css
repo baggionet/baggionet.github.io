@@ -12,7 +12,7 @@
 .oculto{
     display: none;
 }
-.nav, .direccion{
+.nav1, .direccion{
     background-color: #c32421;
 }
 .direccion{
@@ -30,6 +30,7 @@
 .franja{
     font-size: 15px;
     text-align: center;
+    font-weight: 900;
 }
 
 .mensaje{
@@ -52,6 +53,10 @@
 #noencontrado{
     margin-top: 90px;
 }
-
+#formulario{
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    padding-left: 4vw;
+}
 
 

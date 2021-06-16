@@ -16,10 +16,11 @@
     background-color: #3c8dbc;
     padding-left: 30px;
     font-size: 20px;
-    cursor: pointer;
+    cursor:pointer;
 }
 .subextracto:hover{ 
     color:white;
+    font-weight: 900;
 }
 .lista{
     list-style: none;
