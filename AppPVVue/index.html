@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./src/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.x/css/materialdesignicons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla</title>
+</head>
+<body>
+    <div id="app">
+        <v-app>   
+            <v-app-bar app
+                color="blue"
+                dense
+                flat
+            >
+                <v-row>
+                    <v-col cols="2" >
+                        <v-img
+                            contain
+                            width="40"
+                            height="40"
+                            src="./src/assets/logoTienda.png"
+                        ></v-img>
+                    </v-col>
+                    <v-col class="fecha-hora" cols="8" >
+                        <v-card elevation="0" color="blue" class="sub-feho">{{fecha()}}</v-card>
+                        <v-card elevation="0" color="blue" class="sub-feho">{{hora()}}</v-card>
+                    </v-col>
+                    <v-col class="fecha-hora" cols="2" >
+                        <v-app-bar-nav-icon></v-app-bar-nav-icon>
+                    </v-col>
+                </v-row>
+                
+            </v-app-bar>
+            <v-main>
+                <v-container>
+                    <v-row>
+                        <v-col cols="12">
+                            <v-tabs > 
+                                <v-tabs-slider color="yellow"></v-tabs-slider>
+                                <v-tab>
+                                    Almacen
+                                </v-tab>
+                                <v-tab>
+                                    Tickets
+                                </v-tab>
+                                <v-tab>
+                                    Compra
+                                </v-tab>
+                                <v-tab>
+                                    Productos
+                                </v-tab>
+        
+                                <v-tab-item>
+                                    <v-card flat>
+                                        <v-card-text><p>Mi Almacen</p></v-card-text>
+                                    </v-card>
+                                </v-tab-item>
+                                <v-tab-item>
+                                    <v-card flat>
+                                        <v-card-text><p>Tickes</p></v-card-text>
+                                    </v-card>
+                                </v-tab-item>
+                                <v-tab-item>
+                                    <v-card flat>
+                                        <v-card-text>Nuevo Tickes</v-card-text>
+                                    </v-card>
+                                </v-tab-item>
+                                <v-tab-item>
+                                    <v-card flat>
+                                        <v-data-table
+                                            mobile
+                                            :headers="headers"
+                                            :items="myItems"
+                                            :items-per-page="5"
+                                            class="elevation-1"
+                                        >
+                                            
+                                        </v-data-table>
+                                    </v-card>
+                                </v-tab-item>
+                            </v-tabs>
+                        </v-col>
+                    </v-row>
+                </v-container>
+            </v-main>
+        </v-app>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+    <script src="index.js"></script>
+    <!--script src="producto.js"></script-->
+</body>
+</html>
