@@ -4,11 +4,20 @@ var app = new Vue({
     el: "#app",
     vuetify: new Vuetify(),
     data: {
+        headerAlm:['Marca', 'Descripcion', 'Stockmin', 'Stockmax', 'Precio'] ,
         headers: [
-            {text:'Marca'},
-            {text:'Producto'},
-            {text:'Precio'}
-        ]
+            {text:'Marca', value: 'marca'},
+            {text:'Descripcion', value:'descripcion'},
+            {text:'Stockmin', value:'stockMin'},
+            {text:'Stockmax', value:'stockMax'},
+            {text:'Stock', value:'stock'},
+            {text:'Precio', value:'costo'},
+        ],
+        myItems: [
+            {code:"7501018310233", marca:"Moderna", descripcion:"Sopa de Lengua 200g", stockMin:3, stockMax:10, stock:4, prevCosto:12, costo:12 },
+            {code:"7501018310745", marca:"Moderna", descripcion:"Sopa de Almeja 200g", stockMin:3, stockMax:10, stock:5, prevCosto:12, costo:12 },
+            {code:"7501018310103", marca:"Moderna", descripcion:"Sopa de Spaghetti", stockMin:3, stockMax:6, stock:3, prevCosto:12, costo:12 },  
+        ], 
     },
     methods:{
         //Obtenemos la fecha actual
