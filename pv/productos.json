@@ -1,0 +1,5 @@
+[
+    {"marca":"Moderna", "descripcion":"Sopa de Lengua 200g", "stockMin":3, "stockMax":10, "stock":4,  "costo":12, "img": "" },
+    {"marca":"Moderna", "descripcion":"Sopa de Almeja 200g", "stockMin":3, "stockMax":10, "stock":5,  "costo":12, "img": "" },
+    {"marca":"Moderna", "descripcion":"Sopa de Spaghetti", "stockMin":3, "stockMax":6, "stock":3,  "costo":12, "img": "" } 
+]

@@ -1,31 +1,130 @@
+Vue.component('inicio',{
+    template: 
+    `
+    <div>
+            <v-main>
+                <v-container>
+                    <v-row>
+                        <v-col cols="12">
+                            <v-tabs 
+                                background-color="primary"
+                                centered
+                                dark
+                                icons-and-text    
+                            > 
+                                <v-tabs-slider color="yellow"></v-tabs-slider>
+                                <v-tab>
+                                    Despensa
+                                </v-tab>
+                                <v-tab>
+                                    Tickets
+                                </v-tab>
+                                <v-tab>
+                                    Compra
+                                </v-tab>
+                                <v-tab>
+                                    Productos
+                                </v-tab>
+        
+                                <v-tab-item>
+                                    <div d-flex flex-wrap flat>
+                                        <productos></productos>
+                                    </div>
+                                </v-tab-item>
+                                <v-tab-item>
+                                    <v-card flat>
+                                        <v-card-text><p>Tickes</p></v-card-text>
+                                    </v-card>
+                                </v-tab-item>
+                                <v-tab-item>
+                                    <v-card flat>
+                                        <v-card-text></v-card-text>
+                                    </v-card>
+                                </v-tab-item>
+                                <v-tab-item>
+                                    <v-card flat>
+                                        <tablaProductos></tablaProductos>
+                                        
+                                    </v-card>
+                                </v-tab-item>
+                            </v-tabs>
+                        </v-col>
+                    </v-row>
+                </v-container>
+            </v-main>
+    </div>
+    `
+})
 
+const store = new Vuex.Store({
+    state:{
+        numero: 10,
+        productos: [],
+       /* marca: "",
+        descripcion:"",
+        stockMin: "",
+        stockMax: "",
+        stock: "",
+        costo: ""*/
+        
+    },
+    mutations:{
+        llenarProductos(state, productosAccion ){
+            if(productosAccion === null){
+                state.productos = []
+            }else{
+                state.productos = productosAccion
+            }
+            
+            console.log(state.productos)
+            
+        },
+        agregarProducto(state, [marca, descripcion, stockMin, stockMax, precio]){
+            if(marca === null || descripcion === null || stockMin === null || stockMax === null || precio === null){
+                alert("Se requiere todos los campos")
+                
+            }else{
+                console.log(typeof(stockMin))
+                stockMin = parseInt(stockMin)
+                stockMax = parseInt(stockMax)
+                precio = parseFloat(precio)
+                console.log(typeof(stockMin))
+                state.productos.push({
+                    marca: marca,
+                    descripcion: descripcion,
+                    stockMin: stockMin,
+                    stockMax: stockMax,
+                    stock: 0,
+                    precio:precio
+                })
+                
+
+                let formAdd = document.getElementById('formAdd')
+                formAdd.style.display = "none"
+            }    
+        }
+    },
+    actions:{
+        obtenerProductos: async function({commit}){
+            const data = await JSON.parse(localStorage.getItem("dbLocal"));
+            console.log(data)
+            commit('llenarProductos', data)
+        }
+    },
+    
+})
 
 var app = new Vue({
     el: "#app",
+    store: store,
     vuetify: new Vuetify(),
-    data: {
-        headerAlm:['Marca', 'Descripcion', 'Stockmin', 'Stockmax', 'Precio'] ,
-        headers: [
-            {text:'Marca', value: 'marca'},
-            {text:'Descripcion', value:'descripcion'},
-            {text:'Stockmin', value:'stockMin'},
-            {text:'Stockmax', value:'stockMax'},
-            {text:'Stock', value:'stock'},
-            {text:'Precio', value:'costo'},
-        ],
-        myItems: [
-            {code:"7501018310233", marca:"Moderna", descripcion:"Sopa de Lengua 200g", stockMin:3, stockMax:10, stock:4, prevCosto:12, costo:12 },
-            {code:"7501018310745", marca:"Moderna", descripcion:"Sopa de Almeja 200g", stockMin:3, stockMax:10, stock:5, prevCosto:12, costo:12 },
-            {code:"7501018310103", marca:"Moderna", descripcion:"Sopa de Spaghetti", stockMin:3, stockMax:6, stock:3, prevCosto:12, costo:12 },  
-        ], 
-    },
+    
+    
     methods:{
-        //Obtenemos la fecha actual
-        fecha: function(){
-            var hoy = new Date();
-            var mes = hoy.getMonth();
-            console.log(mes);
-            var fecha;
+        obtenerFecha:function(){
+            //Obtenemos la fecha actual
+            let hoy = new Date();
+            let mes = hoy.getMonth();
             switch (mes) {
                 case 0:
                     mes = "Enero"
@@ -66,17 +165,29 @@ var app = new Vue({
                 default:
                     break;
             }   
-            console.log(mes)
-            return fecha = hoy.getDate()+' '+mes+' '+hoy.getFullYear();
+            //console.log(mes)
+            var fecha = hoy.getDate()+' '+mes+' '+hoy.getFullYear();
+            return fecha
         },
+        obtenerHora:function(){
+            //Obtenemos la fecha actual
+            let hoy = new Date();        
         //Obtenemos la hora
-        hora: function(){
-            var hoy = new Date();
             var hora = hoy.getHours()+':'+hoy.getMinutes();
-
-            return hora;
-        }
+            return hora
+        },
+        ...Vuex.mapActions(['obtenerProductos'])
     },
-    
+    computed:{
+        ...Vuex.mapState(['productos'])
+    },
+    created:function(){
+        
+        this.obtenerProductos()
+        
+
+        
+        
+    }
 })
 
