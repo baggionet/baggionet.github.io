@@ -3,8 +3,8 @@ Vue.component('tablaProductos',{
     `
         <div>
             <div class="mt-4 mb-5">
-                <button class="btn btn-primary" @click="displayForm">Agregar</button>
-                <v-card id="formAdd" class="oculto">
+                <button class="btn btn-primary" @click="displayForm">Agregar producto nuevo</button>
+                <v-card id="formAdd" class="d-none">
                     <v-card-title class="justify-content-center">Agregar producto nuevo</v-card-title>
                     <div class="input-group mb-1">
                         <span class="input-group-text">Marca</span>
@@ -16,15 +16,19 @@ Vue.component('tablaProductos',{
                     </div>
                     <div class="input-group mb-1">
                         <span class="input-group-text">Stock Minimo</span>
-                        <input type="text" class="form-control" placeholder="Stock Minimo" v-model="stockMin" required>
+                        <input type="number" class="form-control" placeholder="Stock Minimo" v-model="stockMin" required>
                     </div>
                     <div class="input-group mb-1">
                         <span class="input-group-text">Stock Maximo</span>
-                        <input type="text" class="form-control" placeholder="Stock Maximo" v-model="stockMax" required>
+                        <input type="number" class="form-control" placeholder="Stock Maximo" v-model="stockMax" required>
+                    </div>
+                    <div class="input-group mb-1">
+                        <span class="input-group-text">Stock</span>
+                        <input type="number" class="form-control" placeholder="Stock" v-model="stock" required>
                     </div>
                     <div class="input-group mb-1">
                         <span class="input-group-text">Costo</span>
-                        <input type="text" class="form-control" placeholder="Precio" v-model="precio" required>
+                        <input type="number" class="form-control" placeholder="Precio" v-model="precio" required>
                     </div>
                     <div class="input-group mt-3 justify-content-center">
                         <button class="btn btn-primary" @click="agregarProducto([marca, descripcion, stockMin, stockMax, precio])">Enviar</button>
@@ -52,11 +56,12 @@ Vue.component('tablaProductos',{
         ...Vuex.mapMutations(['agregarProducto']),
         displayForm:function(){
             let formAdd = document.getElementById('formAdd')
-            formAdd.style.display = "block"
+            formAdd.className = ""
                 this.marca = null,
                 this.descripcion = null,
                 this.stockMin= null,
                 this.stockMax= null,
+                this.stock= null,
                 this.precio = null
         },
     },

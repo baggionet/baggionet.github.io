@@ -60,12 +60,6 @@ const store = new Vuex.Store({
     state:{
         numero: 10,
         productos: [],
-       /* marca: "",
-        descripcion:"",
-        stockMin: "",
-        stockMax: "",
-        stock: "",
-        costo: ""*/
         
     },
     mutations:{
@@ -79,29 +73,48 @@ const store = new Vuex.Store({
             console.log(state.productos)
             
         },
-        agregarProducto(state, [marca, descripcion, stockMin, stockMax, precio]){
-            if(marca === null || descripcion === null || stockMin === null || stockMax === null || precio === null){
+        agregarProducto(state, [marca, descripcion, stockMin, stockMax, stock, precio]){
+            var idUp = state.productos.length;
+            console.log(idUp)
+            if(marca === null || descripcion === null || stockMin === null || stockMax === null || precio === null || stock === null){
                 alert("Se requiere todos los campos")
                 
             }else{
-                console.log(typeof(stockMin))
+                 
+                //console.log(typeof(stockMin))
                 stockMin = parseInt(stockMin)
                 stockMax = parseInt(stockMax)
+                stock = parseInt(stock)
                 precio = parseFloat(precio)
-                console.log(typeof(stockMin))
+                //console.log(typeof(stockMin))
                 state.productos.push({
+                    id: idUp,
                     marca: marca,
                     descripcion: descripcion,
                     stockMin: stockMin,
                     stockMax: stockMax,
-                    stock: 0,
+                    stock: stock,
                     precio:precio
                 })
                 
 
                 let formAdd = document.getElementById('formAdd')
-                formAdd.style.display = "none"
-            }    
+                formAdd.className = "d-none"
+            }   
+            localStorage.setItem('dbLocal', JSON.stringify(state.productos))
+        }, 
+        usado(state, id){
+            const myId = id;
+            console.log(myId)
+            if(state.productos[myId].stock <= 0){
+                alert("No tienes mas producto para usar")
+            }else{
+                state.productos[myId].stock--
+                localStorage.setItem('dbLocal', JSON.stringify(state.productos))
+            }
+            
+            console.log(state.productos[myId].stock)
+            console.log(state.productos[myId].descripcion)
         }
     },
     actions:{
