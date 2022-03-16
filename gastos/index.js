@@ -103,6 +103,15 @@ const app = new Vue({
                 this.gastos = dbGastos
                 console.log(this.gastos)
             }
+        },
+        resulTotal(){
+            let total = 0;
+            for (let index = 0; index < this.gastos.length; index++) {
+                total += total = parseFloat(this.gastos[index].gasto);
+                 
+                console.log(total)
+            }
+            return `$ ${total}`
         }
     },
 
