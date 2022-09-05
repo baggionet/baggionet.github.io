@@ -284,7 +284,7 @@ section{
     position: absolute;
     z-index: 2;
     left: 3.75rem;
-    top: 138.438rem;
+    top: 132.438rem;
     font-size: 18px;
     border-radius: 3.125rem;
     padding: 7px 20px;
@@ -296,7 +296,7 @@ section{
     position: absolute;
     z-index: 2;
     left: 3.75rem;
-    top: 162.1rem;
+    top: 154.8rem;
     font-size: 18px;
     border-radius: 3.125rem;
     padding: 7px 20px;
@@ -307,8 +307,8 @@ section{
 .tech-sub-item .tech-sub-item2 button {
     position: absolute;
     z-index: 2;
-    left: 30.5rem;
-    top: 162.1rem;
+    left: 31.5rem;
+    top: 154.8rem;
     font-size: 18px;
     border-radius: 3.125rem;
     padding: 7px 20px;
@@ -319,8 +319,8 @@ section{
 .tech-item1 button {
     position: absolute;
     z-index: 2;
-    right: 17rem;
-    top: 162.1rem;
+    right: 15.7rem;
+    top: 154.8rem;
     font-size: 18px;
     border-radius: 3.125rem;
     padding: 7px 20px;
