@@ -68,11 +68,12 @@ const app = new Vue({
             fecha = dia+' '+mes+' '+anno;
             return fecha
         },//end obtenerFecha
+        //Funcion para añadir un elemento
         addGasto(quincena){
             this.fechaActual()
+            //Validando que los campos no esten vacios
             if(this.descripcion === null || this.gasto === null ){
                 alert("Se requiere todos los campos")
-                
             }else{
             this.gastos.push({
                 fecha: this.fecha,

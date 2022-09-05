@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/FAVICON.png">
+    <title>R+B</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/indexMedia.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+<body style="border: 0; margin:0;">
+<div>
+    <div class="background-slider">
+        <!--div class="manto"></div-->
+        <img name="slider" src="img/BRAHAMAN.png">
+    </div>
+    
+    <div class="header">
+        <div class="super-head">
+            <div>
+                <div class="menu-movil" id="menu-movil">
+                    <span >
+                        <i id="burger" class="bi bi-list "></i><!--icono de burger-->
+                        <i id="close" class="bi bi-x-lg d-none"></i><!--icono de close-->
+                    </span>
+                    <div id="principal" class="menu-principal  d-none"><!--Menu principal movil-->
+                        <!--span>Menu</span-->
+                        <ul >
+                            <li>Inicio</li>
+                            <li> Productos</li>
+                            <li onclick="actProducts()">Programas de nutricion <i class="bi bi-arrow-bar-right" ></i></li>
+                            <li>Empresa</li>
+                        </ul>
+                    </div>
+                    <div id="products" class="products-movil d-none"><!--submenu productos movil-->
+                        <span class="return" onclick="backPrincipal()"><i class="bi bi-arrow-bar-left"></i>Regresar</span>
+                        <ul >
+                            <li><a href="#" class="link">HiPhos</a></li>
+                            <li><a href="#" class="link">BioHydra</a></li>
+                            <li><a href="#" class="link">Bioenergy</a></li>
+                            <li><a href="#" class="link">Tropiphos</a></li>
+                            <li><a href="#" class="link">Ganatec</a></li>
+                            <li><a href="#" class="link">Anionicas</a></li>
+                            <li><a href="#" class="link">Capture</a></li>
+                            <li><a href="#" class="link">D-Balance</a></li>
+                            <li><a href="#" class="link">Grasssuplex</a></li>
+                            <li><a href="#" class="link">BioMix</a></li>
+                            <li><a href="#" class="link">BaseMix Lechero</a></li>
+                            <li><a href="#" class="link">BaseMix Cerdos</a></li>
+                            <li><a href="#" class="link">Nifish</a></li>
+                            <li><a href="#" class="link">BaseMix Engorda</a></li>
+                            <li><a href="#" class="link">R+b Guard</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub-super-head">
+                    <span class="item-white ">contacto@rbnut.com</span> 
+                    <span class="item-white mx-4">800 123 45 56</span>
+                    <span class="item-blue">QUIERO DISTRIBUIR LOS PRODUCTOS</span>
+                </div>
+            </div>
+            <div class="linea-superior"></div>
+        </div>
+<!-- ****************** Logo con menu-->
+        <div class="menu">
+            <div class="logo">
+                <div class="five-points">
+                    <img src="img/puntos.png" alt="" >
+                </div>
+                <div class="sub-logo">
+                    <img src="img/logoR+B.png" >
+                </div>
+            </div>
+<!-- ****************** Menu ******************************-->
+            <div class="nav">
+                <ul class="dropdown desktop">
+                    <li>Inicio</li>
+                    <li class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        Productos
+                        <ul class="dropdown-menu products">
+                            <li><a href="#" class="link">HiPhos</a></li>
+                            <li><a href="#" class="link">BioHydra</a></li>
+                            <li><a href="#" class="link">Bioenergy</a></li>
+                            <li><a href="#" class="link">Tropiphos</a></li>
+                            <li><a href="#" class="link">Ganatec</a></li>
+                            <li><a href="#" class="link">Anionicas</a></li>
+                            <li><a href="#" class="link">Capture</a></li>
+                            <li><a href="#" class="link">D-Balance</a></li>
+                            <li><a href="#" class="link">Grasssuplex</a></li>
+                            <li><a href="#" class="link">BioMix</a></li>
+                            <li><a href="#" class="link">BaseMix Lechero</a></li>
+                            <li><a href="#" class="link">BaseMix Cerdos</a></li>
+                            <li><a href="#" class="link">Nifish</a></li>
+                            <li><a href="#" class="link">BaseMix Engorda</a></li>
+                            <li><a href="#" class="link">R+b Guard</a></li>
+                        </ul>
+                    </li>
+                    <li>Programas de nutricion</li>
+                    <li>Empresa</li>
+                    <!--li>Cotiza</li-->
+                </ul>
+                <button><a href="#">Cotiza</a></button>
+            </div>
+<!--  ************** Control de slaider ******************* -->
+            <div class="buttons-slider">
+                <div class="control-icon">
+                    <ul style="color:white; cursor: pointer;">
+                        <li id="0" onclick="selectSlider(id)"></li>
+                        <li id="1" onclick="selectSlider(id)"></li>
+                        <li id="2" onclick="selectSlider(id)"></li>
+                    </ul>
+                </div>
+                <div class="linea-vertical">
+                </div>
+                <div class="icons-slider">
+                    <ul>
+                        <li id="0" onclick="selectSlider(id)" ><img src="img/HOLSTEIN.png"></li>
+                        <li id="1" onclick="selectSlider(id)"><img src="img/ANGUS.png"></li>
+                        <li id="2" onclick="selectSlider(id)"><img src="img/BORREGO.png"></li>
+                        <li id="3" onclick="selectSlider(id)"><img src="img/CABRA.png"></li>
+                        <li id="4" onclick="selectSlider(id)"><img src="img/CERDO.png"></li>
+                        <li id="5" onclick="selectSlider(id)"><img src="img/CABALLO.png"></li>
+                    </ul>
+                </div>
+            </div>
+        </div><!--final de menu-->
+        <div class="whatsapp">
+            <a href="http://wa.me/524612259029" target="_blank">
+                <i class="bi bi-whatsapp" ></i>
+            </a>
+        </div>
+    </div><!-- fin Header-->
+    <section><!-- Inicia Section -->
+        <div class="company"><!-- Inicia Company -->
+            <div class="company-text">
+                <div class="title-text">
+                    <h6>NUESTRA EMPRESA </h6>
+                    <i class="bi bi-dash-lg"></i>
+                </div>
+                <p class="text-first">
+                   Desarrollamos productos <br>
+                   biotecnológicos de alto valor nutricional <br>
+                   para la alimentación y productividad <br>
+                   animal
+                </p>
+                <p class="text-second">
+                    Creamos procesos tecnológicos únicos para la elaboración de productos que
+                    aseguran homogeneidad a través de blindaje y acondicionamiento; que logran
+                    precisión en la formulación y aporte de nutrientes propuesto en la ración.
+                </p>
+                <button class="btn btn-primary" style="font-family: livemono;">Conocer mas</button>
+            </div>
+            <div class="company-img">
+                <img src="img/companyImg.png" alt="" srcset="">
+            </div>
+        </div><!-- Termina company -->
+        <div class="services"><!-- Inicia Services -->
+            <div class="sub-services">
+                <img src="img/MEZCLA_DE_MINERALES_1_.png" alt="" srcset="">
+                <h5>PREMEZCLAS MINERALES</h5>
+                <span>
+                    Creamos procesos tecnológicos únicos para la elaboración de productos que aseguran homogeneidad.
+                </span>
+            </div>
+            <div class="sub-services">
+                <img src="img/SOPORTE_TÉCNICO_1_.png" alt="" srcset="">
+                <h5>SOPORTE TÉCNICO</h5>
+                <span>
+                    Creamos procesos tegnológicos únicos para la elaboración de productos que aseguran homogeneidad.
+                </span>
+            </div>
+            <div class="sub-services">
+                <img src="img/Frame.png" alt="" srcset="">
+                <h5>FORMULACIÓN</h5>
+                <span>
+                    Creamos procesos tegnológicos únicos para la elaboración de productos que aseguran homogeneidad.
+                </span>
+            </div>
+        </div><!-- Termina Services -->
+        <div class="technology"><!-- Inicio technology -->
+                <div class="title">
+                    <h6>TECNOLOGÍA </h6>
+                    <i class="bi bi-dash-lg"></i>
+                </div>
+                <div class="sub-technology">
+                    <div class="tech-item">
+                        <div class="tech-sub-item">
+                            <img src="img/bioEnergy.png" >
+                            <button  type="button" class="btn btn-light">
+                                <a href="#" style="text-decoration: none; color: black;">Conocer Más</a>
+                            </button>
+                        </div>
+                        <div class="tech-sub-item">
+                            <div class="tech-sub-item1">
+                                <img src="img/hiPhos.png" >
+                                <button  type="button" class="btn btn-light">
+                                    <a href="#" style="text-decoration: none; color: black;">Conocer Más</a>
+                                </button>
+                            </div>
+                            <div class="tech-sub-item2">
+                                <img src="img/bioHydra.png" >
+                                <button  type="button" class="btn btn-light">
+                                    <a href="#" style="text-decoration: none; color: black;">Conocer Más</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tech-item1">
+                        <img src="img/tropiPhos.png" >
+                        <button  type="button" class="btn btn-light">
+                            <a href="#" style="text-decoration: none; color: black;">Conocer Más</a>
+                        </button>
+                    </div>
+                </div>
+        </div><!-- Termina technology -->
+        <div class="presence"><!-- Inicia Presencia -->
+            <div class="title">
+                <h6>PRESENCIA </h6>
+                <i class="bi bi-dash-lg"></i>
+            </div>
+            <div class="mapa">
+                <img src="img/mapa.png" >
+            </div>
+            <div class="points-up">
+                <div class="items-point1">
+                    <img id="marker1" src="img/point1.png" alt="" class="markers" onclick="pointMap(id)">
+                </div>
+                <div class="items-point2">
+                    <img id="marker2" src="img/point4.png" alt="" class="markers" onclick="pointMap(id)">
+                </div>
+                <div class="address d-none" id="addr1">
+                    <span>SONORA</span>
+                    <ul>
+                        <li>Teléfono</li>
+                        <li>52 654 02 14</li>
+                        <li>Mail</li>
+                        <li>sonora@rbnut.com</li>
+                    </ul>
+                </div>
+                <div class="address" id="addr2">
+                    <span>TAMAULIPAS</span>
+                    <ul>
+                        <li>Teléfono</li>
+                        <li>52 735 37 71</li>
+                        <li>Mail</li>
+                        <li>tamaulipas@rbnut.com</li>
+                    </ul>
+                </div>
+                <div class="address d-none" id="addr3">
+                    <span>QUERETARO</span>
+                    <ul>
+                        <li>Teléfono</li>
+                        <li>52 457 87 98</li>
+                        <li>Mail</li>
+                        <li>queretaro@rbnut.com</li>
+                    </ul>
+                </div>
+                <div class="address d-none" id="addr4">
+                    <span>CDMX</span>
+                    <ul>
+                        <li>Teléfono</li>
+                        <li>52 785 98 36</li>
+                        <li>Mail</li>
+                        <li>cdmx@rbnut.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pointsdown">
+                <div class="pointsdown-item1">
+                    <img id="marker3" src="img/point1.png" alt="" class="markers" onclick="pointMap(id)">
+                </div>
+                <div class="pointsdown-item2">
+                    <img id="marker4" src="img/point1.png" alt="" class="markers" onclick="pointMap(id)">
+                </div>
+            </div>
+        </div><!-- Termina Presencia -->
+        <div class="news-nutrition"><!-- Inicia Noticis de nutricion -->
+            <div class="title">
+                <h6>NOTICIAS DE NUTRICIÓN </h6>
+                <i class="bi bi-dash-lg"></i>
+            </div>
+            <div class="news-items">
+                <div class="news-item">
+                    <img src="img/Maskgroup.png" alt="">
+                    <h3>¿Por qué utilizar HiPhos vitaminado?</h3>
+                    <ul class="details">
+                        <li class="gray-color">Escrito por </li>
+                        <li class="orange-color">Staff</li>
+                        <li class="gray-color2">Publicada el </li>
+                        <li class="black-color">9. 6. 2022</li>
+                    </ul>
+                </div>
+                <div class="news-item">
+                    <img src="img/Maskgroup-2.png" alt="">
+                    <h3>Visita a Rancho Los Eladios</h3>
+                    <ul class="details">
+                        <li class="gray-color">Escrito por </li>
+                        <li class="orange-color">Staff</li>
+                        <li class="gray-color2">Publicada el </li>
+                        <li class="black-color">9. 6. 2022</li>
+                    </ul>
+                </div>
+                <div class="news-item">
+                    <img src="img/Maskgroup-1.png" alt="">
+                    <h3>Nos vemos en Fonaholstein 2022</h3>
+                    <ul class="details">
+                        <li class="gray-color">Escrito por </li>
+                        <li class="orange-color">Staff</li>
+                        <li class="gray-color2">Publicada el </li>
+                        <li class="black-color">9. 6. 2022</li>
+                    </ul>
+                </div>
+            </div>
+        </div><!-- Termina Noticias de nutricion -->
+    </section><!-- Termina Section -->
+    <footer><!-- Inicia Footer -->
+        <div class="sub-footer1">
+            <div class="footer-text1">
+                <p>05</p>
+                <p>Contáctanos</p>
+            </div>
+            <div class="footer-text2">
+                <p>Más cerca que nunca. Escríbenos.</p>
+                <p class="text2-item">
+                    Estamos a un click de distancia y listos para ayudarte a generar ganacias sorprendentes.
+                </p>
+                <span>
+                    contacto@rbnut.com
+                </span>
+            </div>
+            <div class="form">
+                <form  action="" method="">
+                    <div class="group-input">
+                        <input name="nombre" type="text" style="width:49%" placeholder="Nombre">
+                        <input name="email" type="email" style="width:49.5%" placeholder="Email">
+                    </div>
+                    <div class="group-input" >
+                        <input name="telefono" type="text" style="width:100%" placeholder="Teléfono">
+                    </div>
+                    <div class="group-input">
+                        <textarea name="mensaje" id="" cols="30" rows="7" style="width:100%" placeholder="Mensaje"></textarea>
+                    </div>
+                    <button class="btn btn-dark" type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+        <div class="sub-footer2">
+            <div class="item-img">
+                <img src="img/logoR+B.png" alt="">
+            </div>
+            <div class="item-ul1">
+                <ul>
+                    <li style="font-family: PoppinsBold;"> PRODUCTOS </li>
+                    <li>Bovino Lechero</li>
+                    <li>Bovino Engorda</li>
+                    <li>Ovicaprino</li>
+                    <li>Cerdos</li>
+                    <li>Aves</li>
+                </ul>
+            </div>
+            <div class="item-ul2">
+                <ul>
+                    <li style="font-family: PoppinsBold;">EMPRESA</li>
+                    <li><a class="link" href="nosotros.html">Nosotros</a></li>
+                    <li>Programas</li>
+                    <li>Contacto</li>
+                    <li>Hablar con asesor</li>
+                </ul>
+            </div>
+        </div>
+    </footer><!-- Inicia Footer -->
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<script src="js/index.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

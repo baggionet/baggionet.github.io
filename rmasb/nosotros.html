@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/FAVICON.png">
+    <title>R+B</title>
+    <link rel="stylesheet" href="css/nosotros.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+<body style="border: 0; margin:0;">
+<div>
+    <div style="background: black; position: absolute;
+    z-index: -1; width:100%; height:755px;">
+        <!--div class="manto"></div-->
+        <img  src="img/Nosotros.png"  width="100%" height="747">
+    </div>
+    
+    <div class="header">
+        <!--div class="super-head">
+            <div class="sub-super-head">
+                <span class="item-white ">contacto@rbnut.com</span> 
+                <span class="item-white mx-4">800 123 45 56</span>
+                <span class="item-blue">QUIERO DISTRIBUIR LOS PRODUCTOS</span>
+            </div>
+            <div class="linea-superior"></div>
+        </div -->
+<!-- ****************** Logo con menu-->
+        <div class="menu">
+            <div class="logo">
+                <div class="five-points">
+                    <img src="img/puntos.png" alt="" >
+                </div>
+                <div class="sub-logo">
+                    <img src="img/logoR+B.png" >
+                </div>
+            </div>
+<!-- ****************** Menu ******************************-->
+            <div class="nav">
+                <ul>
+                    <li><a class="link" href="index.html">Inicio</a></li>
+                    <li>Acerca de R+B</li>
+                    <li>Programas de nutricion</li>
+                    <li>Productos</li>
+                </ul>
+                <button><a href="#">Cotiza</a></button>
+                <div class="toggle">
+                    <img onclick="toggleChange()" id="toggle" src="img/toggleEn.png" alt="">
+                </div>
+            </div>
+        </div><!--final de menu-->
+        <!--  ************** Control de slaider ******************* -->
+        <div class="buttons-slider">
+            <div class="control-icon">
+                <ul style="color:white; cursor: pointer;">
+                    <li id="0" onclick="selectSlider(id)"></li>
+                    <li id="1" onclick="selectSlider(id)"></li>
+                    <li id="2" onclick="selectSlider(id)"></li>
+                    <li id="3" onclick="selectSlider(id)"></li>
+                </ul>
+            </div>
+            <div class="linea-vertical">
+            </div>
+            <div class="icons-slider">
+                <ul>
+                    <li id="0" onclick="selectSlider(id)" ><img src="img/HOLSTEIN.png"></li>
+                    <li id="1" onclick="selectSlider(id)"><img src="img/ANGUS.png"></li>
+                    <li id="2" onclick="selectSlider(id)"><img src="img/BORREGO.png"></li>
+                    <li id="3" onclick="selectSlider(id)"><img src="img/CABRA.png"></li>
+                    <li id="4" onclick="selectSlider(id)"><img src="img/CERDO.png"></li>
+                    <li id="5" onclick="selectSlider(id)"><img src="img/CABALLO.png"></li>
+                </ul>
+            </div>
+        </div>
+    </div><!-- fin Header-->
+    <section><!-- Inicia Section -->
+
+
+    </section><!-- Termina Section -->
+    <footer><!-- Inicia Footer -->
+        <div class="sub-footer1">
+            <div class="footer-text1">
+                <p>05</p>
+                <p>Contáctanos</p>
+            </div>
+            <div class="footer-text2">
+                <p>Más cerca que nunca. Escríbenos.</p>
+                <p class="text2-item">
+                    Estamos a un click de distancia y listos para ayudarte a generar ganacias sorprendentes.
+                </p>
+                <span>
+                    contacto@rbnut.com
+                </span>
+            </div>
+            <div class="form">
+                <form  action="" method="">
+                    <div class="group-input">
+                        <input name="nombre" type="text" style="width:49%" placeholder="Nombre">
+                        <input name="email" type="email" style="width:49.5%" placeholder="Email">
+                    </div>
+                    <div class="group-input" >
+                        <input name="telefono" type="text" style="width:100%" placeholder="Teléfono">
+                    </div>
+                    <div class="group-input">
+                        <textarea name="mensaje" id="" cols="30" rows="7" style="width:100%" placeholder="Mensaje"></textarea>
+                    </div>
+                    <button class="btn btn-dark" type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+        <div class="sub-footer2">
+            <div class="item-img">
+                <img src="img/logoR+B.png" alt="">
+            </div>
+            <div class="item-ul1">
+                <ul>
+                    <li style="font-family: PoppinsBold;"> PRODUCTOS </li>
+                    <li>Bovino Lechero</li>
+                    <li>Bovino Engorda</li>
+                    <li>Ovicaprino</li>
+                    <li>Cerdos</li>
+                    <li>Aves</li>
+                </ul>
+            </div>
+            <div class="item-ul2">
+                <ul>
+                    <li style="font-family: PoppinsBold;">EMPRESA</li>
+                    <li>Nosotros</li>
+                    <li>Programas</li>
+                    <li>Contacto</li>
+                    <li>Hablar con asesor</li>
+                </ul>
+            </div>
+        </div>
+    </footer><!-- Inicia Footer -->
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
