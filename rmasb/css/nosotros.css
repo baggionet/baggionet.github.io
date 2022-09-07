@@ -90,6 +90,9 @@
 }.nav ul li .products{
     padding-left: 1rem;
     background-color: #00A6E3;
+    padding-right: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .nav ul li .products li{
     display: block;
