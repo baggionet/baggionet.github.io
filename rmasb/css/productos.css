@@ -1,0 +1,287 @@
+section{
+    background-color: #F5F5F5;
+}
+.ficha{
+    padding-left: 8.6%;
+    padding-bottom: 6.625rem;
+}
+.ficha .title-text{
+    font-family: livemono;
+    font-size: 1.125rem;
+    color: #1AA2DD;
+}
+.ficha .ficha-content{
+    display: flex;
+}
+/*columna 1*/
+.ficha-content .column1{
+    margin-top: 7.5rem;
+}
+.ficha-content .column1 ul{
+    list-style: none;
+}
+.ficha-content .column1 ul li:first-child{
+    margin-bottom: 4.25rem;
+}
+.ficha-content .column1 ul li:last-child{
+    margin-top: 7.063rem;
+}
+.ficha-content .column2{
+    margin-left: 4.188rem;
+    margin-right: 6.688rem;
+}
+/*columna 3*/
+.ficha-content .column3{
+    margin-top: 7.5rem;
+    padding-right: 15%;
+}
+.ficha-content .column3 ul{
+    list-style: none;
+}
+.ficha-content .column3 ul li:first-child{
+    margin-bottom: 4.25rem;
+}
+.ficha-content .column3 ul li:last-child{
+    margin-top: 7.063rem;
+}
+/*------- our-company -------*/
+.our-company{
+    display: flex;
+    margin-left: 8%;
+    margin-right: 6.5%;
+    padding-bottom: 7.563rem;
+}
+.our-company .title-text{
+    font-family: livemono;
+    font-size: 1.125rem;
+    color: #1AA2DD;
+    margin-top:3.875rem ;
+    margin-bottom: 6.875rem;
+}
+.our-company .title-text h6{
+    display: inline-block;
+}
+.our-text{
+    padding-right: 19%;
+}
+.our-text p:first-child{
+    font-size: 2.375rem;
+    font-weight: bold;
+    margin-bottom: 3.125rem;
+}
+.our-text p:last-child{
+    font-family: livemono;
+    font-size: 1rem;
+    margin-bottom: 5rem;
+    color: #777C83;
+}
+.our-company button{
+    padding: 0.906rem 4rem;
+    background-color: #1AA2DD;
+    color: #FFFFFF;
+}
+/* ---------  dosis ----------- */
+.dosis{
+    padding-left:7.125rem ;
+    padding-right: 9.875rem;
+    padding-bottom: 11.25rem;
+}
+.dosis .dosis-title{
+    font-family: livemono;
+    font-size: 1.764rem;
+    color: #FFFFFF;
+    background-color: #1AA2DD;
+    width: 17.75rem;
+    height: 2.875rem;
+    padding-top: 6px;
+    padding-left: 38px;
+}
+.dosis .data-sheet{
+    display: flex;
+    background-color: #FFFFFF;
+    padding-top: 35px;
+    padding-bottom: 16px;
+}
+.dosis .data-sheet .data-sheet-item{
+    border-right: solid black 1px;
+    width: 25%;
+    padding-left:31px ;
+    padding-top: 29px;
+    padding-bottom: 45px;
+    vertical-align: middle;
+}
+.dosis .data-sheet .data-sheet-item p:first-child{
+    font-size: 1rem;
+    margin-bottom: 0;
+    font-family: Akzidenz-Grotesk BQBold;
+}
+.dosis .data-sheet .data-sheet-item p:last-child{
+    font-size: 1rem;
+    margin-bottom: 0;
+    font-family: Akzidenz-Grotesk BQ;
+}
+.dosis .data-sheet .data-sheet-buttom{
+    padding-left: 2.25rem;
+    padding-top: 1.938rem;
+}
+.dosis .data-sheet .data-sheet-buttom buttom{
+    font-size: 1rem;
+    font-family: Akzidenz-Grotesk BQBold;
+    background-color: #16284F;
+    color: #FFFFFF;
+    padding-left: 1.531rem;
+    padding-right: 1.531rem;
+    padding-top: 0.719rem;
+    padding-bottom: 0.719rem;
+}
+/* --------- form-sheet ------------ */
+.form-sheet {
+}
+.form-sheet .form{
+    box-shadow:1px 1px 7px gray;
+    position: absolute;
+    margin-top: -610px;
+    margin-left: 160px;
+    display: flex;
+    width: 83.6%;
+    border-radius: 30px;
+}
+.form-sheet .form .item-form{
+    width: 64.5%;
+    background-color: #FFFFFF;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    padding-top: 52px;
+    padding-left: 70px;
+}
+.form-sheet .form .item-form h2{
+    color: #1AA2DD ;
+    font-size: 30px;
+    margin-bottom: 39px;
+}
+.form-sheet .form .item-img{
+    width: 35.5%;
+    background-color: #EEEEEE;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+}
+.form-group1{
+    width: 242px;
+    margin-right: 40px;
+}
+.form-group2{
+    width: 305px;
+}
+.group label{
+    display: block;
+    font-size: 15px;
+}
+.group input{
+    width: 100%;
+    border-bottom: solid black 1px;
+    outline: none;
+    font-size: 15px;
+    font-family: Inter;
+    color: #D7D7D7;
+    border-width: 0 0 1px 0;
+    padding-top: 35px;
+    margin-bottom: 21px;
+}
+.item-form form button{
+    width: 305px;
+    margin-top: 49px;
+    margin-right: 68px;
+    margin-bottom: 3.625rem;
+    background-color: #1AA2DD;
+    color: white;
+    border-color:#1AA2DD;
+}
+.item-img img{
+    padding-top: 20px;
+}
+/* --------- css para ganatec ------------ */
+.ficha .ficha-content-ganatec{
+    display: flex;
+}
+/*columna 1*/
+.ficha-content-ganatec .column1{
+    margin-top: 2.5rem;
+}
+.ficha-content-ganatec .column1 ul{
+    list-style: none;
+}
+.ficha-content-ganatec .column1 ul li{
+    margin-bottom: 4.25rem;
+}
+/*columna 2*/
+.ficha-content-ganatec .column2{
+    margin-left: 4.188rem;
+    margin-right: 6.688rem;
+}
+/*columna 3*/
+.ficha-content-ganatec .column3{
+    margin-top: 2rem;
+    padding-right: 15%;
+}
+.ficha-content-ganatec .column3 ul{
+    list-style: none;
+}
+.ficha-content-ganatec .column3 ul li{
+    margin-bottom: 3rem;
+}
+.dosis .dosis-title-ganatec{
+    font-family: livemono;
+    font-size: 1.764rem;
+    color: #FFFFFF;
+    background-color: #FF6C00;
+    width: 17.75rem;
+    height: 2.875rem;
+    padding-top: 6px;
+    padding-left: 38px;
+}
+/* -------------- css para BioHidra -------------------*/
+.ficha-biohydra{
+    padding-left: 8.6%;
+    padding-bottom: 3.625rem;
+}
+.ficha-biohydra .title-text{
+    font-family: livemono;
+    font-size: 1.125rem;
+    color: #1AA2DD;
+}
+.ficha-biohydra .ficha-content-biohydra{
+    display: flex;
+}
+/*columna 1*/
+.ficha-content-biohydra .column1{
+    margin-top: 7.5rem;
+    width: 332px;
+}
+.ficha-content-biohydra .column1 ul{
+    list-style: none;
+    padding-left: 0;
+}
+.ficha-content-biohydra .column1 ul li:first-child{
+    margin-bottom: 4.25rem;
+}
+.ficha-content-biohydra .column1 ul li:last-child{
+    margin-top: 4.25rem;
+}
+.ficha-content-biohydra .column2{
+    margin-top:8rem ;
+}
+/*columna 3*/
+.ficha-content-biohydra .column3{
+    margin-top: 9.813rem;
+    padding-right: 15%;
+}
+.ficha-content-biohydra .column3 ul{
+    list-style: none;
+    padding-left: 0;
+    width: 264px;
+}
+.ficha-content-biohydra .column3 ul li:first-child{
+}
+.ficha-content-biohydra .column3 ul li:last-child{
+    margin-top: 7.063rem;
+}

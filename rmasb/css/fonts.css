@@ -1,24 +1,24 @@
 @font-face {
     font-family: livemono;
-    src: url(/fonts/Livemono.otf);
+    src: url(../fonts/Livemono.otf);
 }
 @font-face {
     font-family: Akzidenz-Grotesk BQ;
-    src: url(/fonts/AkzidenzGroteskBQ-Reg.woff);
+    src: url(../fonts/AkzidenzGroteskBQ-Reg.woff);
 }
 @font-face {
     font-family: Akzidenz-Grotesk BQBold;
-    src: url(/fonts/AkzidenzGroteskBQ-Bold.woff);
+    src: url(../fonts/AkzidenzGroteskBQ-Bold.woff);
 }
 @font-face {
     font-family: Helvetica;
-    src: url(/fonts/Helvetica.ttf);
+    src: url(../fonts/Helvetica.ttf);
 }
 @font-face {
     font-family: Inter;
-    src: url(/fonts/Inter-Regular.woff);
+    src: url(../fonts/Inter-Regular.woff);
 }
 @font-face {
     font-family: PoppinsBold;
-    src: url(/fonts/Poppins-Bold.woff);
+    src: url(../fonts/Poppins-Bold.woff);
 }

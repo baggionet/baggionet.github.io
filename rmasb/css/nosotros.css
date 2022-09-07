@@ -6,6 +6,17 @@
 .link:hover{
     color: white;
 }
+.background-slider{
+    background: black; 
+    position: absolute;
+    z-index: -1; 
+    width:100%; 
+    height:747px;
+}
+.background-slider img{
+    width:100%; 
+    height:100%;
+}
 .sub-super-head{
     font-family: livemono;
     display: flex !important;
@@ -13,6 +24,9 @@
     padding-right: 3.7em;
     padding-top: 11px;
     padding-bottom: 15px;
+}
+.header{
+    padding-bottom: 10.1rem;
 }
 .item-white{
     color: white;
@@ -74,11 +88,15 @@
 .nav ul li:hover{
     border-bottom: 6px solid #1BA6E3;
 }.nav ul li .products{
-    padding-left: 0px;
+    padding-left: 1rem;
+    background-color: #00A6E3;
 }
 .nav ul li .products li{
     display: block;
     padding: 0;
+}
+.nav ul li .products li:hover{
+    border-bottom: 6px solid white;
 }
 .nav button{
     color: white;
@@ -103,7 +121,6 @@
     display: flex;
     justify-content: flex-end;
     margin-right: 10px;
-    padding-top: 22px;
 }
 .control-icon{
     color:white; 
@@ -115,7 +132,7 @@
 }
 .linea-vertical{
     border-left:white solid 1px;
-    height:31.5em; 
+    height:29.763rem; 
     margin-right: 18px;
 }
 .icons-slider ul {
@@ -149,7 +166,88 @@
 }
 /*  ---------------------------  section  -------------------------------------- */
 section{
-    padding-top: 9.625rem;
+    padding-top: 8.25rem;
+}
+/* ----------------------------- R+B   ----------------------------------------*/
+.RplusB{
+    padding-left: 5.0rem;
+    padding-bottom: 7.7%;
+}
+.RplusB .title-text{
+    height:2.625rem;
+}
+.RplusB .title-text h6{
+    font-family: livemono;
+    font-weight:900;
+    display: inline-block;
+    font-size: 18px;
+    color: #1AA2DD;
+    font-weight: bold;
+}
+.RplusB .title-text i{
+    font-size: 45px;
+    color: #1AA2DD;
+    margin-left: 1rem;
+    vertical-align: middle;
+    
+}
+.RplusB .rplusb-text{
+    margin-top: 3.188rem;
+}
+.text-item1{
+    color: #1D1E3C;
+    width: 90%;
+    font-family: Akzidenz-Grotesk BQBold;
+    font-size: 2.375rem;
+    letter-spacing: -2px;
+    line-height: 1;
+    padding-bottom: 4.188rem;
+}
+.text-item2{
+    letter-spacing: 0.5px;
+    font-family: livemono;
+    color: #777C83;
+    width: 97%;
+    font-size:1rem;
+}
+.sub-rplusb img{
+  padding-right: 4.9%;
+  width: 100%;  
+}
+.RplusB-nosotros{
+    padding-bottom: 7rem;
+}
+ .mision, .vision{
+    color: #FFFFFF;
+    width: 65%;
+    padding-top: 6.5%;
+    padding-left: 4.3%;
+    padding-bottom: 6%;
+    height: 360px;
+}
+.sustentabilidad, .presencia{
+    color: #FFFFFF;
+    width: 35%;
+    padding-top: 6.5%;
+    padding-left: 3.05%;
+    padding-bottom: 6%;
+    height: 360px;
+}
+.mision .item1, .vision .item1, .sustentabilidad .item1, .presencia .item1{
+    font-family: livemono;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.mision .item2, .vision .item2, .sustentabilidad .item2, .presencia .item2{
+    font-family: Akzidenz-Grotesk BQBold;
+    font-size: 2.375rem;
+    margin-bottom: 0;
+}
+.mision .item3, .vision .item3, .sustentabilidad .item3, .presencia .item3{
+    font-family: Akzidenz-Grotesk BQ;
+    font-size: 1rem;
+    margin-bottom: 0;
 }
 
 /* ----------------------------- Footer------------------------------------------ */
@@ -253,12 +351,3 @@ footer .sub-footer2 ul li{
 .item-ul1{
     width: 21.5%;
 }
-
-
-/*w=1440.26 tech-sub-item1
-  h= 720  
-  top: 134.438rem;
-  539
-  271
-      margin-right: 14px;
-    margin-left: 301px;*/
