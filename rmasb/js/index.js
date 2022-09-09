@@ -2,9 +2,9 @@ window.addEventListener('load', function() {
     console.log('CARGADOS')
     //Array que contendra las imagenes
     var images = [];
-    images[0] = 'img/BRAHAMAN.png';
-    images[1] = 'img/Hoistein.png';
-    images[2] = 'img/Granjero.png';
+    images[0] = 'img/BRAHAMAN.webp';
+    images[1] = 'img/Hoistein.webp';
+    images[2] = 'img/Granjero.webp';
     //INdeximg tendra el valos de la imagen
     var indeximg = 0;
     //contendra el tiempo en que cambiaran las imagenes
@@ -16,7 +16,6 @@ window.addEventListener('load', function() {
         //console.log(boxImg)
         //boxImg.style.backgroundImage = "url("+ images[indeximg] + ")";
         slider.src = images[indeximg]
-        console.log(images[indeximg])
         if (indeximg < 2) {
             indeximg++;
         }else{
@@ -28,11 +27,10 @@ window.addEventListener('load', function() {
 function selectSlider(id) {
     var indexIcons = id;
     var iconos = [];
-    iconos[0] = 'img/BRAHAMAN.png';
-    iconos[1] = 'img/Hoistein.png';
-    iconos[2] = 'img/Granjero.png';
+    iconos[0] = 'img/BRAHAMAN.webp';
+    iconos[1] = 'img/Hoistein.webp';
+    iconos[2] = 'img/Granjero.webp';
     slider.src = iconos[indexIcons]
-    console.log(iconos[indexIcons])
 }
 //Funcion que pondra a todos los points en amarillos y escondera los recuadros de informacion 
 function loopArray(TheArray1, valor1, TheArray2, valor2){
@@ -40,9 +38,7 @@ function loopArray(TheArray1, valor1, TheArray2, valor2){
         TheArray1[index].src = valor1;
     }
     for (let index = 0; index < TheArray2.length; index++) {
-        console.log(TheArray2[index].src = valor2)
         TheArray2[index].className = valor2;
-        
     }
 }
 //funcion que activa el point seleccionado y habilita su cuadro de informacion

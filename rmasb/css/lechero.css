@@ -1,0 +1,102 @@
+section{
+    background-color: #F5F5F5;
+}
+.program{
+    display: flex;
+    margin-left: 6.5%;
+    margin-right: 1.1%;
+    padding-bottom: 2.5rem;
+}
+.program .title-text{
+    font-family: livemono;
+    font-size: 1.125rem;
+    color: #1AA2DD;
+    margin-top:2.938rem ;
+    margin-bottom: 2.25rem;
+}
+.program .title-text h6{
+    display: inline-block;
+}
+.program-text{
+    padding-right: 14%;
+}
+.program-text p:first-child{
+    font-family: Akzidenz-Grotesk BQBold;
+    font-size: 2.375rem;
+    margin-bottom: 2.2rem;
+}
+.program-text p:last-child{
+    font-family: livemonoRegular;
+    font-size: 1rem;
+    margin-bottom: 2.4rem;
+    color: #777C83;
+    letter-spacing: -1px;
+}
+.program button{
+    font-family: RobotikasemiBold;
+    padding: 1rem 4rem;
+    background-color: #1AA2DD;
+    color: #FFFFFF;
+    border-radius: 50px;
+}
+.periodo{
+    font-family: livemonoBold;
+    padding-left: 5.375rem;
+    padding-top: 9.188rem;
+    color: #1AA2DD;
+    font-size: 1.125rem;
+}
+.periodo ul:first-child{
+    list-style: none;
+    width: 30.25rem;
+    margin-right: 7.375rem;
+}
+.sub-periodo{
+    margin-bottom: 3.125rem;
+    border-bottom: solid 1px #1AA2DD;
+}
+.sub-periodo-titulo{
+    margin-bottom: 2.063rem;
+}
+.sub-periodo-black{
+    font-family: Akzidenz-Grotesk BQBold;
+    font-size: 1.875rem;
+    margin-bottom: 3.125rem;
+    color: black;
+    border-bottom: solid 1px #1AA2DD;
+}
+.periodo ul:last-child{
+    list-style: none;
+}
+.sub-recomendacion{
+    margin-bottom: 6.313rem;
+}
+.sub-recomendacion-img img{
+    margin-right: 7.125rem;
+    margin-bottom: 2.5rem;
+}
+.objetivos{
+    padding-top: 12.063rem;
+    padding-left: 6.85%;
+    padding-right: 4%;
+    padding-bottom: 9.5rem;
+    display: flex;
+}
+.objetivos-item1{
+    width: 43%;
+    padding-right: 125px;
+}
+.objetivos-item1 p:first-child{
+    font-family: Akzidenz-Grotesk BQBold;
+    color: #1D1E3C;
+    font-size: 2.375rem;
+    line-height: 1;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+}
+.objetivos-item1 p:last-child{
+    font-family: livemonoRegular;
+    color: #777C83;
+    font-size: 1rem;
+    line-height: 1.4;
+}

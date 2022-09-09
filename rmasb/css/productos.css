@@ -6,11 +6,12 @@ section{
     padding-bottom: 6.625rem;
 }
 .ficha .title-text{
-    font-family: livemono;
+    font-family: livemonoBold;
     font-size: 1.125rem;
     color: #1AA2DD;
 }
 .ficha .ficha-content{
+    font-family: Akzidenz-Grotesk BQ;
     display: flex;
 }
 /*columna 1*/
@@ -26,6 +27,7 @@ section{
 .ficha-content .column1 ul li:last-child{
     margin-top: 7.063rem;
 }
+/*columna */
 .ficha-content .column2{
     margin-left: 4.188rem;
     margin-right: 6.688rem;
@@ -52,7 +54,7 @@ section{
     padding-bottom: 7.563rem;
 }
 .our-company .title-text{
-    font-family: livemono;
+    font-family: livemonoBold;
     font-size: 1.125rem;
     color: #1AA2DD;
     margin-top:3.875rem ;
@@ -65,17 +67,19 @@ section{
     padding-right: 19%;
 }
 .our-text p:first-child{
+    font-family: RobotikaBold;
     font-size: 2.375rem;
     font-weight: bold;
     margin-bottom: 3.125rem;
 }
 .our-text p:last-child{
-    font-family: livemono;
+    font-family: livemonoRegular;
     font-size: 1rem;
     margin-bottom: 5rem;
     color: #777C83;
 }
 .our-company button{
+    font-family: RobotikasemiBold;
     padding: 0.906rem 4rem;
     background-color: #1AA2DD;
     color: #FFFFFF;
@@ -87,7 +91,7 @@ section{
     padding-bottom: 11.25rem;
 }
 .dosis .dosis-title{
-    font-family: livemono;
+    font-family: livemonoMedium;
     font-size: 1.764rem;
     color: #FFFFFF;
     background-color: #1AA2DD;
@@ -135,8 +139,7 @@ section{
     padding-bottom: 0.719rem;
 }
 /* --------- form-sheet ------------ */
-.form-sheet {
-}
+
 .form-sheet .form{
     box-shadow:1px 1px 7px gray;
     position: absolute;
@@ -155,6 +158,7 @@ section{
     padding-left: 70px;
 }
 .form-sheet .form .item-form h2{
+    font-family: RobotikaBold;
     color: #1AA2DD ;
     font-size: 30px;
     margin-bottom: 39px;
@@ -173,21 +177,23 @@ section{
     width: 305px;
 }
 .group label{
+    font-family: Akzidenz-Grotesk BQ;
     display: block;
     font-size: 15px;
 }
 .group input{
+    font-family: Akzidenz-Grotesk BQ;
     width: 100%;
     border-bottom: solid black 1px;
     outline: none;
     font-size: 15px;
-    font-family: Inter;
     color: #D7D7D7;
     border-width: 0 0 1px 0;
     padding-top: 35px;
     margin-bottom: 21px;
 }
 .item-form form button{
+    font-family: Akzidenz-Grotesk BQBold;
     width: 305px;
     margin-top: 49px;
     margin-right: 68px;
@@ -201,6 +207,7 @@ section{
 }
 /* --------- css para ganatec ------------ */
 .ficha .ficha-content-ganatec{
+    font-family: Akzidenz-Grotesk BQ;
     display: flex;
 }
 /*columna 1*/
@@ -230,7 +237,7 @@ section{
     margin-bottom: 3rem;
 }
 .dosis .dosis-title-ganatec{
-    font-family: livemono;
+    font-family: livemonoMedium;
     font-size: 1.764rem;
     color: #FFFFFF;
     background-color: #FF6C00;
@@ -245,11 +252,12 @@ section{
     padding-bottom: 3.625rem;
 }
 .ficha-biohydra .title-text{
-    font-family: livemono;
+    font-family: livemonoBold;
     font-size: 1.125rem;
     color: #1AA2DD;
 }
 .ficha-biohydra .ficha-content-biohydra{
+    font-family: Akzidenz-Grotesk BQ;
     display: flex;
 }
 /*columna 1*/
@@ -280,8 +288,100 @@ section{
     padding-left: 0;
     width: 264px;
 }
-.ficha-content-biohydra .column3 ul li:first-child{
-}
 .ficha-content-biohydra .column3 ul li:last-child{
     margin-top: 7.063rem;
+}
+/* -------------- css para BioEnergy -------------------*/
+/*columna */
+.column2-energy{
+    margin-left: 3.75rem;
+    margin-right: 5.688rem;
+}
+/*columna 3*/
+.column3-energy{
+    margin-top: 7.5rem;
+    padding-right: 12.33%;
+}
+.column3-energy ul{
+    list-style: none;
+}
+.column3-energy ul li:first-child{
+    margin-bottom: 4.25rem;
+}
+.column3-energy ul li:last-child{
+    margin-top: 7.063rem;
+}
+.our-company-bioenergy button{
+    padding: 0.906rem 4rem;
+    background-color: #2C8840;
+    color: #FFFFFF;
+}
+.our-company-bioenergy button:hover{
+    background-color: #2C8840;
+    color: #FFFFFF;
+}
+.dosis .data-sheet .data-sheet-item-energy{
+    border-right: solid black 1px;
+    width: 18.75%;
+    padding-left:31px ;
+    padding-top: 29px;
+    padding-bottom: 45px;
+    vertical-align: middle;
+}
+.dosis .data-sheet .data-sheet-item-energy p:first-child{
+    font-size: 1rem;
+    margin-bottom: 0;
+    font-family: Akzidenz-Grotesk BQBold;
+}
+.dosis .data-sheet .data-sheet-item-energy p:last-child{
+    font-size: 1rem;
+    margin-bottom: 0;
+    font-family: Akzidenz-Grotesk BQ;
+}
+.dosis-title-bioenergy{
+    font-family: livemonoMedium;
+    font-size: 1.764rem;
+    color: #FFFFFF;
+    background-color: #2C8840;
+    width: 17.75rem;
+    height: 2.875rem;
+    padding-top: 6px;
+    padding-left: 38px;
+}
+.data-sheet-buttom-energy{
+    padding-left: 2.25rem;
+    padding-top: 1.938rem;
+}
+.data-sheet-buttom-energy buttom{
+    font-size: 1rem;
+    font-family: Akzidenz-Grotesk BQBold;
+    background-color: #EDB20E;
+    color: #FFFFFF;
+    padding-left: 1.531rem;
+    padding-right: 1.531rem;
+    padding-top: 0.719rem;
+    padding-bottom: 0.719rem;
+}
+.data-sheet-buttom-energy buttom:hover{
+    background-color: #EDB20E;
+    color: #FFFFFF;  
+}
+/* -------------- css para Grasssuplex -------------------*/
+.dosis .data-sheet .data-sheet-item-grass{
+    border-right: solid black 1px;
+    width: 74%;
+    padding-left:31px ;
+    padding-top: 29px;
+    padding-bottom: 45px;
+    vertical-align: middle;
+}
+.dosis .data-sheet .data-sheet-item-grass p:first-child{
+    font-size: 1rem;
+    margin-bottom: 0;
+    font-family: Akzidenz-Grotesk BQBold;
+}
+.dosis .data-sheet .data-sheet-item-grass p:last-child{
+    font-size: 1rem;
+    margin-bottom: 0;
+    font-family: Akzidenz-Grotesk BQ;
 }

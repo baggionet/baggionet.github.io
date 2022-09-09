@@ -18,7 +18,7 @@
     height:100%;
 }
 .sub-super-head{
-    font-family: livemono;
+    font-family: livemonoRegular;
     display: flex !important;
     justify-content: flex-end;
     padding-right: 3.7em;
@@ -66,6 +66,7 @@
     margin-top: 6px;
 }
 .nav{
+    font-family: Akzidenz-Grotesk BQ;
     color: white;
     display: inline-block;
     margin-right: 3.625rem;
@@ -148,7 +149,7 @@
     padding-bottom: 13px;
     cursor: pointer;
 }
-.whatsapp{
+/*.whatsapp{
     display: flex !important;
     justify-content: flex-end;
     margin-right: 15px;
@@ -166,7 +167,7 @@
 .whatsapp a i{
     font-size: 25px;
     color: white;
-}
+}*/
 /*  ---------------------------  section  -------------------------------------- */
 section{
     padding-top: 8.25rem;
@@ -180,7 +181,7 @@ section{
     height:2.625rem;
 }
 .RplusB .title-text h6{
-    font-family: livemono;
+    font-family: livemonoBold;
     font-weight:900;
     display: inline-block;
     font-size: 18px;
@@ -208,7 +209,7 @@ section{
 }
 .text-item2{
     letter-spacing: 0.5px;
-    font-family: livemono;
+    font-family: livemonoRegular;
     color: #777C83;
     width: 97%;
     font-size:1rem;
@@ -237,7 +238,7 @@ section{
     height: 360px;
 }
 .mision .item1, .vision .item1, .sustentabilidad .item1, .presencia .item1{
-    font-family: livemono;
+    font-family: livemonoBold;
     font-size: 1.2rem;
     font-weight: bold;
     margin-bottom: 0;
@@ -253,49 +254,52 @@ section{
     margin-bottom: 0;
 }
 
-/* ----------------------------- Footer------------------------------------------ */
-footer{
+/*----- contacto ------------*/
+.contact{
     background-color: #049DD6;
     padding-top: 14.313rem;
-    padding-bottom: 4.313rem;
-}
-footer .sub-footer1{
     display: flex;
 }
-.footer-text1{
+.contact-text1{
     font-family: Inter;
     width: 20.7%;
     color: white;
     padding-left: 3.375rem;
     padding-top: 5.8rem;
 }
-.footer-text1 p:first-child{
+.contact-text1 p:first-child{
     font-size: 4.625rem;
     margin-bottom: 0;
 }
-.footer-text1 p:last-child{
+.contact-text1 p:last-child{
     font-size: 0.625rem;
     padding-left: 0.8rem;
 }
-.footer-text2{
+.contact-text2{
     width: 33.5%;
     color: white;
 }
-.footer-text2 p:first-child{
+.contact-text2 p:first-child{
+    font-family: RobotikaBold;
     font-size: 3.438rem;
     width: 70%;
     line-height: 1.2;
 }
-.footer-text2 .text2-item{
-    font-family: livemono;
+.contact-text2 .text2-item{
+    font-family: livemonoRegular;
     font-size:1rem;
     width: 75%;
    letter-spacing: 2px;
 }
-.footer-text2 span{
+.contact-text2 span{
     font-family: Inter;
     font-size:1.5rem;
 }
+/*  Footer */
+footer{
+    background-color: #049DD6;
+    padding-bottom: 4.313rem;
+} 
 .form{
     width: 31.6%;
 }
@@ -339,7 +343,7 @@ footer .sub-footer2 ul{
     list-style: none;
     padding-left: 0;
     color: white;
-}
+} 
 footer .sub-footer2 ul li{
     font-family: Helvetica;
     padding-top: 8px;

@@ -1,6 +1,14 @@
 @font-face {
-    font-family: livemono;
-    src: url(../fonts/Livemono.otf);
+    font-family: livemonoRegular;
+    src: url(../fonts/Livemono-Regular.ttf);
+}
+@font-face {
+    font-family: livemonoMedium;
+    src: url(../fonts/Livemono-Medium.ttf);
+}
+@font-face {
+    font-family: livemonoBold;
+    src: url(../fonts/Livemono-Bold.ttf);
 }
 @font-face {
     font-family: Akzidenz-Grotesk BQ;
@@ -21,4 +29,16 @@
 @font-face {
     font-family: PoppinsBold;
     src: url(../fonts/Poppins-Bold.woff);
+}
+@font-face {
+    font-family: RobotikaRegular;
+    src: url(../fonts/RobotikaRegular.ttf);
+}
+@font-face {
+    font-family: RobotikaBold;
+    src: url(../fonts/RobotikaBold.ttf);
+}
+@font-face {
+    font-family: RobotikasemiBold;
+    src: url(../fonts/RobotikaSemibold.ttf);
 }
