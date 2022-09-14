@@ -10,18 +10,20 @@
     <meta name="copyright" content="R+B nutrición" />
     <meta name="robots" content="index, follow"/>
     <link rel="icon" href="img/FAVICON.png">
-    <title>R+B</title>
+    <title>R+B nutrition - Nutrición animal</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/indexMedia.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 </head>
 <body style="border: 0; margin:0;">
 <div>
-    <div class="background-slider">
+    <div class="background-slider" >
         <!--div class="manto"></div-->
-        <img name="slider" src="img/BRAHAMAN.webp">
+        <img name="slider" src="img/BRAHAMAN.webp" data-aos="zoom-out"
+        data-aos-duration="1000">
     </div>
     
     <div class="header">
@@ -63,9 +65,15 @@
                     </div>
                 </div>
                 <div class="sub-super-head">
-                    <span class="item-white ">contacto@rbnut.com</span> 
-                    <span class="item-white mx-4">800 123 45 56</span>
-                    <span class="item-blue">QUIERO DISTRIBUIR LOS PRODUCTOS</span>
+                    <span class="item-white">
+                        <a class="link" href="mailto:contacto@rbnut.com"> contacto@rbnut.com</a>
+                    </span>
+                    <span class="item-white mx-4">
+                        <a class="link" href="tel:+528001234556">800 123 45 56</a>
+                    </span>
+                    <span class="item-blue">
+                        <a class="link" href="#contacto">QUIERO DISTRIBUIR LOS PRODUCTOS</a>
+                    </span>
                 </div>
             </div>
             <div class="linea-superior"></div>
@@ -83,10 +91,10 @@
 <!-- ****************** Menu ******************************-->
             <div class="nav">
                 <ul class=" desktop">
-                    <li>Inicio</li>
-                    <li id="products">
-                        Productos<i class="bi bi-caret-down-fill" style=" font-size: 14px; padding-left: 5px;"></i>
-                        <ul id="theProducts" class="products d-none" style="position:absolute">
+                    <li class="item-menu">Inicio</li>
+                    <li class="item-submenu">
+                        Productos<i class="bi bi-plus" style=" font-size: 18px; font-weight: 900; padding-left: 5px;"></i>
+                        <ul class="products" >
                             <li><a href="phiphos.html" class="link">HiPhos</a></li>
                             <li><a href="pbiohydra.html" class="link">BioHydra</a></li>
                             <li><a href="pbioenergy.html" class="link">Bioenergy</a></li>
@@ -104,11 +112,11 @@
                             <li><a href="#" class="link">R+b Guard</a></li>
                         </ul>
                     </li>
-                    <li>Programas de nutricion</li>
-                    <li>Empresa</li>
+                    <li class="item-menu">Programas de nutricion</li>
+                    <li class="item-menu">Empresa</li>
                     <!--li>Cotiza</li-->
                 </ul>
-                <button><a href="#">Cotiza</a></button>
+                <button class="btn"><a href="#">Cotiza</a></button>
             </div>
 <!--  ************** Control de slaider ******************* -->
             <div class="buttons-slider">
@@ -134,7 +142,7 @@
             </div>
         </div><!--final de menu-->
         <div class="whatsapp">
-            <a href="http://wa.me/524612259029" target="_blank">
+            <a href="http://wa.me/524615555555" target="_blank">
                 <i class="bi bi-whatsapp" ></i>
             </a>
         </div>
@@ -160,7 +168,7 @@
                 <button class="btn btn-primary" style="font-family: livemono;">Conocer mas</button>
             </div>
             <div class="company-img">
-                <img src="img/companyImg.webp" alt="" srcset="">
+                <img src="img/companyImg.webp" data-aos="flip-right" alt="" srcset="">
             </div>
         </div><!-- Termina company -->
         <div class="services"><!-- Inicia Services -->
@@ -194,20 +202,20 @@
                 <div class="sub-technology">
                     <div class="tech-item">
                         <div class="tech-sub-item">
-                            <img src="img/bioEnergy.webp" >
+                            <img src="img/bioEnergy.webp"  data-aos="zoom-in-down">
                             <button  type="button" class="btn btn-light">
                                 <a href="#" style="text-decoration: none; color: black;">Conocer Más</a>
                             </button>
                         </div>
                         <div class="tech-sub-item">
                             <div class="tech-sub-item1">
-                                <img src="img/hiPhos.webp" >
+                                <img src="img/hiPhos.webp"  data-aos="zoom-in-down">
                                 <button  type="button" class="btn btn-light">
                                     <a href="#" style="text-decoration: none; color: black;">Conocer Más</a>
                                 </button>
                             </div>
                             <div class="tech-sub-item2">
-                                <img src="img/bioHydra.webp" >
+                                <img src="img/bioHydra.webp"  data-aos="zoom-in-down">
                                 <button  type="button" class="btn btn-light">
                                     <a href="#" style="text-decoration: none; color: black;">Conocer Más</a>
                                 </button>
@@ -215,7 +223,7 @@
                         </div>
                     </div>
                     <div class="tech-item1">
-                        <img src="img/tropiPhos.webp" >
+                        <img src="img/tropiPhos.webp"  data-aos="zoom-in-down" >
                         <button  type="button" class="btn btn-light">
                             <a href="#" style="text-decoration: none; color: black;">Conocer Más</a>
                         </button>
@@ -232,10 +240,10 @@
             </div>
             <div class="points-up">
                 <div class="items-point1">
-                    <img id="marker1" src="img/point1.png" alt="" class="markers" onclick="pointMap(id)">
+                    <img id="marker1" src="img/point1.png" data-aos="fade-down" alt="" class="markers" onclick="pointMap(id)">
                 </div>
                 <div class="items-point2">
-                    <img id="marker2" src="img/point4.png" alt="" class="markers" onclick="pointMap(id)">
+                    <img id="marker2" src="img/point4.png" data-aos="fade-down" alt="" class="markers" onclick="pointMap(id)">
                 </div>
                 <div class="address d-none" id="addr1">
                     <span>SONORA</span>
@@ -276,10 +284,10 @@
             </div>
             <div class="pointsdown">
                 <div class="pointsdown-item1">
-                    <img id="marker3" src="img/point1.png" alt="" class="markers" onclick="pointMap(id)">
+                    <img id="marker3" src="img/point1.png" data-aos="fade-down" alt="" class="markers" onclick="pointMap(id)">
                 </div>
                 <div class="pointsdown-item2">
-                    <img id="marker4" src="img/point1.png" alt="" class="markers" onclick="pointMap(id)">
+                    <img id="marker4" src="img/point1.png" data-aos="fade-down" alt="" class="markers" onclick="pointMap(id)">
                 </div>
             </div>
         </div><!-- Termina Presencia -->
@@ -290,7 +298,7 @@
             </div>
             <div class="news-items">
                 <div class="news-item">
-                    <img src="img/Maskgroup.webp" alt="">
+                    <img src="img/Maskgroup.webp" data-aos="flip-left" alt="">
                     <h3>¿Por qué utilizar HiPhos vitaminado?</h3>
                     <ul class="details">
                         <li class="gray-color">Escrito por </li>
@@ -300,7 +308,7 @@
                     </ul>
                 </div>
                 <div class="news-item">
-                    <img src="img/Maskgroup-2.webp" alt="">
+                    <img src="img/Maskgroup-2.webp" data-aos="fade-down" alt="">
                     <h3>Visita a Rancho Los Eladios</h3>
                     <ul class="details">
                         <li class="gray-color">Escrito por </li>
@@ -310,7 +318,7 @@
                     </ul>
                 </div>
                 <div class="news-item">
-                    <img src="img/Maskgroup-1.webp" alt="">
+                    <img src="img/Maskgroup-1.webp" data-aos="flip-right" alt="">
                     <h3>Nos vemos en Fonaholstein 2022</h3>
                     <ul class="details">
                         <li class="gray-color">Escrito por </li>
@@ -337,7 +345,7 @@
             contacto@rbnut.com
         </span>
     </div>
-    <div class="form">
+    <div class="form"  id="contacto">
         <form  action="" method="">
             <div class="group-input">
                 <input name="nombre" type="text" style="width:49%" placeholder="Nombre">
@@ -382,6 +390,12 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 <script src="js/index.js"></script>
-<script src="js/app.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        once: true,
+        duration: 1500
+    });
+</script>
 </body>
 </html>

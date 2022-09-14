@@ -1,3 +1,4 @@
+
 window.addEventListener('load', function() {
     console.log('CARGADOS')
     //Array que contendra las imagenes
@@ -110,14 +111,14 @@ function backPrincipal(){
     products.className = "products-movil d-none"
 }
 //Blocke de codigo que activa el submenu de productos
-let ulProducts = document.getElementById("products")
+/*let ulProducts = document.getElementById("products")
 ulProducts.addEventListener("mouseover", function(){
     let theProducts = document.getElementById("theProducts");
     theProducts.className = "products"
 })
 theProducts.addEventListener("mouseout", function(){
     theProducts.className = "products d-none"
-}) 
+}) */
 
 
 
