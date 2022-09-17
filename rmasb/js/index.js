@@ -41,7 +41,7 @@ window.addEventListener('load', function() {
             indeximg = 0
         }
     }
-    setInterval(changeImg, time)
+    //setInterval(changeImg, time)
 })
 function selectSlider(id) {
     var indexIcons = id;
