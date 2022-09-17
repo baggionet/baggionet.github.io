@@ -1,22 +1,40 @@
 
 window.addEventListener('load', function() {
     console.log('CARGADOS')
+    var divImg = document.getElementsByClassName("background-slider")
+    
     //Array que contendra las imagenes
-    var images = [];
-    images[0] = 'img/BRAHAMAN.webp';
+    /*var images = [];
+    images[0] = 'img/BRAHAMAN1.webp';
     images[1] = 'img/Hoistein.webp';
-    images[2] = 'img/Granjero.webp';
-    //INdeximg tendra el valos de la imagen
+    images[2] = 'img/Granjero.webp';*/
+    //INdeximg tendra el valor de la imagen
     var indeximg = 0;
     //contendra el tiempo en que cambiaran las imagenes
-    var time = 6000;
+    var time = 3000;
     //funcion que cambiara las iimagenes 
     
     function changeImg(){
-        //var boxImg = document.getElementById('slider')
-        //console.log(boxImg)
-        //boxImg.style.backgroundImage = "url("+ images[indeximg] + ")";
-        slider.src = images[indeximg]
+       
+        console.log(indeximg)
+        if(indeximg === 0){
+            console.log("se activa " + indeximg)
+            divImg[indeximg].className = "background-slider"
+            divImg[1].className = "background-slider d-none"
+            divImg[2].className = "background-slider d-none"
+        }
+       if(indeximg == 1){
+            console.log("se activa " + indeximg)
+            divImg[indeximg].className = "background-slider"
+            divImg[2].className = "background-slider d-none"
+            divImg[0].className = "background-slider d-none"
+        }
+        if(indeximg == 2){
+            console.log("se activa " + indeximg)
+            divImg[indeximg].className = "background-slider"
+            divImg[0].className = "background-slider d-none"
+            divImg[1].className = "background-slider d-none"
+        }
         if (indeximg < 2) {
             indeximg++;
         }else{

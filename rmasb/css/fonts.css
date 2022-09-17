@@ -42,3 +42,7 @@
     font-family: RobotikasemiBold;
     src: url(../fonts/RobotikaSemibold.ttf);
 }
+@font-face {
+    font-family: RobotikaThin;
+    src: url(../fonts/RobotikaThin.ttf);
+}

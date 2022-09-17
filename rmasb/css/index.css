@@ -9,7 +9,7 @@
 .background-slider{
     background: black; 
     position: absolute;
-    z-index: -1; 
+    z-index: -2; 
     width:100%; 
     height:747px;
 }
@@ -17,6 +17,241 @@
     width:100%; 
     height:100%;
 }
+/* ::::::::::::: texto de slider ::::::::::::::::*/
+.background-text{
+    display: flex;
+    position:absolute;
+    left: 40px;
+    top: 310px;
+    color:white;
+}
+.background-text ul{
+    list-style: none;
+    padding-left: 31px;
+}
+.background-text .vertical-text{
+    font-size: 9px;
+    font-family: Inter;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    margin-top: 264px;
+    letter-spacing: -0.5px;
+}
+.background-text .vertical-line{
+    border-right: 2px solid white;
+    height: 47px;
+    margin-top: 19px;
+    width: 6px;
+}
+.background-text .horizontal-text1{
+    font-size: 78px;
+    font-family: livemonoRegular;
+    height: 90px;
+}
+.background-text .horizontal-text2{
+    font-size: 17px;
+    font-family: Akzidenz-Grotesk BQBold;
+    letter-spacing: -0.9px;
+}
+.background-text .horizontal-text3{
+    font-size: 94px;
+    font-family: RobotikaRegular;
+    letter-spacing: -2.7px;
+    margin-left: -2px;
+    height: 85px;
+}
+.background-text .horizontal-text4{
+    font-size: 125px;
+    font-family: RobotikaBold;
+    letter-spacing: -2.5px;
+    height: 120px;
+    vertical-align: top;
+    margin-left: -3px;
+}
+.background-text .horizontal-text5{
+    font-size: 8px;
+    font-family: Akzidenz-Grotesk BQ;
+    letter-spacing: -0.2px;
+    margin-top: 53px;
+    margin-left: 2px;
+}
+.recuadro {
+    display: flex;
+    margin-left: 235px;
+    margin-top: 301px;
+}
+.recuadro .recuadro-item1{
+    background-color:white;
+    color: black;
+    width: 314px;
+    height: 136px;
+    padding-top: 38px;
+    padding-left: 64px;
+}
+.recuadro .recuadro-item1 p:first-child{
+    font-family: Inter;
+    font-size: 9px;
+    margin-bottom: 1px;
+    font-weight: bold;
+}
+.recuadro .recuadro-item1 p:last-child{
+    font-family: Inter;
+    font-size: 14px;
+    letter-spacing: -0.45px;
+}
+.recuadro .recuadro-item2{
+   background-color: #FD9B00;
+    width: 92px;
+    height: 136px;
+    padding-left: 35px;
+    padding-top: 52px;
+}
+.recuadro .recuadro-item2 img:first-child{
+    display: block;
+    width: 21px;
+    height: 7px;
+    margin-bottom: 28px;
+ }
+ .recuadro .recuadro-item2 img:last-child{
+    display: block;
+    width: 21px;
+    height: 7px;
+ }
+ /* ::::::::::::: texto de slider 2 Lechero ::::::::::::::::*/
+.horizontal-text1-lechero{
+    font-size: 78px;
+    font-family: livemonoRegular;
+    height: 90px;
+    margin-left: -9px;
+}
+.horizontal-text2-lechero{
+    font-size: 17px;
+    font-family: Akzidenz-Grotesk BQBold;
+    letter-spacing: -0.6px;
+}
+ .recuadro-lechero {
+    display: flex;
+    margin-left: 445px;
+    margin-top: 301px;
+}
+.recuadro-lechero .recuadro-item1-lechero{
+    background-color:white;
+    color: black;
+    width: 314px;
+    height: 136px;
+    padding-top: 38px;
+    padding-left: 64px;
+}
+.recuadro-lechero .recuadro-item1-lechero p:first-child{
+    font-family: Inter;
+    font-size: 9px;
+    margin-bottom: 1px;
+    font-weight: bold;
+}
+.recuadro-lechero .recuadro-item1-lechero p:last-child{
+    font-family: Inter;
+    font-size: 14px;
+    letter-spacing: -0.45px;
+}
+.recuadro-lechero .recuadro-item2-lechero{
+    background-color: #1BA6E3;
+    width: 92px;
+    height: 136px;
+    padding-left: 35px;
+    padding-top: 52px;
+}
+.recuadro-lechero .recuadro-item2-lechero img:first-child{
+    display: block;
+    width: 21px;
+    height: 7px;
+    margin-bottom: 28px;
+ }
+ .recuadro-lechero .recuadro-item2-lechero img:last-child{
+    display: block;
+    width: 21px;
+    height: 7px;
+ }
+ /* ::::::::::::: texto de slider 3 granjero ::::::::::::::::*/
+.horizontal-text1-granjero{
+    font-size: 75px;
+    font-family: livemonoRegular;
+    height: 90px;
+    margin-left: 12px;
+    letter-spacing: 2px;
+}
+.horizontal-text2-granjero{
+    font-size: 15px;
+    font-family: Akzidenz-Grotesk BQBold;
+    letter-spacing: 0.4px;
+    margin-left: 2px;
+    margin-top: 8px;
+}
+.background-text .horizontal-text3-granjero{
+    font-size: 103px;
+    font-family: RobotikaRegular;
+    letter-spacing: 2.1px;
+    margin-left: 1px;
+    margin-top: -8px;
+    height: 100px;
+}
+.background-text .horizontal-text4-granjero{
+    font-size: 88px;
+    font-family: RobotikaBold;
+    letter-spacing: 2.4px;
+    height: 100px;
+    vertical-align: top;
+    margin-left: 2px;
+}
+.background-text .horizontal-text5-granjero{
+    font-size: 8px;
+    font-family: Akzidenz-Grotesk BQ;
+    letter-spacing: -0.2px;
+    margin-top: 62px;
+    margin-left: 8px;
+}
+ .recuadro-granjero {
+    display: flex;
+    margin-left: 276px;
+    margin-top: 300px;
+}
+.recuadro-granjero .recuadro-item1-granjero{
+    background-color: white;
+    color: black;
+    width: 314px;
+    height: 137px;
+    padding-top: 38.5px;
+    padding-left: 37px;
+}
+.recuadro-granjero .recuadro-item1-granjero p:first-child{
+    font-family: Inter;
+    font-size: 9px;
+    margin-bottom: 1px;
+    font-weight: bold;
+}
+.recuadro-granjero .recuadro-item1-granjero p:last-child{
+    font-family: Inter;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+}
+.recuadro-granjero .recuadro-item2-granjero{
+    background-color:#88BA2B;
+    width: 100px;
+    height: 138px;
+    padding-left: 35px;
+    padding-top: 52px;
+}
+.recuadro-granjero .recuadro-item2-granjero img:first-child{
+    display: block;
+    width: 21px;
+    height: 7px;
+    margin-bottom: 28px;
+ }
+ .recuadro-granjero .recuadro-item2-granjero img:last-child{
+    display: block;
+    width: 21px;
+    height: 7px;
+ }
+ /* :::::::::::::: super header :::::::::::::::::::::::::::::::::*/
 .sub-super-head{
     font-family: livemonoRegular;
     display: flex !important;
@@ -171,7 +406,7 @@ ul li .products:focus{
     display: flex !important;
     justify-content: flex-end;
     margin-right: 15px;
-    padding-top: 5.25rem;
+    padding-top: 4.9rem;
     
 }
 .whatsapp a{

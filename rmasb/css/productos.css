@@ -1,3 +1,122 @@
+.background-text-hiphos{
+    display: flex;
+    position:absolute;
+    left: 2.95%;
+    top: 22%;
+    color:white;
+}
+.background-text-hiphos ul{
+    list-style: none;
+    padding-left: 85%;
+}
+.background-text-hiphos .vertical-text-hiphos{
+    font-size: 56.25%;
+    font-family: Inter;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    margin-top: 353px;
+    letter-spacing: -0.1px;
+    height: 20%;
+}
+.background-text-hiphos .vertical-line-hiphos{
+    border-right: 2px solid white;
+    height: 47px;
+    margin-top: 17px;
+    width: 6px;
+}
+.background-text-hiphos .horizontal-text1-hiphos{
+    font-size: 75px;
+    font-family: Inter;
+    height: 90px;
+    margin-left: 20px;
+}
+.background-text-hiphos .horizontal-text1-hiphos p{
+    font-size: 10px;
+    font-family: Inter;
+    margin-left: 20px;
+}
+.background-text-hiphos .horizontal-text2-hiphos{
+    margin-top: 71px;
+    margin-left: 25px;
+    font-size: 15px;
+    font-family: Akzidenz-Grotesk BQBold;
+    letter-spacing: 0.4px;
+}
+.background-text-hiphos .horizontal-text3-hiphos{
+    font-size: 80px;
+    font-family: RobotikaBold;
+    letter-spacing: 2px;
+    margin-left: -2px;
+    margin-top: 8px;
+    margin-left: 22px;
+}
+.background-text-hiphos .horizontal-text3-hiphos p{
+    font-size: 80px;
+    display: inline-block;
+    font-family: RobotikaThin;
+    letter-spacing: 0.9px;
+    margin-left: -4px;
+}
+.background-text-hiphos .horizontal-text4-hiphos{
+    font-size: 16px;
+    font-family: livemonoRegular;
+    letter-spacing: 0.4px;
+    margin-left: -3px;
+    width: 50%;
+    margin-left: 20px;
+    line-height: 1.25;
+}
+.background-text-hiphos .horizontal-text5-hiphos{
+    font-size: 8px;
+    font-family: Akzidenz-Grotesk BQ;
+    letter-spacing: 0.4px;
+    margin-top: 70px;
+    margin-left: 20px;
+}
+.recuadro-hiphos {
+    display: flex;
+    margin-left: 50px;
+    margin-top: 449px;
+}
+.recuadro-hiphos .recuadro-item1-hiphos{
+    background-color:white;
+    color: black;
+    width: 314px;
+    height: 136px;
+    padding-top: 38px;
+    padding-left: 64px;
+}
+.recuadro-hiphos .recuadro-item1-hiphos p:first-child{
+    font-family: Inter;
+    font-size: 9px;
+    margin-bottom: 1px;
+    font-weight: bold;
+}
+.recuadro-hiphos .recuadro-item1-hiphos p:last-child{
+    font-family: Inter;
+    font-size: 14px;
+    letter-spacing: -0.45px;
+}
+.recuadro-hiphos .recuadro-item2-hiphos{
+   background-color: #1BA6E3;
+    width: 92px;
+    height: 136px;
+    padding-left: 35px;
+    padding-top: 52px;
+}
+.recuadro-hiphos .recuadro-item2-hiphos img:first-child{
+    display: block;
+    width: 21px;
+    height: 7px;
+    margin-bottom: 28px;
+ }
+ .recuadro-hiphos .recuadro-item2-hiphos img:last-child{
+    display: block;
+    width: 21px;
+    height: 7px;
+ }
+ /* :::::::::::::::: Bio
+ /* :::::::::::::::: Sectio :::::::::::::::::::::::::::*/
 section{
     background-color: #F5F5F5;
 }
@@ -206,6 +325,133 @@ section{
     padding-top: 20px;
 }
 /* --------- css para ganatec ------------ */
+/* :::::::::::::::: texto slider Ganatec ::::::::::::::::::::::: */
+.background-text-ganatec{
+    display: flex;
+    position:absolute;
+    left: 2.95%;
+    top: 16.5%;
+    color:white;
+}
+.background-text-ganatec ul{
+    list-style: none;
+    padding-left: 85%;
+}
+.background-text-ganatec .vertical-text-ganatec{
+    font-size: 56.25%;
+    font-family: Inter;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    margin-top: 400px;
+    margin-left: 0.5px;
+    letter-spacing: -0.1px;
+    height: 20%;
+}
+.background-text-ganatec .vertical-line-ganatec{
+    border-right: 2px solid white;
+    height: 47px;
+    margin-top: 15px;
+    width: 6px;
+    margin-left: 4px;
+}
+.background-text-ganatec .horizontal-text1-ganatec{
+    font-size: 75px;
+    font-family: Inter;
+    height: 90px;
+    margin-left: 20px;
+    padding-top: 40px;
+}
+.background-text-ganatec .horizontal-text1-ganatec p{
+    font-size: 10px;
+    font-family: Inter;
+    margin-top: -10px;
+    margin-left: -2px;
+}
+.background-text-ganatec .horizontal-text2-ganatec{
+    margin-top: 95px;
+    margin-left: 18px;
+    font-size: 15px;
+    font-family: Akzidenz-Grotesk BQBold;
+    letter-spacing: 0.4px;
+}
+.background-text-ganatec .horizontal-text3-ganatec{
+    font-size: 80px;
+    display: inline-block;
+    font-family: RobotikaBold;
+    letter-spacing: 1.9px;
+    margin-left: 16px;
+    margin-top: 18px;
+    width: 114%;
+}
+.background-text-ganatec .horizontal-text3-ganatec p{
+    font-size: 80px;
+    display: inline-block;
+    font-family: RobotikaThin;
+    letter-spacing: 1.6px;
+    margin-left: -4px;
+    margin-bottom: 0;
+    
+}
+.background-text-ganatec .horizontal-text4-ganatec{
+    font-size: 16px;
+    font-family: livemonoRegular;
+    letter-spacing: 0.4px;
+    margin-left: 18px;
+    margin-top: 25px;
+    width: 50%;
+    line-height: 1.17;
+}
+.background-text-ganatec .horizontal-text5-ganatec{
+    font-size: 8px;
+    font-family: Akzidenz-Grotesk BQ;
+    letter-spacing: 0.4px;
+    margin-top: 57px;
+    margin-left: 19px;
+    display: inline-block;
+}
+.recuadro-ganatec {
+    display: flex;
+    margin-left: -225px;
+    margin-top: 492px;
+}
+.recuadro-ganatec .recuadro-item1-ganatec{
+    background-color:white;
+    color: black;
+    width: 314px;
+    height: 136px;
+    padding-top: 45px;
+    padding-left: 64px;
+}
+.recuadro-ganatec .recuadro-item1-ganatec p:first-child{
+    font-family: Inter;
+    font-size: 9px;
+    margin-bottom: 1px;
+    font-weight: bold;
+}
+.recuadro-ganatec .recuadro-item1-ganatec p:last-child{
+    font-family: Inter;
+    font-size: 14px;
+    letter-spacing: -0.45px;
+}
+.recuadro-ganatec .recuadro-item2-ganatec{
+   background-color: #FDAC10;
+    width: 92px;
+    height: 136px;
+    padding-left: 35px;
+    padding-top: 52px;
+}
+.recuadro-ganatec .recuadro-item2-ganatec img:first-child{
+    display: block;
+    width: 21px;
+    height: 7px;
+    margin-bottom: 28px;
+ }
+ .recuadro-ganatec .recuadro-item2-ganatec img:last-child{
+    display: block;
+    width: 21px;
+    height: 7px;
+ }
+/* :::::::::::::::::: Ficha :::::::::::::::::::::::::::::: */
 .ficha .ficha-content-ganatec{
     font-family: Akzidenz-Grotesk BQ;
     display: flex;
@@ -247,6 +493,127 @@ section{
     padding-left: 38px;
 }
 /* -------------- css para BioHidra -------------------*/
+/* :::::::::::::::: texto slider BIohydra ::::::::::::::::::::::: */
+.background-text-biohydra{
+    display: flex;
+    position:absolute;
+    left: 2.95%;
+    top: 22%;
+    color:white;
+}
+.background-text-biohydra ul{
+    list-style: none;
+    padding-left: 85%;
+}
+.background-text-biohydra .vertical-text-biohydra{
+    font-size: 56.25%;
+    font-family: Inter;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    margin-top: 311px;
+    letter-spacing: -0.1px;
+    height: 20%;
+}
+.background-text-biohydra .vertical-line-biohydra{
+    border-right: 2px solid white;
+    height: 47px;
+    margin-top: 15px;
+    width: 6px;
+}
+.background-text-biohydra .horizontal-text1-biohydra{
+    font-size: 75px;
+    font-family: Inter;
+    height: 90px;
+    margin-left: 20px;
+}
+.background-text-biohydra .horizontal-text1-biohydra p{
+    font-size: 10px;
+    font-family: Inter;
+    margin-top: -10px;
+}
+.background-text-biohydra .horizontal-text2-biohydra{
+    margin-top: 51px;
+    margin-left: 19px;
+    font-size: 15px;
+    font-family: Akzidenz-Grotesk BQBold;
+    letter-spacing: 0.4px;
+}
+.background-text-biohydra .horizontal-text3-biohydra{
+    font-size: 95px;
+    display: inline-block;
+    font-family: RobotikaBold;
+    letter-spacing: 2px;
+    margin-top: 7px;
+    margin-left: 19px;
+    width: 100%;
+}
+.background-text-biohydra .horizontal-text3-biohydra p{
+    font-size: 95px;
+    display: inline-block;
+    font-family: RobotikaThin;
+    letter-spacing: 2px;
+    margin-left: -4px;
+}
+.background-text-biohydra .horizontal-text4-biohydra{
+    font-size: 16px;
+    font-family: livemonoRegular;
+    letter-spacing: 0.4px;
+    margin-left: -4px;
+    width: 50%;
+    margin-left: 20px;
+    line-height: 1.15;
+}
+.background-text-biohydra .horizontal-text5-biohydra{
+    font-size: 8px;
+    font-family: Akzidenz-Grotesk BQ;
+    letter-spacing: 0.4px;
+    margin-top: 95px;
+    margin-left: 19px;
+    display: inline-block;
+    
+}
+.recuadro-biohydra {
+    display: flex;
+    margin-left: -240px;
+    margin-top: 449px;
+}
+.recuadro-biohydra .recuadro-item1-biohydra{
+    background-color:white;
+    color: black;
+    width: 314px;
+    height: 136px;
+    padding-top: 38px;
+    padding-left: 64px;
+}
+.recuadro-biohydra .recuadro-item1-biohydra p:first-child{
+    font-family: Inter;
+    font-size: 9px;
+    margin-bottom: 1px;
+    font-weight: bold;
+}
+.recuadro-biohydra .recuadro-item1-biohydra p:last-child{
+    font-family: Inter;
+    font-size: 14px;
+    letter-spacing: -0.45px;
+}
+.recuadro-biohydra .recuadro-item2-biohydra{
+   background-color: #0667C5;
+    width: 92px;
+    height: 136px;
+    padding-left: 35px;
+    padding-top: 52px;
+}
+.recuadro-biohydra .recuadro-item2-biohydra img:first-child{
+    display: block;
+    width: 21px;
+    height: 7px;
+    margin-bottom: 28px;
+ }
+ .recuadro-biohydra .recuadro-item2-biohydra img:last-child{
+    display: block;
+    width: 21px;
+    height: 7px;
+ }
 .ficha-biohydra{
     padding-left: 8.6%;
     padding-bottom: 3.625rem;
@@ -292,6 +659,127 @@ section{
     margin-top: 7.063rem;
 }
 /* -------------- css para BioEnergy -------------------*/
+/* :::::::::::::::: texto slider BioEnergy ::::::::::::::::::::::: */
+.background-text-bioenergy{
+    display: flex;
+    position:absolute;
+    left: 2.95%;
+    top: 22%;
+    color:white;
+}
+.background-text-bioenergy ul{
+    list-style: none;
+    padding-left: 85%;
+}
+.background-text-bioenergy .vertical-text-bioenergy{
+    font-size: 56.25%;
+    font-family: Inter;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    margin-top: 340px;
+    letter-spacing: -0.1px;
+    height: 20%;
+}
+.background-text-bioenergy .vertical-line-bioenergy{
+    border-right: 2px solid white;
+    height: 47px;
+    margin-top: 15px;
+    width: 6px;
+}
+.background-text-bioenergy .horizontal-text1-bioenergy{
+    font-size: 75px;
+    font-family: Inter;
+    height: 90px;
+    margin-left: 20px;
+}
+.background-text-bioenergy .horizontal-text1-bioenergy p{
+    font-size: 10px;
+    font-family: Inter;
+    margin-top: -10px;
+}
+.background-text-bioenergy .horizontal-text2-bioenergy{
+    margin-top: 51px;
+    margin-left: 19px;
+    font-size: 15px;
+    font-family: Akzidenz-Grotesk BQBold;
+    letter-spacing: 0.4px;
+}
+.background-text-bioenergy .horizontal-text3-bioenergy{
+    font-size: 95px;
+    display: inline-block;
+    font-family: RobotikaBold;
+    letter-spacing: 2px;
+    margin-top: 7px;
+    margin-left: 19px;
+    width: 100%;
+}
+.background-text-bioenergy .horizontal-text3-bioenergy p{
+    font-size: 95px;
+    display: inline-block;
+    font-family: RobotikaThin;
+    letter-spacing: 2px;
+    margin-left: -4px;
+}
+.background-text-bioenergy .horizontal-text4-bioenergy{
+    font-size: 16px;
+    font-family: livemonoRegular;
+    letter-spacing: 0.4px;
+    margin-left: -4px;
+    width: 50%;
+    margin-left: 20px;
+    line-height: 1.15;
+}
+.background-text-bioenergy .horizontal-text5-bioenergy{
+    font-size: 8px;
+    font-family: Akzidenz-Grotesk BQ;
+    letter-spacing: 0.4px;
+    margin-top: 60px;
+    margin-left: 19px;
+    display: inline-block;
+    
+}
+.recuadro-bioenergy {
+    display: flex;
+    margin-left: -55px;
+    margin-top: 449px;
+}
+.recuadro-bioenergy .recuadro-item1-bioenergy{
+    background-color:white;
+    color: black;
+    width: 314px;
+    height: 136px;
+    padding-top: 38px;
+    padding-left: 64px;
+}
+.recuadro-bioenergy .recuadro-item1-bioenergy p:first-child{
+    font-family: Inter;
+    font-size: 9px;
+    margin-bottom: 1px;
+    font-weight: bold;
+}
+.recuadro-bioenergy .recuadro-item1-bioenergy p:last-child{
+    font-family: Inter;
+    font-size: 14px;
+    letter-spacing: -0.45px;
+}
+.recuadro-bioenergy .recuadro-item2-bioenergy{
+   background-color: #2C8840;
+    width: 92px;
+    height: 136px;
+    padding-left: 35px;
+    padding-top: 52px;
+}
+.recuadro-bioenergy .recuadro-item2-bioenergy img:first-child{
+    display: block;
+    width: 21px;
+    height: 7px;
+    margin-bottom: 28px;
+ }
+ .recuadro-bioenergy .recuadro-item2-bioenergy img:last-child{
+    display: block;
+    width: 21px;
+    height: 7px;
+ }
 /*columna */
 .column2-energy{
     margin-left: 3.75rem;
@@ -367,6 +855,137 @@ section{
     color: #FFFFFF;  
 }
 /* -------------- css para Grasssuplex -------------------*/
+/* :::::::::::::::: texto slider Grasssuplex ::::::::::::::::::::::: */
+.background-text-grasssuplex{
+    display: flex;
+    position:absolute;
+    left: 2.95%;
+    top: 16.5%;
+    color:white;
+}
+.background-text-grasssuplex ul{
+    list-style: none;
+    padding-left: 85%;
+}
+.background-text-grasssuplex .vertical-text-grasssuplex{
+    font-size: 56.25%;
+    font-family: Inter;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    margin-top: 385px;
+    margin-left: 0.5px;
+    letter-spacing: -0.1px;
+    height: 20%;
+}
+.background-text-grasssuplex .vertical-line-grasssuplex{
+    border-right: 2px solid white;
+    height: 47px;
+    margin-top: 15px;
+    width: 6px;
+    margin-left: 4px;
+}
+.background-text-grasssuplex .horizontal-text1-grasssuplex{
+    font-size: 75px;
+    font-family: Inter;
+    height: 90px;
+    margin-left: 20px;
+    padding-top: 13px;
+}
+.background-text-grasssuplex .horizontal-text1-grasssuplex p{
+    font-size: 10px;
+    font-family: Inter;
+    margin-top: -10px;
+}
+.background-text-grasssuplex .horizontal-text2-grasssuplex{
+    margin-top: 67px;
+    margin-left: 19px;
+    font-size: 15px;
+    font-family: Akzidenz-Grotesk BQBold;
+    letter-spacing: 0.4px;
+}
+.background-text-grasssuplex .horizontal-text3-grasssuplex{
+    font-size: 95px;
+    display: inline-block;
+    font-family: RobotikaBold;
+    letter-spacing: 2px;
+    margin-left: 14px;
+    margin-top: -16px;
+    width: 105%;
+}
+.background-text-grasssuplex .horizontal-text3-grasssuplex p{
+    font-size: 95px;
+    display: inline-block;
+    font-family: RobotikaThin;
+    letter-spacing: 2px;
+    margin-left: -4px;
+    margin-bottom: 0;
+    
+}.background-text-grasssuplex .horizontal-text3-grasssuplex p:last-child{
+    font-size: 95px;
+    display: inline-block;
+    font-family: RobotikaThin;
+    letter-spacing: 2px;
+    margin-left: -1px;
+}
+.background-text-grasssuplex .horizontal-text4-grasssuplex{
+    font-size: 16px;
+    font-family: livemonoRegular;
+    letter-spacing: 0.4px;
+    margin-left: 15px;
+    width: 50%;
+    line-height: 1.15;
+}
+.background-text-grasssuplex .horizontal-text5-grasssuplex{
+    font-size: 8px;
+    font-family: Akzidenz-Grotesk BQ;
+    letter-spacing: 0.4px;
+    margin-top: 50px;
+    margin-left: 19px;
+    display: inline-block;
+}
+.recuadro-grasssuplex {
+    display: flex;
+    margin-left: -170px;
+    margin-top: 492px;
+}
+.recuadro-grasssuplex .recuadro-item1-grasssuplex{
+    background-color:white;
+    color: black;
+    width: 314px;
+    height: 136px;
+    padding-top: 45px;
+    padding-left: 64px;
+}
+.recuadro-grasssuplex .recuadro-item1-grasssuplex p:first-child{
+    font-family: Inter;
+    font-size: 9px;
+    margin-bottom: 1px;
+    font-weight: bold;
+}
+.recuadro-grasssuplex .recuadro-item1-grasssuplex p:last-child{
+    font-family: Inter;
+    font-size: 14px;
+    letter-spacing: -0.45px;
+}
+.recuadro-grasssuplex .recuadro-item2-grasssuplex{
+   background-color: #2C8840;
+    width: 92px;
+    height: 136px;
+    padding-left: 35px;
+    padding-top: 52px;
+}
+.recuadro-grasssuplex .recuadro-item2-grasssuplex img:first-child{
+    display: block;
+    width: 21px;
+    height: 7px;
+    margin-bottom: 28px;
+ }
+ .recuadro-grasssuplex .recuadro-item2-grasssuplex img:last-child{
+    display: block;
+    width: 21px;
+    height: 7px;
+ }
+/* :::::::::::::::::: Dosis :::::::::::::::::::::::::::::: */
 .dosis .data-sheet .data-sheet-item-grass{
     border-right: solid black 1px;
     width: 74%;

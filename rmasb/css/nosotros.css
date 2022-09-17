@@ -17,6 +17,119 @@
     width:100%; 
     height:100%;
 }
+/* ::::::::::::: texto de slider ::::::::::::::::*/
+.background-text{
+    display: flex;
+    position:absolute;
+    left: 2.95%;
+    top: 22%;
+    color:white;
+}
+.background-text ul{
+    list-style: none;
+    padding-left: 82%;
+}
+.background-text .vertical-text{
+    font-size: 56.25%;
+    font-family: Inter;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    margin-top: 348px;
+    letter-spacing: -0.5px;
+    height: 20%;
+}
+.background-text .vertical-line{
+    border-right: 2px solid white;
+    height: 47px;
+    margin-top: 19px;
+    width: 6px;
+}
+.background-text .horizontal-text1{
+    font-size: 75px;
+    font-family: Inter;
+    height: 90px;
+    margin-left: 10px;
+}
+.background-text .horizontal-text2{
+    margin-top: 13px;
+    margin-left: 18px;
+    font-size: 15px;
+    font-family: Akzidenz-Grotesk BQBold;
+    letter-spacing: -0.9px;
+}
+.background-text .horizontal-text3{
+    font-size: 80px;
+    font-family: RobotikaBold;
+    letter-spacing: -2.7px;
+    margin-left: -2px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.background-text .horizontal-text3 p{
+    font-size: 80px;
+    display: inline-block;
+    font-family: RobotikaThin;
+    letter-spacing: -2.7px;
+}
+.background-text .horizontal-text4{
+    font-size: 16px;
+    font-family: livemonoRegular;
+    letter-spacing: -0.8px;
+    margin-left: -3px;
+    width: 50%;
+    margin-left: 15px;
+    margin-top: -4px;
+    line-height: 1.25;
+}
+.background-text .horizontal-text5{
+    font-size: 8px;
+    font-family: Akzidenz-Grotesk BQ;
+    letter-spacing: 0px;
+    margin-top: 20px;
+    margin-left: 14px;
+}
+.recuadro {
+    display: flex;
+    margin-left: 123px;
+    margin-top: 447px;
+}
+.recuadro .recuadro-item1{
+    background-color:white;
+    color: black;
+    width: 314px;
+    height: 136px;
+    padding-top: 38px;
+    padding-left: 64px;
+}
+.recuadro .recuadro-item1 p:first-child{
+    font-family: Inter;
+    font-size: 9px;
+    margin-bottom: 1px;
+    font-weight: bold;
+}
+.recuadro .recuadro-item1 p:last-child{
+    font-family: Inter;
+    font-size: 14px;
+    letter-spacing: -0.45px;
+}
+.recuadro .recuadro-item2{
+   background-color: #1BA6E3;
+    width: 92px;
+    height: 136px;
+    padding-left: 35px;
+    padding-top: 52px;
+}
+.recuadro .recuadro-item2 img:first-child{
+    display: block;
+    width: 21px;
+    height: 7px;
+    margin-bottom: 28px;
+ }
+ .recuadro .recuadro-item2 img:last-child{
+    display: block;
+    width: 21px;
+    height: 7px;
+ }
 .sub-super-head{
     font-family: livemonoRegular;
     display: flex !important;
