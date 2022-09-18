@@ -15,7 +15,7 @@
     font-family: Inter;
     writing-mode: vertical-lr;
     transform: rotate(180deg);
-    margin-top: 210px;
+    margin-top: 220px;
     letter-spacing: -0.5px;
     height: 20%;
 }
@@ -29,26 +29,26 @@
     font-size: 75px;
     font-family: Inter;
     height: 90px;
-    margin-left: 35px;
+    margin-left: 30px;
 }
 .background-text .horizontal-text1 p{
     font-size: 15px;
     font-family: Akzidenz-Grotesk BQBold;
-    letter-spacing: 0.5px;
+    letter-spacing: -0.5px;
     margin-top: -25px;
-    margin-left: -15px;
+    margin-left: -12px;
 }
 .background-text .horizontal-text2{
     font-size:103px;
     font-family: RobotikaThin ;
-    letter-spacing: 2.2px;
+    letter-spacing: -3px;
     margin-top: 25px;
     margin-left: 15px;
 }
 .background-text .horizontal-text3{
     font-size:103px;
     font-family: RobotikaBold ;
-    letter-spacing: 2.8px;
+    letter-spacing: -3px;
     margin-left: 2px;
     margin-top: -33px;
     margin-left: 15px;
@@ -56,13 +56,13 @@
 .background-text .horizontal-text4{
     font-size: 8px;
     font-family: Akzidenz-Grotesk BQ;
-    letter-spacing: 0.7px;
+    letter-spacing: 0.3px;
     margin-top: 3px;
     margin-left: 14px;
 }
 .recuadro {
     display: flex;
-    margin-left: 432px;
+    margin-left: 338px;
     margin-top: 312px;
 }
 .recuadro .recuadro-item1{
@@ -85,7 +85,7 @@
     letter-spacing: -0.45px;
 }
 .recuadro .recuadro-item2{
-   background-color: #1be36e;
+   background-color: #1BA6E3;
     width: 92px;
     height: 136px;
     padding-left: 35px;

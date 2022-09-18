@@ -13,11 +13,13 @@ window.addEventListener('load', function() {
     //contendra el tiempo en que cambiaran las imagenes
     var time = 3000;
     //funcion que cambiara las iimagenes 
-    
-    function changeImg(){
+    function selectSlider(id) {
+        changeImg(id)
+    }
+    function changeImg(theId){
        
         console.log(indeximg)
-        if(indeximg === 0){
+        if(indeximg === 0 || theId === 0){
             console.log("se activa " + indeximg)
             divImg[indeximg].className = "background-slider"
             divImg[1].className = "background-slider d-none"
@@ -41,16 +43,37 @@ window.addEventListener('load', function() {
             indeximg = 0
         }
     }
-    //setInterval(changeImg, time)
+    setInterval(changeImg, time)
 })
 function selectSlider(id) {
+    var divImg = document.getElementsByClassName("background-slider")
+    if(id == 1 ){
+        console.log("se activa al hacer click en" + id)
+        divImg[0].className = "background-slider"
+        divImg[1].className = "background-slider d-none"
+        divImg[2].className = "background-slider d-none"
+    }
+   if(id == 2){
+        console.log("se activa al hacer click en " + id)
+        divImg[1].className = "background-slider"
+        divImg[2].className = "background-slider d-none"
+        divImg[0].className = "background-slider d-none"
+    }
+    if(id == 3){
+        console.log("se activa al hacer click en " + id)
+        divImg[2].className = "background-slider"
+        divImg[0].className = "background-slider d-none"
+        divImg[1].className = "background-slider d-none"
+    }
+}
+/*function selectSlider(id) {
     var indexIcons = id;
     var iconos = [];
     iconos[0] = 'img/BRAHAMAN.webp';
     iconos[1] = 'img/Hoistein.webp';
     iconos[2] = 'img/Granjero.webp';
     slider.src = iconos[indexIcons]
-}
+}*/
 //Funcion que pondra a todos los points en amarillos y escondera los recuadros de informacion 
 function loopArray(TheArray1, valor1, TheArray2, valor2){
     for (let index = 0; index < TheArray1.length; index++) {

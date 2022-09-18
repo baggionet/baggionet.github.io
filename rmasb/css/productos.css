@@ -75,7 +75,7 @@
 }
 .recuadro-hiphos {
     display: flex;
-    margin-left: 50px;
+    margin-left: -92px;
     margin-top: 449px;
 }
 .recuadro-hiphos .recuadro-item1-hiphos{
@@ -372,22 +372,22 @@ section{
     margin-left: 18px;
     font-size: 15px;
     font-family: Akzidenz-Grotesk BQBold;
-    letter-spacing: 0.4px;
+    letter-spacing: -0.7px;
 }
 .background-text-ganatec .horizontal-text3-ganatec{
     font-size: 80px;
     display: inline-block;
     font-family: RobotikaBold;
-    letter-spacing: 1.9px;
+    letter-spacing: -2.5px;
     margin-left: 16px;
     margin-top: 18px;
-    width: 114%;
+    width: 120%;
 }
 .background-text-ganatec .horizontal-text3-ganatec p{
     font-size: 80px;
     display: inline-block;
     font-family: RobotikaThin;
-    letter-spacing: 1.6px;
+    letter-spacing: -2.3px;
     margin-left: -4px;
     margin-bottom: 0;
     
@@ -395,23 +395,22 @@ section{
 .background-text-ganatec .horizontal-text4-ganatec{
     font-size: 16px;
     font-family: livemonoRegular;
-    letter-spacing: 0.4px;
+    letter-spacing: -0.6px;
     margin-left: 18px;
     margin-top: 25px;
-    width: 50%;
+    width: 35%;
     line-height: 1.17;
 }
 .background-text-ganatec .horizontal-text5-ganatec{
     font-size: 8px;
     font-family: Akzidenz-Grotesk BQ;
-    letter-spacing: 0.4px;
     margin-top: 57px;
     margin-left: 19px;
     display: inline-block;
 }
 .recuadro-ganatec {
     display: flex;
-    margin-left: -225px;
+    margin-left: -245px;
     margin-top: 492px;
 }
 .recuadro-ganatec .recuadro-item1-ganatec{
@@ -510,8 +509,8 @@ section{
     font-family: Inter;
     writing-mode: vertical-lr;
     transform: rotate(180deg);
-    margin-top: 311px;
-    letter-spacing: -0.1px;
+    margin-top: 360px;
+    letter-spacing: -1px;
     height: 20%;
 }
 .background-text-biohydra .vertical-line-biohydra{
@@ -536,28 +535,27 @@ section{
     margin-left: 19px;
     font-size: 15px;
     font-family: Akzidenz-Grotesk BQBold;
-    letter-spacing: 0.4px;
+    letter-spacing: -0.6px;
 }
 .background-text-biohydra .horizontal-text3-biohydra{
     font-size: 95px;
     display: inline-block;
     font-family: RobotikaBold;
-    letter-spacing: 2px;
+    letter-spacing: -2.8px;
     margin-top: 7px;
     margin-left: 19px;
-    width: 100%;
+    width: 110%;
 }
 .background-text-biohydra .horizontal-text3-biohydra p{
     font-size: 95px;
     display: inline-block;
     font-family: RobotikaThin;
-    letter-spacing: 2px;
-    margin-left: -4px;
+    letter-spacing: -2.5px;
 }
 .background-text-biohydra .horizontal-text4-biohydra{
     font-size: 16px;
     font-family: livemonoRegular;
-    letter-spacing: 0.4px;
+    letter-spacing: -0.7px;
     margin-left: -4px;
     width: 50%;
     margin-left: 20px;
@@ -574,8 +572,8 @@ section{
 }
 .recuadro-biohydra {
     display: flex;
-    margin-left: -240px;
-    margin-top: 449px;
+    margin-left: -257px;
+    margin-top: 447px;
 }
 .recuadro-biohydra .recuadro-item1-biohydra{
     background-color:white;
@@ -676,8 +674,8 @@ section{
     font-family: Inter;
     writing-mode: vertical-lr;
     transform: rotate(180deg);
-    margin-top: 340px;
-    letter-spacing: -0.1px;
+    margin-top: 360px;
+    letter-spacing: -1.5px;
     height: 20%;
 }
 .background-text-bioenergy .vertical-line-bioenergy{
@@ -690,40 +688,40 @@ section{
     font-size: 75px;
     font-family: Inter;
     height: 90px;
-    margin-left: 20px;
+    margin-left: 18px;
 }
 .background-text-bioenergy .horizontal-text1-bioenergy p{
     font-size: 10px;
     font-family: Inter;
-    margin-top: -10px;
+    margin-top: -11px;
 }
 .background-text-bioenergy .horizontal-text2-bioenergy{
     margin-top: 51px;
     margin-left: 19px;
     font-size: 15px;
     font-family: Akzidenz-Grotesk BQBold;
-    letter-spacing: 0.4px;
+    letter-spacing: -0.6px;
 }
 .background-text-bioenergy .horizontal-text3-bioenergy{
     font-size: 95px;
     display: inline-block;
     font-family: RobotikaBold;
-    letter-spacing: 2px;
+    letter-spacing: -2.7px;
     margin-top: 7px;
     margin-left: 19px;
-    width: 100%;
+    width: 105%;
 }
 .background-text-bioenergy .horizontal-text3-bioenergy p{
     font-size: 95px;
     display: inline-block;
     font-family: RobotikaThin;
-    letter-spacing: 2px;
+    letter-spacing: -2.2px;
     margin-left: -4px;
 }
 .background-text-bioenergy .horizontal-text4-bioenergy{
     font-size: 16px;
     font-family: livemonoRegular;
-    letter-spacing: 0.4px;
+    letter-spacing: -0.7px;
     margin-left: -4px;
     width: 50%;
     margin-left: 20px;
@@ -732,7 +730,7 @@ section{
 .background-text-bioenergy .horizontal-text5-bioenergy{
     font-size: 8px;
     font-family: Akzidenz-Grotesk BQ;
-    letter-spacing: 0.4px;
+    letter-spacing: 0.1px;
     margin-top: 60px;
     margin-left: 19px;
     display: inline-block;
@@ -740,7 +738,7 @@ section{
 }
 .recuadro-bioenergy {
     display: flex;
-    margin-left: -55px;
+    margin-left: -98px;
     margin-top: 449px;
 }
 .recuadro-bioenergy .recuadro-item1-bioenergy{
@@ -872,7 +870,7 @@ section{
     font-family: Inter;
     writing-mode: vertical-lr;
     transform: rotate(180deg);
-    margin-top: 385px;
+    margin-top: 397px;
     margin-left: 0.5px;
     letter-spacing: -0.1px;
     height: 20%;
@@ -889,25 +887,26 @@ section{
     font-family: Inter;
     height: 90px;
     margin-left: 20px;
-    padding-top: 13px;
+    padding-top: 11px;
 }
 .background-text-grasssuplex .horizontal-text1-grasssuplex p{
     font-size: 10px;
     font-family: Inter;
     margin-top: -10px;
+    letter-spacing: 0.4px;
 }
 .background-text-grasssuplex .horizontal-text2-grasssuplex{
     margin-top: 67px;
     margin-left: 19px;
     font-size: 15px;
     font-family: Akzidenz-Grotesk BQBold;
-    letter-spacing: 0.4px;
+    letter-spacing: -0.7px;
 }
 .background-text-grasssuplex .horizontal-text3-grasssuplex{
     font-size: 95px;
     display: inline-block;
     font-family: RobotikaBold;
-    letter-spacing: 2px;
+    letter-spacing: -2.5px;
     margin-left: 14px;
     margin-top: -16px;
     width: 105%;
@@ -916,36 +915,36 @@ section{
     font-size: 95px;
     display: inline-block;
     font-family: RobotikaThin;
-    letter-spacing: 2px;
-    margin-left: -4px;
+    letter-spacing: -3px;
+    margin-left: -10px;
     margin-bottom: 0;
     
 }.background-text-grasssuplex .horizontal-text3-grasssuplex p:last-child{
     font-size: 95px;
     display: inline-block;
     font-family: RobotikaThin;
-    letter-spacing: 2px;
+    letter-spacing: -2.3px;
     margin-left: -1px;
 }
 .background-text-grasssuplex .horizontal-text4-grasssuplex{
     font-size: 16px;
     font-family: livemonoRegular;
-    letter-spacing: 0.4px;
+    letter-spacing: -0.6px;
     margin-left: 15px;
+    margin-top: 3px;
     width: 50%;
     line-height: 1.15;
 }
 .background-text-grasssuplex .horizontal-text5-grasssuplex{
     font-size: 8px;
     font-family: Akzidenz-Grotesk BQ;
-    letter-spacing: 0.4px;
-    margin-top: 50px;
+    margin-top: 45px;
     margin-left: 19px;
     display: inline-block;
 }
 .recuadro-grasssuplex {
     display: flex;
-    margin-left: -170px;
+    margin-left: -209px;
     margin-top: 492px;
 }
 .recuadro-grasssuplex .recuadro-item1-grasssuplex{
@@ -968,7 +967,7 @@ section{
     letter-spacing: -0.45px;
 }
 .recuadro-grasssuplex .recuadro-item2-grasssuplex{
-   background-color: #2C8840;
+   background-color: #3F2859;
     width: 92px;
     height: 136px;
     padding-left: 35px;
