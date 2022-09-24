@@ -14,7 +14,8 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/indexMedia.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" >
+    <!--script src="js/scrollreveal.js"></script-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 </head>
@@ -22,23 +23,22 @@
 <div>
     <!-- ::::::::::::::: grupo de slider :::::::::::::::-->
     <!-- :::::::::::::::::::: Slider1 ::::::::::::::::::-->
-    <div class="background-slider " id="slader1" >
-        <img name="slider" src="img/BRAHAMAN1.webp" data-aos="zoom-out"
-        data-aos-duration="1000">
-        <div  class="background-text">
+    <div class="background-slider " id="slader1">
+        <img id="slider" src="img/BRAHAMAN1.webp" >
+        <div  class="background-text" >
             <div>
-                <ul>
+                <ul class="vertical" >
                     <li class="vertical-text">NAVEGAR MÁS</li>
                     <li class="vertical-line"></li>
                 </ul>
             </div>
             <div>
-                <ul style="padding-left: 17px;">
-                    <li class="horizontal-text1">01</li>
-                    <li class="horizontal-text2">SOMOS R+B NUT</li>
-                    <li class="horizontal-text3">Especialistas en</li>
-                    <li class="horizontal-text4">NUTRICIÓN</li>
-                    <li class="horizontal-text5">@ R+B nutrición - Derechos Reservados</li>
+                <ul style="padding-left: 17px; list-style: none;">
+                    <li class="horizontal-text1" >01</li>
+                    <li class="horizontal-text2" >SOMOS R+B NUT</li>
+                    <li class="horizontal-text3" >Especialistas en</li>
+                    <li class="horizontal-text4" >NUTRICIÓN</li>
+                    <li class="horizontal-text5" >@ R+B nutrición - Derechos Reservados</li>
                 </ul>
             </div>
             <div class="recuadro">
@@ -53,24 +53,25 @@
             </div>
         </div>
     </div>
+    
     <!-- :::::::::::::::::::: Slider2 ::::::::::::::::::-->
     <div class="background-slider d-none" id="slader2" >
-        <img name="slider2" src="img/holstein1.webp" data-aos="zoom-out"
-        data-aos-duration="1000">
+        <img id="slider2" src="img/holstein1.webp" 
+        >
         <div  class="background-text">
             <div>
-                <ul>
+                <ul class="vertical-lechero" >
                     <li class="vertical-text">NAVEGAR MÁS</li>
                     <li class="vertical-line"></li>
                 </ul>
             </div>
             <div>
-                <ul style="padding-left: 17px;">
-                    <li class="horizontal-text1-lechero">02</li>
+                <ul style="padding-left: 17px; list-style: none">
+                    <li id="lechero" class="horizontal-text1-lechero">02</li>
                     <li class="horizontal-text2-lechero">PROGRAMA DE PRODUCCIÓN LÁCTEA</li>
-                    <li class="horizontal-text3">Màs y mejor</li>
-                    <li class="horizontal-text4">LECHE</li>
-                    <li class="horizontal-text5">@ R+B nutrición - Derechos Reservados</li>
+                    <li class="horizontal-text3-lechero">Màs y mejor</li>
+                    <li class="horizontal-text4-lechero" >LECHE</li>
+                    <li class="horizontal-text5-lechero" >@ R+B nutrición - Derechos Reservados</li>
                 </ul>
             </div>
             <div class="recuadro-lechero">
@@ -88,17 +89,16 @@
     </div>
     <!-- :::::::::::::::::::: Slider3 ::::::::::::::::::-->
     <div class="background-slider d-none" id="slader3" >
-        <img name="slider3" src="img/Granjero1.webp" data-aos="zoom-out"
-        data-aos-duration="1000">
+        <img id="slider3" src="img/Granjero1.webp">
         <div  class="background-text">
             <div>
-                <ul style="padding-left: 15px;">
+                <ul class="vertical-granjero" style="padding-left: 15px;">
                     <li class="vertical-text">NAVEGAR MÁS</li>
                     <li class="vertical-line"></li>
                 </ul>
             </div>
             <div>
-                <ul style="padding-left: 17px;">
+                <ul style="padding-left: 17px; list-style: none">
                     <li class="horizontal-text1-granjero">03</li>
                     <li class="horizontal-text2-granjero">QUIERES DISTRIBUIR?</li>
                     <li class="horizontal-text3-granjero">Ofrece</li>
@@ -188,9 +188,9 @@
                     <li class="item-menu"><a class="link" href="index.html">Inicio</a></li>
                     <li class="item-menu">Acerca de R+B</li>
                     <li class="item-menu">Programas de nutricion</li>
-                    <li>
+                    <li id="products">
                         Productos<i class="bi bi-plus" style=" font-size: 18px; font-weight: 900; padding-left: 5px;"></i>
-                        <ul class="products ">
+                        <ul class="products">
                             <li><a href="phiphos.html" class="link">HiPhos</a></li>
                             <li><a href="pbiohydra.html" class="link">BioHydra</a></li>
                             <li><a href="pbioenergy.html" class="link">Bioenergy</a></li>
@@ -214,10 +214,10 @@
 <!--  ************** Control de slaider ******************* -->
             <div class="buttons-slider">
                 <div class="control-icon">
-                    <ul style="color:white; cursor: pointer;">
-                        <li id="1" onclick="selectSlider(id)"></li>
-                        <li id="2" onclick="selectSlider(id)"></li>
-                        <li id="3" onclick="selectSlider(id)"></li>
+                    <ul >
+                        <li id="1" onclick="selectSlider(id)"><i class="bi bi-circle-fill"></i></li>
+                        <li id="2" onclick="selectSlider(id)"><i class="bi bi-circle-fill"></i></li>
+                        <li id="3" onclick="selectSlider(id)"><i class="bi bi-circle-fill"></i></li>
                     </ul>
                 </div>
                 <div class="linea-vertical">
@@ -297,20 +297,20 @@
                     <div class="tech-item">
                         <div class="tech-sub-item">
                             <img src="img/bioEnergy.webp"  data-aos="zoom-in-down">
-                            <button  type="button" class="btn btn-light">
+                            <button  type="button" class="btn btn-light" data-aos="zoom-in-down">
                                 <a href="#" style="text-decoration: none; color: black;">Conocer Más</a>
                             </button>
                         </div>
                         <div class="tech-sub-item">
                             <div class="tech-sub-item1">
                                 <img src="img/hiPhos.webp"  data-aos="zoom-in-down">
-                                <button  type="button" class="btn btn-light">
+                                <button  type="button" class="btn btn-light" data-aos="zoom-in-down">
                                     <a href="#" style="text-decoration: none; color: black;">Conocer Más</a>
                                 </button>
                             </div>
                             <div class="tech-sub-item2">
                                 <img src="img/bioHydra.webp"  data-aos="zoom-in-down">
-                                <button  type="button" class="btn btn-light">
+                                <button  type="button" class="btn btn-light" data-aos="zoom-in-down">
                                     <a href="#" style="text-decoration: none; color: black;">Conocer Más</a>
                                 </button>
                             </div>
@@ -318,7 +318,7 @@
                     </div>
                     <div class="tech-item1">
                         <img src="img/tropiPhos.webp"  data-aos="zoom-in-down" >
-                        <button  type="button" class="btn btn-light">
+                        <button  type="button" class="btn btn-light" data-aos="zoom-in-down">
                             <a href="#" style="text-decoration: none; color: black;">Conocer Más</a>
                         </button>
                     </div>
@@ -392,7 +392,7 @@
             </div>
             <div class="news-items">
                 <div class="news-item">
-                    <img src="img/Maskgroup.webp" data-aos="flip-left" alt="">
+                    <img src="img/Maskgroup.webp"  alt="">
                     <h3>¿Por qué utilizar HiPhos vitaminado?</h3>
                     <ul class="details">
                         <li class="gray-color">Escrito por </li>
@@ -402,7 +402,7 @@
                     </ul>
                 </div>
                 <div class="news-item">
-                    <img src="img/Maskgroup-2.webp" data-aos="fade-down" alt="">
+                    <img src="img/Maskgroup-2.webp"  alt="">
                     <h3>Visita a Rancho Los Eladios</h3>
                     <ul class="details">
                         <li class="gray-color">Escrito por </li>
@@ -412,7 +412,7 @@
                     </ul>
                 </div>
                 <div class="news-item">
-                    <img src="img/Maskgroup-1.webp" data-aos="flip-right" alt="">
+                    <img src="img/Maskgroup-1.webp"  alt="">
                     <h3>Nos vemos en Fonaholstein 2022</h3>
                     <ul class="details">
                         <li class="gray-color">Escrito por </li>
@@ -483,13 +483,18 @@
 </footer><!-- termina Footer -->
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-<script src="js/index.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init({
         once: true,
         duration: 1500
     });
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/index.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
 </script>
 </body>
 </html>

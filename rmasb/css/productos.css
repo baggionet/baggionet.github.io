@@ -1,3 +1,7 @@
+.{
+    display: none;
+    margin-right: 100px;
+}
 .background-text-hiphos{
     display: flex;
     position:absolute;
@@ -5,9 +9,12 @@
     top: 22%;
     color:white;
 }
-.background-text-hiphos ul{
+.background-text-hiphos .vertical-hiphos{
     list-style: none;
     padding-left: 85%;
+    /*añadido por el slider del texto*/
+    display: none;
+    margin-left: -80px;
 }
 .background-text-hiphos .vertical-text-hiphos{
     font-size: 56.25%;
@@ -28,7 +35,10 @@
     font-size: 75px;
     font-family: Inter;
     height: 90px;
-    margin-left: 20px;
+    /*margin-left: 20px;
+    añadido por el slider del texto*/
+    display: none;
+    margin-left: -80px;
 }
 .background-text-hiphos .horizontal-text1-hiphos p{
     font-size: 10px;
@@ -37,7 +47,10 @@
 }
 .background-text-hiphos .horizontal-text2-hiphos{
     margin-top: 71px;
-    margin-left: 25px;
+    /*margin-left: 25px;
+    añadido por el slider del texto*/
+    display: none;
+    margin-left: -80px;
     font-size: 15px;
     font-family: Akzidenz-Grotesk BQBold;
     letter-spacing: 0.4px;
@@ -48,7 +61,10 @@
     letter-spacing: 2px;
     margin-left: -2px;
     margin-top: 8px;
-    margin-left: 22px;
+    /*margin-left: 22px;
+    añadido por el slider del texto*/
+    display: none;
+    margin-left: -80px;
 }
 .background-text-hiphos .horizontal-text3-hiphos p{
     font-size: 80px;
@@ -63,7 +79,10 @@
     letter-spacing: 0.4px;
     margin-left: -3px;
     width: 50%;
-    margin-left: 20px;
+    /*margin-left: 20px;
+    añadido por el slider del texto*/
+    display: none;
+    margin-left: -80px;
     line-height: 1.25;
 }
 .background-text-hiphos .horizontal-text5-hiphos{
@@ -71,10 +90,13 @@
     font-family: Akzidenz-Grotesk BQ;
     letter-spacing: 0.4px;
     margin-top: 70px;
-    margin-left: 20px;
+    /*margin-left: 20px;
+    añadido por el slider del texto*/
+    display: none;
+    margin-left: -80px;
 }
 .recuadro-hiphos {
-    display: flex;
+    display: none;
     margin-left: -92px;
     margin-top: 449px;
 }

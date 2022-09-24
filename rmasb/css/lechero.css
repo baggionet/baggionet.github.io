@@ -1,16 +1,16 @@
 /* ::::::::::::: texto de slider ::::::::::::::::*/
-.background-text{
+.background-text-plechero{
     display: flex;
     position:absolute;
     left: 2.95%;
     top: 40%;
     color:white;
 }
-.background-text ul{
+.background-text-plechero ul{ 
     list-style: none;
     padding-left: 82%;
 }
-.background-text .vertical-text{
+.background-text-plechero .vertical-text{
     font-size: 8px;
     font-family: Inter;
     writing-mode: vertical-lr;
@@ -19,33 +19,33 @@
     letter-spacing: -0.5px;
     height: 20%;
 }
-.background-text .vertical-line{
+.background-text-plechero .vertical-line{
     border-right: 2px solid white;
     height: 47px;
     margin-top: 14px;
     width: 6px;
 }
-.background-text .horizontal-text1{
+.background-text-plechero .horizontal-text1-plechero{
     font-size: 75px;
     font-family: Inter;
     height: 90px;
     margin-left: 30px;
 }
-.background-text .horizontal-text1 p{
+.background-text-plechero .horizontal-text1-plechero p{
     font-size: 15px;
     font-family: Akzidenz-Grotesk BQBold;
     letter-spacing: -0.5px;
     margin-top: -25px;
     margin-left: -12px;
 }
-.background-text .horizontal-text2{
+.background-text-plechero .horizontal-text2-plechero{
     font-size:103px;
     font-family: RobotikaThin ;
     letter-spacing: -3px;
     margin-top: 25px;
     margin-left: 15px;
 }
-.background-text .horizontal-text3{
+.background-text-plechero .horizontal-text3-plechero{
     font-size:103px;
     font-family: RobotikaBold ;
     letter-spacing: -3px;
@@ -53,19 +53,19 @@
     margin-top: -33px;
     margin-left: 15px;
 }
-.background-text .horizontal-text4{
+.background-text-plechero .horizontal-text4-plechero{
     font-size: 8px;
     font-family: Akzidenz-Grotesk BQ;
     letter-spacing: 0.3px;
     margin-top: 3px;
     margin-left: 14px;
 }
-.recuadro {
+.recuadro-plechero {
     display: flex;
     margin-left: 338px;
     margin-top: 312px;
 }
-.recuadro .recuadro-item1{
+.recuadro-plechero .recuadro-item1-plechero{
     background-color:white;
     color: black;
     width: 314px;
@@ -73,31 +73,31 @@
     padding-top: 38px;
     padding-left: 64px;
 }
-.recuadro .recuadro-item1 p:first-child{
+.recuadro-plechero .recuadro-item1-plechero p:first-child{
     font-family: Inter;
     font-size: 9px;
     margin-bottom: 1px;
     font-weight: bold;
 }
-.recuadro .recuadro-item1 p:last-child{
+.recuadro-plechero .recuadro-item1-plechero p:last-child{
     font-family: Inter;
     font-size: 14px;
     letter-spacing: -0.45px;
 }
-.recuadro .recuadro-item2{
+.recuadro-plechero .recuadro-item2-plechero{
    background-color: #1BA6E3;
     width: 92px;
     height: 136px;
     padding-left: 35px;
     padding-top: 52px;
 }
-.recuadro .recuadro-item2 img:first-child{
+.recuadro-plechero .recuadro-item2-plechero img:first-child{
     display: block;
     width: 21px;
     height: 7px;
     margin-bottom: 28px;
  }
- .recuadro .recuadro-item2 img:last-child{
+ .recuadro-plechero .recuadro-item2-plechero img:last-child{
     display: block;
     width: 21px;
     height: 7px;

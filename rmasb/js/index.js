@@ -1,41 +1,169 @@
-
+//slide down menu productos
+$(document).ready(function () {
+    $("#products").mouseenter(function() {
+        $(".products").slideDown("slow")
+    })
+    $("#products").mouseleave(function() {
+        $(".products").slideUp("slow")
+    })
+    
+})
+function animeSlider1() {
+    //$(".recuadro").delay(500).animate({"marginLeft": "100px", "opacity":"show"}, 500, "linear")
+    $('.vertical').animate( {"marginLeft":0,"opacity":"show"}, 200, "linear", function() {
+        $('#slider').animate( {"marginRight":0,"opacity":"show"}, 2000, "linear")
+        $('.horizontal-text1').animate( {"marginLeft":0,"opacity":"show"}, 500, "linear", function(){
+            $('.horizontal-text2').animate( {"marginLeft":0,"opacity":"show"}, 500, "linear", function(){
+                $('.horizontal-text3').animate( {"marginLeft":"-2px","opacity":"show"}, 500, "linear", function(){
+                    $('.horizontal-text4').animate( {"marginLeft":"-3px","opacity":"show"}, 500, "linear", function(){
+                        $('.horizontal-text5').animate( {"marginLeft":"2px","opacity":"show"}, 500, "linear", function(){
+                            $('.recuadro').slideDown("slow" ).css({"display": "flex"});
+                            
+                        } );
+                    } );
+                } );
+            } );
+        } );
+    });
+}
+function animeSlider2() {
+    $('.vertical-lechero').animate( {"marginLeft":0,"opacity":"show"}, 200, "linear", function() {
+        $('#slider2').animate( {"marginRight":0,"opacity":"show"}, 2000, "linear")
+        $('.horizontal-text1-lechero').animate( {"marginLeft":0,"opacity":"show"}, 500, "linear", function(){
+            $('.horizontal-text2-lechero').animate( {"marginLeft":0,"opacity":"show"}, 500, "linear", function(){
+                $('.horizontal-text3-lechero').animate( {"marginLeft":"-2px","opacity":"show"}, 500, "linear", function(){
+                    $('.horizontal-text4-lechero').animate( {"marginLeft":"-3px","opacity":"show"}, 500, "linear", function(){
+                        $('.horizontal-text5-lechero').animate( {"marginLeft":"2px","opacity":"show"}, 500, "linear", function(){
+                            $('.recuadro-lechero').slideDown("slow" ).css({"display": "flex"});
+                        } );
+                    } );
+                } );
+            } );
+        } );
+    });
+}
+function animeSlider3() {
+    $('.vertical-granjero').animate( {"marginLeft":0,"opacity":"show"}, 200, "linear", function() {
+        $('#slider3').animate( {"marginRight":0,"opacity":"show"}, 2000, "linear")
+        $('.horizontal-text1-granjero').animate( {"marginLeft":0,"opacity":"show"}, 500, "linear", function(){
+            $('.horizontal-text2-granjero').animate( {"marginLeft":0,"opacity":"show"}, 500, "linear", function(){
+                $('.horizontal-text3-granjero').animate( {"marginLeft":"-2px","opacity":"show"}, 500, "linear", function(){
+                    $('.horizontal-text4-granjero').animate( {"marginLeft":"-3px","opacity":"show"}, 500, "linear", function(){
+                        $('.horizontal-text5-granjero').animate( {"marginLeft":"2px","opacity":"show"}, 500, "linear", function(){
+                            $('.recuadro-granjero').slideDown("slow" ).css({"display": "flex"});
+                        } );
+                    } );
+                } );
+            } );
+        } );
+    });
+}
+function ocultarSlider1(){
+    $('#slider').css( {"display": "none", "marginRight":"100px"} );
+    $('.vertical').css( {"display": "none", "marginLeft":"-80px"} );
+    $('.horizontal-text1').css( {"display": "none", "marginLeft":"-80px"} );
+    $('.horizontal-text2').css( {"display": "none", "marginLeft":"-80px"} );
+    $('.horizontal-text3').css( {"display": "none", "marginLeft":"-80px"} );
+    $('.horizontal-text4').css( {"display": "none", "marginLeft":"-80px"} );
+    $('.horizontal-text5').css( {"display": "none", "marginLeft":"-80px"} );
+    $('.recuadro').css( {"display": "none"} );
+}
+function ocultarSlider2(){
+    $('#slider2').css( {"display": "none", "marginRight":"100px"} );
+    $('.vertical-lechero').css( {"display": "none", "marginLeft":"-80px"} );
+    $('.horizontal-text1-lechero').css( {"display": "none", "marginLeft":"-80px"} );
+    $('.horizontal-text2-lechero').css( {"display": "none", "marginLeft":"-80px"} );
+    $('.horizontal-text3-lechero').css( {"display": "none", "marginLeft":"-80px"} );
+    $('.horizontal-text4-lechero').css( {"display": "none", "marginLeft":"-80px"} );
+    $('.horizontal-text5-lechero').css( {"display": "none", "marginLeft":"-80px"} );
+    $('.recuadro-lechero').css( {"display": "none"} );
+}
+function ocultarSlider3(){
+    $('#slider3').css( {"display": "none", "marginRight":"100px"} );
+    $('.vertical-granjero').css( {"display": "none", "marginLeft":"-80px"} );
+    $('.horizontal-text1-granjero').css( {"display": "none", "marginLeft":"-80px"} );
+    $('.horizontal-text2-granjero').css( {"display": "none", "marginLeft":"-80px"} );
+    $('.horizontal-text3-granjero').css( {"display": "none", "marginLeft":"-80px"} );
+    $('.horizontal-text4-granjero').css( {"display": "none", "marginLeft":"-80px"} );
+    $('.horizontal-text5-granjero').css( {"display": "none", "marginLeft":"-80px"} );
+    $('.recuadro-granjero').css( {"display": "none"} );
+}
+// :::::::::::::::::::: funciones para los slider :::::::::::::::::::::::::
+function slaider1(){
+    //se obtienen los id y los elementos con la classe
+    ocultarSlider2()
+    ocultarSlider3()
+    var divImg = document.getElementsByClassName("background-slider")
+    var li1 = document.getElementById("1")
+    var li2 = document.getElementById("2")
+    var li3 = document.getElementById("3")
+    //Se ejecuta los styles para poner el border top del li
+    li1.style.borderTop = "solid 1px white";
+    li2.style.borderTop = "solid 0px white";
+    li3.style.borderTop = "solid 0px white";
+    
+    //Se cambia las clases name en cada elemento
+    divImg[0].className = "background-slider"
+    divImg[1].className = "background-slider d-none"
+    divImg[2].className = "background-slider d-none"
+    animeSlider1()
+    
+}
+function slaider2(){
+    ocultarSlider3()
+    ocultarSlider1()
+    //se obtienen los id y los elementos con la classe
+    var divImg = document.getElementsByClassName("background-slider")
+    var li1 = document.getElementById("1")
+    var li2 = document.getElementById("2")
+    var li3 = document.getElementById("3")
+    //Se ejecuta los styles para poner el border top del li
+    li1.style.borderTop = "solid 0px white";
+    li2.style.borderTop = "solid 1px white";
+    li3.style.borderTop = "solid 0px white";
+    //Se cambia las clases name en cada elemento
+    divImg[1].className = "background-slider"
+    divImg[2].className = "background-slider d-none"
+    divImg[0].className = "background-slider d-none"
+    animeSlider2()
+}
+function slaider3(){
+    ocultarSlider2()
+    ocultarSlider1()
+    //se obtienen los id y los elementos con la classe
+    var divImg = document.getElementsByClassName("background-slider")
+    var li1 = document.getElementById("1")
+    var li2 = document.getElementById("2")
+    var li3 = document.getElementById("3")
+    //Se ejecuta los styles para poner el border top del li
+    li1.style.borderTop = "solid 0px white";
+    li2.style.borderTop = "solid 0px white";
+    li3.style.borderTop = "solid 1px white";
+    //Se cambia las clases name en cada elemento
+    divImg[2].className = "background-slider"
+    divImg[0].className = "background-slider d-none"
+    divImg[1].className = "background-slider d-none"
+    animeSlider3()
+}
+//Control del slaider
 window.addEventListener('load', function() {
     console.log('CARGADOS')
-    var divImg = document.getElementsByClassName("background-slider")
-    
-    //Array que contendra las imagenes
-    /*var images = [];
-    images[0] = 'img/BRAHAMAN1.webp';
-    images[1] = 'img/Hoistein.webp';
-    images[2] = 'img/Granjero.webp';*/
+    slaider1()
     //INdeximg tendra el valor de la imagen
     var indeximg = 0;
     //contendra el tiempo en que cambiaran las imagenes
-    var time = 3000;
-    //funcion que cambiara las iimagenes 
-    function selectSlider(id) {
-        changeImg(id)
-    }
-    function changeImg(theId){
-       
-        console.log(indeximg)
-        if(indeximg === 0 || theId === 0){
-            console.log("se activa " + indeximg)
-            divImg[indeximg].className = "background-slider"
-            divImg[1].className = "background-slider d-none"
-            divImg[2].className = "background-slider d-none"
-        }
-       if(indeximg == 1){
-            console.log("se activa " + indeximg)
-            divImg[indeximg].className = "background-slider"
-            divImg[2].className = "background-slider d-none"
-            divImg[0].className = "background-slider d-none"
+    var time = 5000;
+    function changeImg(){
+        //console.log(indeximg)
+        if(indeximg === 0 ){
+            //animeSlider1()
+            slaider1()
+        } 
+        if(indeximg == 1){
+            slaider2()
         }
         if(indeximg == 2){
-            console.log("se activa " + indeximg)
-            divImg[indeximg].className = "background-slider"
-            divImg[0].className = "background-slider d-none"
-            divImg[1].className = "background-slider d-none"
+            slaider3()
         }
         if (indeximg < 2) {
             indeximg++;
@@ -46,34 +174,17 @@ window.addEventListener('load', function() {
     setInterval(changeImg, time)
 })
 function selectSlider(id) {
-    var divImg = document.getElementsByClassName("background-slider")
+    
     if(id == 1 ){
-        console.log("se activa al hacer click en" + id)
-        divImg[0].className = "background-slider"
-        divImg[1].className = "background-slider d-none"
-        divImg[2].className = "background-slider d-none"
+        slaider1()
     }
    if(id == 2){
-        console.log("se activa al hacer click en " + id)
-        divImg[1].className = "background-slider"
-        divImg[2].className = "background-slider d-none"
-        divImg[0].className = "background-slider d-none"
+        slaider2()
     }
     if(id == 3){
-        console.log("se activa al hacer click en " + id)
-        divImg[2].className = "background-slider"
-        divImg[0].className = "background-slider d-none"
-        divImg[1].className = "background-slider d-none"
+        slaider3()
     }
 }
-/*function selectSlider(id) {
-    var indexIcons = id;
-    var iconos = [];
-    iconos[0] = 'img/BRAHAMAN.webp';
-    iconos[1] = 'img/Hoistein.webp';
-    iconos[2] = 'img/Granjero.webp';
-    slider.src = iconos[indexIcons]
-}*/
 //Funcion que pondra a todos los points en amarillos y escondera los recuadros de informacion 
 function loopArray(TheArray1, valor1, TheArray2, valor2){
     for (let index = 0; index < TheArray1.length; index++) {
