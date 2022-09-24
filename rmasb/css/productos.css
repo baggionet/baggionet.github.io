@@ -1,4 +1,4 @@
-.{
+#slider-hiphos{
     display: none;
     margin-right: 100px;
 }
@@ -348,6 +348,10 @@ section{
 }
 /* --------- css para ganatec ------------ */
 /* :::::::::::::::: texto slider Ganatec ::::::::::::::::::::::: */
+#slider-ganatec{
+    display: none;
+    margin-right: 100px;
+}
 .background-text-ganatec{
     display: flex;
     position:absolute;
@@ -355,9 +359,12 @@ section{
     top: 16.5%;
     color:white;
 }
-.background-text-ganatec ul{
+.background-text-ganatec .vertical-ganatec{
     list-style: none;
     padding-left: 85%;
+    /*añadido por el slider del texto*/
+    display: none;
+    margin-left: -80px;
 }
 .background-text-ganatec .vertical-text-ganatec{
     font-size: 56.25%;
@@ -380,7 +387,10 @@ section{
     font-size: 75px;
     font-family: Inter;
     height: 90px;
-    margin-left: 20px;
+    /*margin-left: 20px;
+    añadido por el slider del texto*/
+    display: none;
+    margin-left: -80px;
     padding-top: 40px;
 }
 .background-text-ganatec .horizontal-text1-ganatec p{
@@ -391,17 +401,23 @@ section{
 }
 .background-text-ganatec .horizontal-text2-ganatec{
     margin-top: 95px;
-    margin-left: 18px;
+    /*margin-left: 18px;
+    añadido por el slider del texto*/
+    display: none;
+    margin-left: -80px;
     font-size: 15px;
     font-family: Akzidenz-Grotesk BQBold;
     letter-spacing: -0.7px;
 }
 .background-text-ganatec .horizontal-text3-ganatec{
     font-size: 80px;
-    display: inline-block;
     font-family: RobotikaBold;
     letter-spacing: -2.5px;
-    margin-left: 16px;
+    /*margin-left: 16px;
+    display: inline-block;
+    añadido por el slider del texto*/
+    display: none;
+    margin-left: -80px;
     margin-top: 18px;
     width: 120%;
 }
@@ -418,7 +434,10 @@ section{
     font-size: 16px;
     font-family: livemonoRegular;
     letter-spacing: -0.6px;
-    margin-left: 18px;
+    /*margin-left: 18px;
+    añadido por el slider del texto*/
+    display: none;
+    margin-left: -80px;
     margin-top: 25px;
     width: 35%;
     line-height: 1.17;
@@ -427,11 +446,14 @@ section{
     font-size: 8px;
     font-family: Akzidenz-Grotesk BQ;
     margin-top: 57px;
-    margin-left: 19px;
+    /*margin-left: 19px;
     display: inline-block;
+    añadido por el slider del texto*/
+    display: none;
+    margin-left: -80px;
 }
 .recuadro-ganatec {
-    display: flex;
+    display: none;
     margin-left: -245px;
     margin-top: 492px;
 }
@@ -515,6 +537,10 @@ section{
 }
 /* -------------- css para BioHidra -------------------*/
 /* :::::::::::::::: texto slider BIohydra ::::::::::::::::::::::: */
+#slider-biohydra{
+    display: none;
+    margin-right: 100px;
+}
 .background-text-biohydra{
     display: flex;
     position:absolute;
@@ -522,9 +548,12 @@ section{
     top: 22%;
     color:white;
 }
-.background-text-biohydra ul{
+.background-text-biohydra .vertical-biohydra{
     list-style: none;
     padding-left: 85%;
+    /*añadido por el slider del texto*/
+    display: none;
+    margin-left: -80px;
 }
 .background-text-biohydra .vertical-text-biohydra{
     font-size: 56.25%;
@@ -545,7 +574,10 @@ section{
     font-size: 75px;
     font-family: Inter;
     height: 90px;
-    margin-left: 20px;
+   /* margin-left: 20px;
+    añadido por el slider del texto*/
+    display: none;
+    margin-left: -80px;
 }
 .background-text-biohydra .horizontal-text1-biohydra p{
     font-size: 10px;
@@ -555,6 +587,9 @@ section{
 .background-text-biohydra .horizontal-text2-biohydra{
     margin-top: 51px;
     margin-left: 19px;
+    /*añadido por el slider del texto*/
+    display: none;
+    margin-left: -80px;
     font-size: 15px;
     font-family: Akzidenz-Grotesk BQBold;
     letter-spacing: -0.6px;
@@ -566,6 +601,9 @@ section{
     letter-spacing: -2.8px;
     margin-top: 7px;
     margin-left: 19px;
+    /*añadido por el slider del texto*/
+    display: none;
+    margin-left: -80px;
     width: 110%;
 }
 .background-text-biohydra .horizontal-text3-biohydra p{
@@ -581,6 +619,9 @@ section{
     margin-left: -4px;
     width: 50%;
     margin-left: 20px;
+    /*añadido por el slider del texto*/
+    display: none;
+    margin-left: -80px;
     line-height: 1.15;
 }
 .background-text-biohydra .horizontal-text5-biohydra{
@@ -588,12 +629,18 @@ section{
     font-family: Akzidenz-Grotesk BQ;
     letter-spacing: 0.4px;
     margin-top: 95px;
-    margin-left: 19px;
+    /*margin-left: 19px;
     display: inline-block;
+    añadido por el slider del texto*/
+    display: none;
+    margin-left: -80px;
+    
     
 }
 .recuadro-biohydra {
-    display: flex;
+    /*display: flex;
+    añadido por el slider del texto*/
+    display: none;
     margin-left: -257px;
     margin-top: 447px;
 }
@@ -680,6 +727,10 @@ section{
 }
 /* -------------- css para BioEnergy -------------------*/
 /* :::::::::::::::: texto slider BioEnergy ::::::::::::::::::::::: */
+#slider-bioenergy{
+    display: none;
+    margin-right: 100px;
+}
 .background-text-bioenergy{
     display: flex;
     position:absolute;
@@ -687,9 +738,11 @@ section{
     top: 22%;
     color:white;
 }
-.background-text-bioenergy ul{
+.background-text-bioenergy .vertical-bioenergy{
     list-style: none;
     padding-left: 85%;
+    display: none;
+    margin-left:-80px;
 }
 .background-text-bioenergy .vertical-text-bioenergy{
     font-size: 56.25%;
@@ -710,7 +763,10 @@ section{
     font-size: 75px;
     font-family: Inter;
     height: 90px;
-    margin-left: 18px;
+    /*margin-left: 18px;
+    añadido por el slider del texto*/
+    display: none;
+    margin-left: -80px;
 }
 .background-text-bioenergy .horizontal-text1-bioenergy p{
     font-size: 10px;
@@ -719,18 +775,24 @@ section{
 }
 .background-text-bioenergy .horizontal-text2-bioenergy{
     margin-top: 51px;
-    margin-left: 19px;
+    /*margin-left: 19px;
+    añadido por el slider del texto*/
+    display: none;
+    margin-left: -80px;
     font-size: 15px;
     font-family: Akzidenz-Grotesk BQBold;
     letter-spacing: -0.6px;
 }
 .background-text-bioenergy .horizontal-text3-bioenergy{
     font-size: 95px;
-    display: inline-block;
     font-family: RobotikaBold;
     letter-spacing: -2.7px;
     margin-top: 7px;
-    margin-left: 19px;
+    /*margin-left: 19px;
+    display: inline-block;
+    añadido por el slider del texto*/
+    display: none;
+    margin-left: -80px;
     width: 105%;
 }
 .background-text-bioenergy .horizontal-text3-bioenergy p{
@@ -746,7 +808,10 @@ section{
     letter-spacing: -0.7px;
     margin-left: -4px;
     width: 50%;
-    margin-left: 20px;
+    /*margin-left: 20px;
+    añadido por el slider del texto*/
+    display: none;
+    margin-left: -80px;
     line-height: 1.15;
 }
 .background-text-bioenergy .horizontal-text5-bioenergy{
@@ -754,12 +819,14 @@ section{
     font-family: Akzidenz-Grotesk BQ;
     letter-spacing: 0.1px;
     margin-top: 60px;
-    margin-left: 19px;
+    /*margin-left: 19px;
     display: inline-block;
-    
+    añadido por el slider del texto*/
+    display: none;
+    margin-left: -80px;    
 }
 .recuadro-bioenergy {
-    display: flex;
+    display: none;
     margin-left: -98px;
     margin-top: 449px;
 }
@@ -876,6 +943,10 @@ section{
 }
 /* -------------- css para Grasssuplex -------------------*/
 /* :::::::::::::::: texto slider Grasssuplex ::::::::::::::::::::::: */
+#slider-grasssuplex{
+    display: none;
+    margin-right: 100px;
+}
 .background-text-grasssuplex{
     display: flex;
     position:absolute;
@@ -883,9 +954,10 @@ section{
     top: 16.5%;
     color:white;
 }
-.background-text-grasssuplex ul{
+.background-text-grasssuplex .vertical-grasssuplex{
     list-style: none;
     padding-left: 85%;
+    display: none;
 }
 .background-text-grasssuplex .vertical-text-grasssuplex{
     font-size: 56.25%;
@@ -908,7 +980,10 @@ section{
     font-size: 75px;
     font-family: Inter;
     height: 90px;
-    margin-left: 20px;
+    /*margin-left: 20px;
+    elementos agregados*/
+    display: none;
+    margin-left: -80px;
     padding-top: 11px;
 }
 .background-text-grasssuplex .horizontal-text1-grasssuplex p{
@@ -919,17 +994,23 @@ section{
 }
 .background-text-grasssuplex .horizontal-text2-grasssuplex{
     margin-top: 67px;
-    margin-left: 19px;
+    /*margin-left: 19px;
+    elementos agregados*/
+    display: none;
+    margin-left: -80px;
     font-size: 15px;
     font-family: Akzidenz-Grotesk BQBold;
     letter-spacing: -0.7px;
 }
 .background-text-grasssuplex .horizontal-text3-grasssuplex{
     font-size: 95px;
-    display: inline-block;
     font-family: RobotikaBold;
     letter-spacing: -2.5px;
-    margin-left: 14px;
+    /*margin-left: 14px;
+    display: inline-block;
+    elementos agregados*/
+    display: none;
+    margin-left: -80px;
     margin-top: -16px;
     width: 105%;
 }
@@ -952,7 +1033,10 @@ section{
     font-size: 16px;
     font-family: livemonoRegular;
     letter-spacing: -0.6px;
-    margin-left: 15px;
+    /*margin-left: 15px;
+    elementos agregados*/
+    display: none;
+    margin-left: -80px;
     margin-top: 3px;
     width: 50%;
     line-height: 1.15;
@@ -961,12 +1045,16 @@ section{
     font-size: 8px;
     font-family: Akzidenz-Grotesk BQ;
     margin-top: 45px;
-    margin-left: 19px;
+    /*margin-left: 19px;
     display: inline-block;
+    elementos agregados*/
+    display: none;
+    margin-left: -80px;
+    
 }
 .recuadro-grasssuplex {
-    display: flex;
-    margin-left: -209px;
+    display: none;
+    margin-left: -215px;
     margin-top: 492px;
 }
 .recuadro-grasssuplex .recuadro-item1-grasssuplex{

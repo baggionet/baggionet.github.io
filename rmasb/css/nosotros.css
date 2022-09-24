@@ -18,7 +18,7 @@
     height:100%;
 }
 /* ::::::::::::: texto de slider ::::::::::::::::*/
-.slider-nosotros{
+#slider-nosotros{
     display: none;
     margin-right: 100px;
 }
