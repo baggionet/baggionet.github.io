@@ -272,5 +272,51 @@ theProducts.addEventListener("mouseout", function(){
     theProducts.className = "products d-none"
 }) */
 
+//Funcion que cambia las imagenes y link a la derecha
+function changeRigth(){
+    let newImg = [];
+    newImg[0] = "img/bioEnergyNew.png";
+    newImg[1] = "img/hiPhosNew.png";
+    newImg[2] = "img/bioHydraNew.png";
+    newImg[3] = "img/tropiPhosnew.png";
+    let newLink = [];
+    newLink[0] = "#";
+    newLink[1] = "#";
+    newLink[2] = "#";
+    newLink[3] = "#";
+    for (let index = 0; index < 4; index++) {
+        var imgId = document.getElementById("techImg"+index)
+        var linkId = document.getElementById("techlink"+index)
+        imgId.src = newImg[index]
+        linkId.href = newLink[index]
+    }
+    var linkl = document.getElementById("btnleft")
+    var linkr = document.getElementById("btnrigth")
+    linkr.style.color = "rgb(225, 222, 222)"
+    linkl.style.color = "white"
+}
+//Funcion que cambia las imagenes y link a la izquierda
+function changeleft(){
+    let newImg = [];
+    newImg[0] = "img/bioEnergy.webp";
+    newImg[1] = "img/hiPhos.webp";
+    newImg[2] = "img/bioHydra.webp";
+    newImg[3] = "img/tropiPhos.webp";
+    let newLink = [];
+    newLink[0] = "pbioenergy.html";
+    newLink[1] = "phiphos.html";
+    newLink[2] = "pbiohydra.html";
+    newLink[3] = "pganatec.html";
+    for (let index = 0; index < 4; index++) {
+        var imgId = document.getElementById("techImg"+index)
+        var linkId = document.getElementById("techlink"+index)
+        imgId.src = newImg[index]
+        linkId.href = newLink[index]
+    }
+    var linkl = document.getElementById("btnleft")
+    var linkr = document.getElementById("btnrigth")
+    linkl.style.color = "rgb(225, 222, 222)"
+    linkr.style.color = "white"
+}
 
 
