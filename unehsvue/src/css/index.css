@@ -4,17 +4,115 @@
     padding: 0;
     box-sizing: border-box;
 }
+.row{
+    margin-right: 0 !important;
+}
+.header{
+    margin-bottom: 97px;
+}
 .fondo-img{
     position: absolute;
     z-index: -1;
     width: 100%;
     height: 90%;
+    
 }
 .fondo-img img{
     width: 100%;
     height: 100%;
 }
+.logo{
+    padding-left: 84px;
+}
 .menu{
-    position: absolute;
-    z-index: 2;
+    list-style: none;
+    color: white;
+    font-size: 18px;
+    font-weight:bold;
+    letter-spacing: 1.5px;
+}
+.menu .menu-item{
+    display: inline-block;
+    width: 110px;
+    text-align: center;
+}
+.menu .menu-item:hover{
+    border-bottom: solid white 6px;
+    cursor: pointer;
+}
+a:link, a:visited, a:hover, a:active{
+    color: white !important;
+    text-decoration: none !important;
+}
+.login{
+    padding-left: 16px;
+}
+.btn-login{
+    margin-left: 12px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border: solid 1px #03304E;
+    background-color: #03304E;
+    width: 85.5px;
+    height: 31.5px;
+    text-align: center;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    border-radius: 5px;
+}
+.btn-login:hover{
+    background-color: white;
+    color: #03304E;
+}
+.sociales{
+    list-style: none;
+    color: white;
+    padding-right: 23px;
+    margin-top: 42px;
+    height: 200px;
+    border-left: 2px solid white;
+    padding-left: 23px;
+    padding-top: 35px;
+    margin-bottom: 0;
+    margin-left: 15px;
+}
+.sociales li i{
+    margin-bottom: 16px;
+    font-size: 1.6rem;
+    width: 24px;
+    height: 28px;
+}
+.sociales li i:hover{
+    cursor: pointer;
+}
+.title{
+    padding-left: 60px !important;
+    padding-top: 0 !important;
+}
+.title1, .title2{
+    
+    color: white;
+    font-size: 68px;
+    display: inline-block;
+    letter-spacing: 2px;
+    margin-left: 20px;
+}
+/* ::::::::::::::::::  sitios de interes :::::::::::::::::::::::::::*/
+.sitios-interes{
+    margin-left: 62px;
+    margin-right: 62px;
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: #03304E solid 3px;
+    border-bottom: #03304E solid 3px;
+}
+.sitios{
+    list-style: none;
+}
+.sitios li:first-child {
+    margin-right: 30px;
+}
+.sitios li{
+    display: inline-block;
+    margin-left: 5px;
 }
