@@ -40,7 +40,7 @@
     border-bottom: solid white 6px;
     cursor: pointer;
 }
-a:link, a:visited, a:hover, a:active{
+.menu-item a:link, .menu-item a:visited, .menu-item a:hover, .menu-item a:active{
     color: white !important;
     text-decoration: none !important;
 }
@@ -115,4 +115,63 @@ a:link, a:visited, a:hover, a:active{
 .sitios li{
     display: inline-block;
     margin-left: 5px;
+}
+
+
+
+
+
+/* ::::::::::::::::::  footers :::::::::::::::::::::::::::*/
+footer{
+    margin-top: 60px;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    margin-left: 60px;
+    margin-right: 33px;
+    border-top: 3px solid #03304E;
+}
+.menu-footer{
+    list-style: none;
+}
+.menu-footer-item{
+    color: #03304E;
+    font-size: 18px;
+    font-weight:bold;
+    letter-spacing: 1.5px;
+    border-bottom: 6px solid #03304E ;
+    width: 400px;
+    padding-left: 20px;
+}
+.menu-footer .menu-footer-item:last-child{
+    padding-top: 18px;
+
+}
+.menu-footer-item a:link, .menu-footer-item a:visited, .menu-footer-item a:hover, .menu-footer-item a:active{
+    color: #03304E !important;
+    text-decoration: none !important;
+}
+.rs-footer-txt{
+    text-align: center;
+}
+.re-footer-text{
+    font-size: 18px;
+    color: #03304E;
+    margin-bottom: 0;
+}
+.rs-footer-i{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 24px;
+}
+.rs-footer-iconf{
+    font-size: 26px;
+    color: #3B5998;
+}
+.rs-footer-icont{
+    font-size: 26px;
+    color: #2962FF;
+}
+.rs-footer-iconl{
+    font-size: 26px;
+    color: #0E76A8;
 }
