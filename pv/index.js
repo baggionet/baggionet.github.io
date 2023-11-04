@@ -110,7 +110,7 @@ const store = new Vuex.Store({
                 alert("No tienes mas producto para usar")
             }else{
                 state.productos[myId].stock--
-                localStorage.setItem('dbLocal', JSON.stringify(state.productos))
+                localStorage.setItem('dbLocal', JSON.stringify(state.productos[myId].stock))
             }
             
             console.log(state.productos[myId].stock)
